@@ -1,0 +1,39 @@
+== lifeline_check  @ 20261102-081140
+found 00:E0:12:34:56:78 ONKAR-LIFE
+SERVICE 00001801-0000-1000-8000-00805f9b34fb Generic Attribute Profile
+   2a05 indicate
+SERVICE 0000d0ff-3c17-d293-8e48-14fe2e4da212 Unknown
+   ffe2 read = 
+   fff3 read = 1200
+   ffd1 write-without-response
+   ffd5 read = 
+   ffd8 write-without-response
+   ffd4 read = 810000e0
+   fff1 read = 0901000700087d00f03f0003
+   fff2 write
+   ffe1 read = 11500000
+   ffd2 read = 00e012345678
+   ffd3 read = 00801b20
+   ffe0 read = 010000000020000800801b20810000e000000000
+SERVICE 0000180f-0000-1000-8000-00805f9b34fb Battery Service
+   2a19 read,notify = 64
+SERVICE 00001800-0000-1000-8000-00805f9b34fb Generic Access Profile
+   2a01 read = c103
+   2aa6 read = 00
+   2a00 read = 4f4e4b41522d4c49464500
+   2a04 read = 0000000000000000
+SERVICE 00006287-3c17-d293-8e48-14fe2e4da212 Unknown
+   00006387-3c17-d293-8e48-14fe2e4da212 write-without-response
+   00006487-3c17-d293-8e48-14fe2e4da212 write,notify
+SERVICE 0000180a-0000-1000-8000-00805f9b34fb Device Information
+   2a23 read = 0001020000030405
+   2a26 read = 52544b4265654669726d7761726552657600
+   2a27 read = 52544b426565486172647761726552657600
+   2a25 read = 52544b42656553657269616c4e756d00
+   2a24 read = 4d6f64656c204e627220302e3900
+   2a29 read = 5265616c74656b20425400
+   2a2a read = 52544b42656549454545446174616c69737400
+   2a28 read = 52544b426565536f66747761726552657600
+   2a50 read = 015d0001000300
+DONE
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-081140-lifeline_check.txt
