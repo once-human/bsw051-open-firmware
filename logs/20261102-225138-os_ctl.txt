@@ -1,0 +1,14 @@
+== os_ctl start @ 20261102-225138
+22:51:45 watch seen but connect failed (BleakError) - retry 1
+22:51:54 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:51:59 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:52:04 watch NOT visible for 11 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:52:14 connected: 00:E0:12:34:56:78 firmware v15
+22:52:15 state: powering up | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 1
+22:52:15 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:52:15 pins (level/changes): P2_2 0/0  P2_4 0/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:52:15 screen powering up: takes ~25 s (soft start). Run 'bash run.sh os_ctl' to see it reach RUNNING.
+22:52:15 state: powering up | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 1
+22:52:15 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:52:15 pins (level/changes): P2_2 0/0  P2_4 0/0  P3_1 1/0 | crown 0 | button auto presses 0
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-225138-os_ctl.txt

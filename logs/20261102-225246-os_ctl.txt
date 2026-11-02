@@ -1,0 +1,113 @@
+== os_ctl watch @ 20261102-225246
+22:52:56 connected: 00:E0:12:34:56:78 firmware v15
+22:52:56 live status every second, Ctrl+C to stop
+22:52:56 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:52:56 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 468 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:52:56 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:52:57 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:52:57 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 490 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:52:57 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:52:58 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:52:58 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 512 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:52:58 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:52:59 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:52:59 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 534 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:52:59 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:01 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:01 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 556 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:01 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:02 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:02 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 577 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:02 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:03 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:03 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 599 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:03 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:04 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:04 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 620 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:04 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:05 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:05 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 642 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:05 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:06 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:06 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 664 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:06 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:07 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:07 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 685 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:07 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:08 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:08 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 707 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:08 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:09 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:09 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 728 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:09 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:10 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:10 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 750 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:10 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:11 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:11 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 772 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:11 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:12 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:12 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 793 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:12 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:14 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:14 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 815 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:14 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:15 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:15 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 836 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:15 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:16 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:16 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 858 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:16 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:17 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:17 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 880 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:17 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:18 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:18 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 901 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:18 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:19 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:19 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 923 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:19 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:20 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:20 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 944 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:20 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:21 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:21 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 966 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:21 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:22 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:22 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 988 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:22 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:23 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:23 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 1009 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:23 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:24 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:24 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 1031 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:24 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:25 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:25 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 1052 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:25 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:26 state: RUNNING | screen: paint | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 36
+22:53:26 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 1074 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:26 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/6 | crown 0 | button auto presses 2
+22:53:28 state: RUNNING | screen: info | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 37
+22:53:28 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 1096 | gestures 41 | last x,y 295,316 | raw ff 00 30 3b 08 11 40 00
+22:53:28 pins (level/changes): P2_2 0/0  P2_4 1/12  P3_1 1/8 | crown 0 | button auto presses 3
+Traceback (most recent call last):
+  File "/home/onkar/Projects/dafit-watch/os_ctl.py", line 89, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/onkar/Projects/dafit-watch/os_ctl.py", line 80, in main
+    show(await cmd(c, [0x30, 2]))
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/onkar/Projects/dafit-watch/tool5.py", line 70, in cmd
+    raise WatchGone()
+tool5.WatchGone
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-225246-os_ctl.txt
