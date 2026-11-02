@@ -1,0 +1,62 @@
+== display_steps  @ 20261102-204621
+20:46:28 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+20:46:36 connected: 00:E0:12:34:56:78 firmware v10
+20:46:36 start: uptime 4 s, last reset: power-on / hardware reset
+20:46:36 WATCH THE SCREEN NOW. Starting in 5 s. If the watch drops, DON'T touch the charger until it beeps twice.
+20:46:42 === attempt 1 of 2
+20:46:42    SPIC2 hardware setup (0x1D)
+20:46:42    screen power P0_1 on
+20:46:43    reset P2_0 high
+20:46:43    reset P2_0 low
+20:46:43    reset P2_0 high
+20:46:43    init 1/22 reg FF00
+20:46:44    init 2/22 reg FF80
+20:46:44    init 3/22 reg C083
+20:46:44    init 4/22 reg C089
+20:46:44    init 5/22 reg C093
+20:46:44    init 6/22 reg C099
+20:46:45    init 7/22 reg B283
+20:46:45    init 8/22 reg 3A00
+20:46:45    init 9/22 reg 5100
+20:46:45    init 10/22 reg 3500
+20:46:46    init 11/22 reg C0C4
+20:46:46    init 12/22 reg C380
+20:46:46    init 13/22 reg C390
+20:46:46    init 14/22 reg C3A0
+20:46:46    init 15/22 reg C5DF
+20:46:47    init 16/22 reg 1100
+20:46:47 !!! DROPPED AT: init 16/22 reg 1100 (5.7 s in)
+20:46:47 hands off the charger - waiting up to 40 s for the watch to return by itself
+20:46:51 came back by itself
+20:47:00 connected: 00:E0:12:34:56:78 firmware v10
+20:47:01 uptime 13 s, last reset: power-on / hardware reset -> the watch REBOOTED
+20:47:01 === attempt 2 of 2
+20:47:01    SPIC2 hardware setup (0x1D)
+20:47:01    screen power P0_1 on
+20:47:02    reset P2_0 high
+20:47:02    reset P2_0 low
+20:47:02    reset P2_0 high
+20:47:03    init 1/22 reg FF00
+20:47:03    init 2/22 reg FF80
+20:47:03    init 3/22 reg C083
+20:47:03    init 4/22 reg C089
+20:47:03    init 5/22 reg C093
+20:47:04    init 6/22 reg C099
+20:47:04    init 7/22 reg B283
+20:47:04    init 8/22 reg 3A00
+20:47:04    init 9/22 reg 5100
+20:47:04    init 10/22 reg 3500
+20:47:05    init 11/22 reg C0C4
+20:47:05    init 12/22 reg C380
+20:47:05    init 13/22 reg C390
+20:47:05    init 14/22 reg C3A0
+20:47:05    init 15/22 reg C5DF
+20:47:06    init 16/22 reg 1100
+20:47:06 !!! DROPPED AT: init 16/22 reg 1100 (5.8 s in)
+20:47:06 hands off the charger - waiting up to 40 s for the watch to return by itself
+20:47:10 came back by itself
+20:47:19 connected: 00:E0:12:34:56:78 firmware v10
+20:47:19 uptime 12 s, last reset: power-on / hardware reset -> the watch REBOOTED
+20:47:20 >>> What did you see on the screen? Type it, even if it's just 'nothing' (white / red / flicker / glow / nothing): 20:51:33 saved to logs/hw.json: display_steps (full detail in the file)
+20:51:33 RESULT: [{'died_at': 'init 16/22 reg 1100', 'by_itself': True, 'uptime': 13, 'reset': 'power-on / hardware reset', 'rebooted': True}, {'died_at': 'init 16/22 reg 1100', 'by_itself': True, 'uptime': 12, 'reset': 'power-on / hardware reset', 'rebooted': True}] | you saw: nothing
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-204621-display_steps.txt

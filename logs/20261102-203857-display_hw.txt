@@ -1,0 +1,18 @@
+== display_hw  @ 20261102-203857
+20:39:04 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+20:39:09 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+20:39:14 watch NOT visible for 11 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+20:39:20 watch NOT visible for 16 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+20:39:28 connected: 00:E0:12:34:56:78 firmware v10
+20:39:28 >>> Look at the WATCH SCREEN for ~30 s (white flash, then a colour). Press Enter. 20:42:12 RED: power P0_1  -> stock init via screen hardware -> WHITE 2 s -> RED
+20:42:12    watch dropped during RED - reconnecting
+20:42:12 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+20:42:20 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+20:42:28 connected: 00:E0:12:34:56:78 firmware v10
+20:42:28 BLUE: power P0_1 P0_3 -> stock init via screen hardware -> WHITE 2 s -> BLUE
+20:42:31    watch dropped during BLUE - reconnecting
+20:42:31 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+20:42:40 connected: 00:E0:12:34:56:78 firmware v10
+20:42:40 >>> What did you see? (white / red / blue / flicker / noise / none): 20:42:43 saved to logs/hw.json: {'display_hw': {'seen': ''}}
+20:42:43 RESULT: none
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-203857-display_hw.txt

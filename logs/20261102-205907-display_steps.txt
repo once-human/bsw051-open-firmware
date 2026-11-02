@@ -1,0 +1,81 @@
+== display_steps  @ 20261102-205907
+20:59:14 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+20:59:19 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+20:59:24 watch NOT visible for 11 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+20:59:30 watch NOT visible for 16 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+20:59:35 watch NOT visible for 22 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+20:59:40 watch NOT visible for 27 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+20:59:46 watch NOT visible for 32 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+20:59:57 connected: 00:E0:12:34:56:78 firmware v10
+20:59:57 start: uptime 2 s, last reset: power-on / hardware reset
+20:59:57 WATCH THE SCREEN NOW. Starting in 5 s. If the watch drops, DON'T touch the charger until it beeps twice.
+21:00:03 === attempt 1 of 2
+21:00:03    SPIC2 hardware setup (0x1D)
+21:00:03 !!! DROPPED AT: SPIC2 hardware setup (0x1D) (0.0 s in)
+21:00:03 hands off the charger - waiting up to 40 s for the watch to return by itself
+21:00:11 came back by itself
+21:00:19 watch seen but connect failed (BleakError) - retry 1
+21:00:28 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:00:33 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:00:38 watch NOT visible for 11 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:00:46 connected: 00:E0:12:34:56:78 firmware v10
+21:00:46 uptime 5 s, last reset: power-on / hardware reset -> the watch REBOOTED
+21:00:46 === attempt 2 of 2
+21:00:46    SPIC2 hardware setup (0x1D)
+21:00:46    screen power P0_1 on
+21:00:47    reset P2_0 high
+21:00:47    reset P2_0 low
+21:00:47    reset P2_0 high
+21:00:48    init 1/22 reg FF00
+21:00:48    init 2/22 reg FF80
+21:00:48    init 3/22 reg C083
+21:00:48    init 4/22 reg C089
+21:00:49    init 5/22 reg C093
+21:00:49    init 6/22 reg C099
+21:00:49    init 7/22 reg B283
+21:00:49    init 8/22 reg 3A00
+21:00:50    init 9/22 reg 5100
+21:00:50    init 10/22 reg 3500
+21:00:50    init 11/22 reg C0C4
+21:00:50    init 12/22 reg C380
+21:00:50    init 13/22 reg C390
+21:00:51    init 14/22 reg C3A0
+21:00:51    init 15/22 reg C5DF
+21:00:51    init 16/22 reg 1100
+21:00:51    init 17/22 reg 2900
+21:00:52    init 18/22 reg FF00
+21:00:52    init 19/22 reg C5E2
+21:00:52    init 20/22 reg C5E5
+21:00:52    init 21/22 reg C482
+21:00:53    init 22/22 reg C489
+21:00:53    brightness max
+21:00:53    ALL PIXELS ON (white) - 3 s
+21:00:56 !!! DROPPED AT: ALL PIXELS ON (white) - 3 s (10.1 s in)
+21:00:56 hands off the charger - waiting up to 40 s for the watch to return by itself
+21:01:36 did NOT come back by itself -> replug the charger now
+21:01:43 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:01:48 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:01:53 watch NOT visible for 11 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:01:59 watch NOT visible for 16 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:02:04 watch NOT visible for 22 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:02:09 watch NOT visible for 27 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:02:15 watch NOT visible for 32 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:02:20 watch NOT visible for 38 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:02:25 watch NOT visible for 43 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:02:31 watch NOT visible for 48 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:02:36 watch NOT visible for 54 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:02:41 watch NOT visible for 59 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:02:47 watch NOT visible for 64 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:02:52 watch NOT visible for 70 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:02:57 watch NOT visible for 75 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:03:03 watch NOT visible for 80 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:03:08 watch NOT visible for 86 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:03:13 watch NOT visible for 91 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:03:19 watch NOT visible for 96 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:03:24 watch NOT visible for 102 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:03:29 watch NOT visible for 107 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:03:37 connected: 00:E0:12:34:56:78 firmware v10
+21:03:37 uptime 6 s, last reset: power-on / hardware reset -> the watch REBOOTED
+21:03:37 >>> What did you see on the screen? Type it, even if it's just 'nothing' (white / red / flicker / glow / nothing): 21:03:46 >>> What did you see on the screen? Type it, even if it's just 'nothing' (white / red / flicker / glow / nothing): 21:03:48 >>> What did you see on the screen? Type it, even if it's just 'nothing' (white / red / flicker / glow / nothing): 21:03:52 saved to logs/hw.json: display_steps (full detail in the file)
+21:03:52 RESULT: [{'died_at': 'SPIC2 hardware setup (0x1D)', 'by_itself': True, 'uptime': 5, 'reset': 'power-on / hardware reset', 'rebooted': True}, {'died_at': 'ALL PIXELS ON (white) - 3 s', 'by_itself': False, 'uptime': 6, 'reset': 'power-on / hardware reset', 'rebooted': True}] | you saw: nothing
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-205907-display_steps.txt
