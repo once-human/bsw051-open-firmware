@@ -1,0 +1,29 @@
+== tool lcdprobe @ 20261102-083200
+08:32:09 not advertising (probably already connected to this laptop) - connecting directly
+Traceback (most recent call last):
+  File "/home/onkar/Projects/dafit-watch/tool.py", line 125, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/onkar/Projects/dafit-watch/tool.py", line 115, in main
+    c = await connect()
+        ^^^^^^^^^^^^^^^
+  File "/home/onkar/Projects/dafit-watch/tool.py", line 32, in connect
+    c = BleakClient(dev, timeout=25); await c.connect()
+                                      ^^^^^^^^^^^^^^^^^
+  File "/home/onkar/watchenv/lib/python3.14/site-packages/bleak/__init__.py", line 660, in connect
+    await self._backend.connect(self._pair_before_connect, **kwargs)
+  File "/home/onkar/watchenv/lib/python3.14/site-packages/bleak/backends/bluezdbus/client.py", line 145, in connect
+    raise BleakDeviceNotFoundError(
+        self.address, f"Device with address {self.address} was not found."
+    )
+bleak.exc.BleakDeviceNotFoundError: Device with address 00:E0:12:34:56:78 was not found.
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-083200-tool.txt

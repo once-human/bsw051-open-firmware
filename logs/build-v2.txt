@@ -1,0 +1,541 @@
+mkdir build
+arm-none-eabi-gcc -E -P -x c -I-I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  app.ld -o app.ld.gen
+mkdir bin
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/system_rtl876x.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/system_rtl876x.lst ../../../src/mcu/rtl876x/system_rtl876x.c -o build/system_rtl876x.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/stdlib_wrapper.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/stdlib_wrapper.lst ../../../src/mcu/rtl876x/stdlib_wrapper.c -o build/stdlib_wrapper.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/overlay_mgr.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/overlay_mgr.lst ../../../src/mcu/rtl876x/overlay_mgr.c -o build/overlay_mgr.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/app_task.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/app_task.lst ../../../src/app/silent_ota/app_task.c -o build/app_task.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/silent_ota_application.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/silent_ota_application.lst ../../../src/app/silent_ota/silent_ota_application.c -o build/silent_ota_application.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/main.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/main.lst ../../../src/app/silent_ota/main.c -o build/main.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/dfu_flash.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/dfu_flash.lst ../../../src/platform/dfu_flash.c -o build/dfu_flash.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/system_trace.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/system_trace.lst ../../../src/platform/system_trace.c -o build/system_trace.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/osif_interface_sdk.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/osif_interface_sdk.lst ../../../src/os/osif_interface_sdk.c -o build/osif_interface_sdk.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/dfu_application.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/dfu_application.lst ../../../src/dfu/dfu_application.c -o build/dfu_application.o
+../../../src/platform/system_trace.c: In function 'system_trace_init':
+../../../src/platform/system_trace.c:165:18: warning: unused variable 'xIdleTaskHandle' [-Wunused-variable]
+  165 |     extern void *xIdleTaskHandle;
+      |                  ^~~~~~~~~~~~~~~
+../../../src/platform/system_trace.c:164:18: warning: unused variable 'xTimerTaskHandle' [-Wunused-variable]
+  164 |     extern void *xTimerTaskHandle;
+      |                  ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/dfu_main.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/dfu_main.lst ../../../src/dfu/dfu_main.c -o build/dfu_main.o
+In file included from ../../../src/app/silent_ota/main.c:30:
+../../../inc/peripheral/rtl876x_gpio.h: In function 'GPIO_ReadInputDataBit':
+../../../inc/peripheral/rtl876x_gpio.h:536:14: warning: unused variable 'data_in' [-Wunused-variable]
+  536 |     uint32_t data_in = GPIO->DATAIN;
+      |              ^~~~~~~
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/dfu_task.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/dfu_task.lst ../../../src/dfu/dfu_task.c -o build/dfu_task.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/bas.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/bas.lst ../../../src/ble/profile/server/bas.c -o build/bas.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/dis.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/dis.lst ../../../src/ble/profile/server/dis.c -o build/dis.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/ota_service.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/ota_service.lst ../../../src/ble/profile/server/ota_service.c -o build/ota_service.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/dfu_service.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/dfu_service.lst ../../../src/ble/profile/server/dfu_service.c -o build/dfu_service.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/simple_ble_service.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/simple_ble_service.lst ../../../src/ble/profile/server/simple_ble_service.c -o build/simple_ble_service.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/onkar_tool.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/onkar_tool.lst ../../../src/app/silent_ota/onkar_tool.c -o build/onkar_tool.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/rtl876x_adc.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/rtl876x_adc.lst ../../../src/mcu/peripheral/rtl876x_adc.c -o build/rtl876x_adc.o
+In file included from ../../../src/app/silent_ota/onkar_tool.c:26:
+../../../inc/peripheral/rtl876x_gpio.h: In function 'GPIO_ReadInputDataBit':
+../../../inc/peripheral/rtl876x_gpio.h:536:14: warning: unused variable 'data_in' [-Wunused-variable]
+  536 |     uint32_t data_in = GPIO->DATAIN;
+      |              ^~~~~~~
+../../../src/app/silent_ota/onkar_tool.c: In function 'pin_read':
+../../../src/app/silent_ota/onkar_tool.c:100:5: warning: function with qualified void return type called
+  100 |     platform_delay_us(30);
+      |     ^~~~~~~~~~~~~~~~~
+../../../src/app/silent_ota/onkar_tool.c: In function 'onkar_tool_handle':
+../../../src/app/silent_ota/onkar_tool.c:307:13: warning: function with qualified void return type called
+  307 |             platform_delay_ms(ms);
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/rtl876x_io_dlps.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/rtl876x_io_dlps.lst ../../../src/mcu/peripheral/rtl876x_io_dlps.c -o build/rtl876x_io_dlps.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/rtl876x_gpio.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/rtl876x_gpio.lst ../../../src/mcu/peripheral/rtl876x_gpio.c -o build/rtl876x_gpio.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/rtl876x_rcc.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/rtl876x_rcc.lst ../../../src/mcu/peripheral/rtl876x_rcc.c -o build/rtl876x_rcc.o
+../../../src/mcu/peripheral/rtl876x_adc.c: In function 'ADC_Init':
+../../../src/mcu/peripheral/rtl876x_adc.c:61:5: warning: function with qualified void return type called
+   61 |     platform_delay_ms(15);
+      |     ^~~~~~~~~~~~~~~~~
+../../../src/mcu/peripheral/rtl876x_adc.c:89:9: warning: function with qualified void return type called
+   89 |         platform_delay_ms(8);
+      |         ^~~~~~~~~~~~~~~~~
+../../../src/mcu/peripheral/rtl876x_adc.c: In function 'ADC_Cmd':
+../../../src/mcu/peripheral/rtl876x_adc.c:230:13: warning: function with qualified void return type called
+  230 |             platform_delay_us(80);
+      |             ^~~~~~~~~~~~~~~~~
+../../../src/mcu/peripheral/rtl876x_adc.c:233:13: warning: function with qualified void return type called
+  233 |             platform_delay_us(320);
+      |             ^~~~~~~~~~~~~~~~~
+../../../src/mcu/peripheral/rtl876x_adc.c:236:13: warning: function with qualified void return type called
+  236 |             platform_delay_us(240);
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/rtl876x_pinmux.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/rtl876x_pinmux.lst ../../../src/mcu/peripheral/rtl876x_pinmux.c -o build/rtl876x_pinmux.o
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/rtl876x_nvic.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/rtl876x_nvic.lst ../../../src/mcu/peripheral/rtl876x_nvic.c -o build/rtl876x_nvic.o
+In file included from ../../../src/mcu/peripheral/rtl876x_gpio.c:9:
+../../../inc/peripheral/rtl876x_gpio.h: In function 'GPIO_ReadInputDataBit':
+../../../inc/peripheral/rtl876x_gpio.h:536:14: warning: unused variable 'data_in' [-Wunused-variable]
+  536 |     uint32_t data_in = GPIO->DATAIN;
+      |              ^~~~~~~
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -specs=nano.specs  -I../../../bin/upperstack_img/upperstack_0_0 -I../../../inc/app -I../../../inc/platform -I../../../inc/platform/cmsis -I../../../inc/os -I../../../inc/bluetooth/profile/server -I../../../inc/peripheral -I../../../inc/bluetooth/profile -I../../../inc/bluetooth/gap -I../../../inc/bluetooth/gap/gap_lib -I../../../inc/bluetooth/profile/server -I../../../src/ble/profile/server -I../../../src/dfu -I../../../src/app/silent_ota -I../../../inc/os/system_trace -I../silent_ota_gcc -I../../../src/os/LiteOS/core/include -I../../../src/os/LiteOS/porting -I../../../src/os/AliOS/core/include -I../../../src/os/AliOS/porting -I../../../src/os/AliOS/porting/m4/include -I../../../src/os/RTT/core/include -I../../../src/os/RTT/core/include/libc -I../../../src/os/RTT/port  -O1 -Wall -fdata-sections -ffunction-sections -std=c99  -MMD -MP -MF"build/rtl876x_aon_wdg.d" -include app_define.h -include mem_config.h -include board.h  -D SUPPORT_ALONE_UPPERSTACK_IMG -D APP_OS  -Wa,-a,-ad,-alms=build/rtl876x_aon_wdg.lst ../../../src/mcu/peripheral/rtl876x_aon_wdg.c -o build/rtl876x_aon_wdg.o
+arm-none-eabi-gcc -x assembler-with-cpp -c -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard   -O1 -Wall -fdata-sections -ffunction-sections ../../../src/mcu/rtl876x/arm/startup_rtl876x_gcc.s -o build/startup_rtl876x_gcc.o
+arm-none-eabi-gcc build/system_rtl876x.o build/stdlib_wrapper.o build/overlay_mgr.o build/app_task.o build/silent_ota_application.o build/main.o build/dfu_flash.o build/system_trace.o build/osif_interface_sdk.o build/dfu_application.o build/dfu_main.o build/dfu_task.o build/bas.o build/dis.o build/ota_service.o build/dfu_service.o build/simple_ble_service.o build/onkar_tool.o build/rtl876x_adc.o build/rtl876x_io_dlps.o build/rtl876x_gpio.o build/rtl876x_rcc.o build/rtl876x_pinmux.o build/rtl876x_nvic.o build/rtl876x_aon_wdg.o build/startup_rtl876x_gcc.o -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Tapp.ld.gen ../../../bin/rom_symbol_gcc.axf ../../../bin/system_trace.a ../../../bin/rtl8762d_sdk.a ../../../bin/adc.a ../../../bin/upperstack_img/upperstack_0_0/gap_utils.a  -lc -lm -lnosys -Wl,-Map=build/app.map,--cref -Wl,--gc-sections  -specs=nano.specs -o build/app.elf
+/usr/arm-none-eabi/bin/ld: warning: build/app.elf has a LOAD segment with RWX permissions
+/usr/arm-none-eabi/bin/ld: warning: (flash_split_read): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_split_read): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (memcmp): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (get_active_ota_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (check_header_valid): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (get_active_ota_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (check_header_valid): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_try_high_speed): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (check_hci_mode_flag): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (reset_reason_get): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (trace_string): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (trace_string): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (os_sched_start): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_ioctl): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_ioctl): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (WDG_Disable): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (RamVectorTableInit): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (trace_string): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (trace_string): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (os_mem_alloc_intern): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/system_rtl876x.o
+/usr/arm-none-eabi/bin/ld: warning: (__aeabi_memset): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/stdlib_wrapper.o
+/usr/arm-none-eabi/bin/ld: warning: (os_msg_queue_create_intern): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/app_task.o
+/usr/arm-none-eabi/bin/ld: warning: (os_msg_queue_create_intern): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/app_task.o
+/usr/arm-none-eabi/bin/ld: warning: (os_msg_recv_intern): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/app_task.o
+/usr/arm-none-eabi/bin/ld: warning: (os_msg_recv_intern): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/app_task.o
+/usr/arm-none-eabi/bin/ld: warning: (os_msg_send_intern): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/app_task.o
+/usr/arm-none-eabi/bin/ld: warning: (os_msg_send_intern): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/app_task.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/app_task.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/app_task.o
+/usr/arm-none-eabi/bin/ld: warning: (os_task_create): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/app_task.o
+/usr/arm-none-eabi/bin/ld: warning: (get_active_ota_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (check_header_valid): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (get_header_addr_by_img_id): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (trace_bdaddr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (trace_binary): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (is_ota_support_bank_switch): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (get_header_addr_by_img_id): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_erase_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/silent_ota_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_read_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_write_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (get_header_addr_by_img_id): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (get_header_addr_by_img_id): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (get_active_ota_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (check_header_valid): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_read_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_read_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_read_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_read_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_ioctl): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_try_high_speed): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (os_sched_start): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_ioctl): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/main.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_erase_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_write_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (memcmp): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_write_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (memcmp): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_auto_read_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_auto_write_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_read_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_read_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_write_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (WDG_SystemReset): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (WDG_SystemReset): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (WDG_SystemReset): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (is_ota_support_bank_switch): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (get_active_ota_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (check_header_valid): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (hw_aes_init): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (hw_aes_decrypt_16byte): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (get_header_addr_by_img_id): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_sw_protect_unlock_by_addr_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_set_block_protect_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_auto_read_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (is_ota_support_bank_switch): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_size): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_size): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_size): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (get_active_ota_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (check_header_valid): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (check_image_chksum): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (get_active_ota_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (get_active_ota_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_auto_write_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_auto_read_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_auto_write_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_auto_read_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_flash.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (trace_bdaddr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (os_timer_stop): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (is_ota_support_bank_switch): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (get_header_addr_by_img_id): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_erase_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (is_ota_support_bank_switch): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_size): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (os_timer_restart): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (os_timer_restart): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (get_active_ota_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (check_header_valid): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_application.o
+/usr/arm-none-eabi/bin/ld: warning: (os_timer_id_get): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_main.o
+/usr/arm-none-eabi/bin/ld: warning: (strlen): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_main.o
+/usr/arm-none-eabi/bin/ld: warning: (os_timer_create): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_main.o
+/usr/arm-none-eabi/bin/ld: warning: (os_timer_create): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_main.o
+/usr/arm-none-eabi/bin/ld: warning: (os_timer_create): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_main.o
+/usr/arm-none-eabi/bin/ld: warning: (os_timer_create): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_main.o
+/usr/arm-none-eabi/bin/ld: warning: (os_timer_start): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_main.o
+/usr/arm-none-eabi/bin/ld: warning: (os_timer_start): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_main.o
+/usr/arm-none-eabi/bin/ld: warning: (WDG_Disable): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_main.o
+/usr/arm-none-eabi/bin/ld: warning: (trace_bdaddr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_main.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_main.o
+/usr/arm-none-eabi/bin/ld: warning: (os_msg_queue_create_intern): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_task.o
+/usr/arm-none-eabi/bin/ld: warning: (os_msg_queue_create_intern): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_task.o
+/usr/arm-none-eabi/bin/ld: warning: (os_msg_recv_intern): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_task.o
+/usr/arm-none-eabi/bin/ld: warning: (os_msg_recv_intern): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_task.o
+/usr/arm-none-eabi/bin/ld: warning: (os_msg_send_intern): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_task.o
+/usr/arm-none-eabi/bin/ld: warning: (os_msg_send_intern): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_task.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_task.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_task.o
+/usr/arm-none-eabi/bin/ld: warning: (os_task_create): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_task.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/bas.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/bas.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/bas.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/bas.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/bas.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dis.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dis.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dis.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dis.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (get_active_ota_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (check_header_valid): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (is_ota_support_bank_switch): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (get_active_ota_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (get_header_addr_by_img_id): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (get_header_addr_by_img_id): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (get_header_addr_by_img_id): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (is_ota_support_bank_switch): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (get_active_ota_bank_addr): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_size): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_get_bank_size): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (get_header_addr_by_img_id): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/ota_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (is_ota_support_bank_switch): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (trace_binary): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (trace_binary): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (is_ota_support_bank_switch): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_erase_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (WDG_Config): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (is_ota_support_bank_switch): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (flash_erase_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/dfu_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/simple_ble_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/simple_ble_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/simple_ble_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/simple_ble_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/simple_ble_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/simple_ble_service.o
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/simple_ble_service.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_read_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/rtl876x_adc.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_write_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/rtl876x_adc.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_read_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/rtl876x_adc.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_write_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/rtl876x_adc.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_read_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/rtl876x_adc.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_write_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/rtl876x_adc.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_read_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/rtl876x_adc.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_write_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/rtl876x_adc.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_read_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/rtl876x_adc.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_write_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/rtl876x_adc.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_read_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/rtl876x_pinmux.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_write_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/rtl876x_pinmux.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_read_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/rtl876x_pinmux.o
+/usr/arm-none-eabi/bin/ld: warning: (btaon_fast_write_safe): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in build/rtl876x_pinmux.o
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl876x_lib_platform.o)
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl876x_lib_platform.o)
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl876x_lib_platform.o)
+/usr/arm-none-eabi/bin/ld: warning: (os_lock): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl876x_lib_platform.o)
+/usr/arm-none-eabi/bin/ld: warning: (os_unlock): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl876x_lib_platform.o)
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl876x_lib_platform.o)
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl876x_lib_platform.o)
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl876x_lib_platform.o)
+/usr/arm-none-eabi/bin/ld: warning: (os_unlock): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl876x_lib_platform.o)
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/upperstack_img/upperstack_0_0/gap_utils.a(gap_lib.o)
+/usr/arm-none-eabi/bin/ld: warning: (spic_wait_busy): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (flash_lock): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (flash_unlock): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (flash_lock): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (flash_split_read): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (flash_unlock): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (flash_read_locked): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (memcmp): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (memcmp): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (log_direct): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (flash_lock): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (spic_wait_busy): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (flash_unlock): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(rtl8762c_lib_flash.o)
+/usr/arm-none-eabi/bin/ld: warning: (spic_wait_busy): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(winbond_flash_otp.o)
+/usr/arm-none-eabi/bin/ld: warning: (flash_wait_busy): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(winbond_flash_otp.o)
+/usr/arm-none-eabi/bin/ld: warning: (log_buffer): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(winbond_flash_otp.o)
+/usr/arm-none-eabi/bin/ld: warning: (flash_load_query_info): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(winbond_flash_otp.o)
+/usr/arm-none-eabi/bin/ld: warning: (flash_write_enable): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(winbond_flash_otp.o)
+/usr/arm-none-eabi/bin/ld: warning: (flash_write_enable): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(winbond_flash_otp.o)
+/usr/arm-none-eabi/bin/ld: warning: (spic_wait_busy): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(winbond_flash_otp.o)
+/usr/arm-none-eabi/bin/ld: warning: (flash_write_enable): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(winbond_flash_otp.o)
+/usr/arm-none-eabi/bin/ld: warning: (spic_wait_busy): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(winbond_flash_otp.o)
+/usr/arm-none-eabi/bin/ld: warning: (flash_wait_busy): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(winbond_flash_otp.o)
+/usr/arm-none-eabi/bin/ld: warning: (flash_cmd_rx): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(winbond_flash_otp.o)
+/usr/arm-none-eabi/bin/ld: warning: (flash_write_enable): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(winbond_flash_otp.o)
+/usr/arm-none-eabi/bin/ld: warning: (flash_cmd_tx): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(winbond_flash_otp.o)
+/usr/arm-none-eabi/bin/ld: warning: (flash_cmd_rx): Forcing branch to absolute symbol in Thumb mode (Thumb-only CPU) in ../../../bin/rtl8762d_sdk.a(winbond_flash_otp.o)
+arm-none-eabi-size build/app.elf
+   text	   data	    bss	    dec	    hex	filename
+  53032	      0	   3196	  56228	   dba4	build/app.elf
+arm-none-eabi-objcopy -O binary -S build/app.elf bin/app.bin --remove-section=App.trace
+arm-none-eabi-objcopy -O binary -S build/app.elf bin/app.trace --only-section=App.trace
+../../../tool/prepend_header/prepend_header -t app_code -b 9 -p bin/app.bin -m 1 -c sha256 -a ../../../tool/key.json
+go encrypt.
+Plain text image.
+Generating SHA256...
+SHA256 = BDC492E530BB05542F183EB2271B43EE747D78241E52174AE613F5729DC3CFA6
+MP header appending...
+ini file path: /home/onkar/Projects/dafit-watch/sdk/rtl8762d-hmi-sdk-master/board/evb_stack_img/silent_ota_gcc/mp.ini
+No BinDependence
+No Comment
+No Author
+No Date
+MP header appending OK!
+../../../tool/md5/md5 bin/app_MP.bin
+Output Image: bin/app_MP_sdk#####_1.8.0.28_b2812c5a-7c0015c051aecb053f8ad78bec4e3f0b.bin
