@@ -1,0 +1,21 @@
+== hwmap  @ 20261102-084208
+08:42:21 connected, firmware v2
+08:42:21 PHASE A: reading every pin with pull none / up / down (automatic, ~5 s)
+Traceback (most recent call last):
+  File "/home/onkar/Projects/dafit-watch/hwmap.py", line 134, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/onkar/Projects/dafit-watch/hwmap.py", line 74, in main
+    a, u, d = s0.get(p), su.get(p), sd.get(p)
+              ^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-084208-hwmap.txt

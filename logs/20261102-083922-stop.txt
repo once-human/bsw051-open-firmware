@@ -1,0 +1,10 @@
+== stop  @ 20261102-083922
+08:39:33 pin 6 -> LOW
+08:39:34 pin 7 -> LOW
+08:39:34 pin 35 -> LOW
+08:39:34 pin 32 -> LOW
+08:39:34 pin 34 -> LOW
+08:39:35 pins low. Rebooting the watch to reset every pin to its default...
+08:39:35 (disconnect during reboot is normal) (<BleakGATTProtocolErrorCode.UNLIKELY_ERROR: 14>, 'GATT Protocol Error: Unlikely Error')
+08:39:35 DONE - vibration should be stopped
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-083922-stop.txt
