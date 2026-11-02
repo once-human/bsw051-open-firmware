@@ -1,0 +1,24 @@
+== tool5 display @ 20261102-183503
+18:35:13 connected: 00:E0:12:34:56:78 firmware v6
+18:35:13 backlight sweep already done (nothing glowed) - skipping it
+18:35:13 >>> P2_5 dropped the watch last time. Look at the SCREEN, press Enter: P2_5 goes HIGH for 2 s 18:35:21 >>> Did the screen FLASH or glow, even briefly, before/while it dropped? (y/n) 18:35:25 saved to logs/hw.json: {'p2_5_flash': False}
+18:35:25 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+18:35:34 connected: 00:E0:12:34:56:78 firmware v6
+18:35:34 Trying the screen on Realtek's reference wiring (CS P4_3, CLK P4_0, DATA P4_2)...
+18:35:34 trying QSPI-AMOLED wake-up...
+18:35:35 painted RED - look at the screen
+18:35:37 painted GREEN - look at the screen
+18:35:38 painted BLUE - look at the screen
+18:35:40 >>> Did the screen light up / change colour? (y/n) 18:35:48 trying 3-wire 9-bit LCD wake-up...
+18:35:49 >>> Red now? (y/n) 18:35:55 no picture on these pins.
+18:35:55 Asking every pin combination for a screen ID (one CS per step, ~1 s each)...
+   CS=P4_3  0 answers      CS=P0_0  0 answers      CS=P0_1  0 answers      CS=P0_2  0 answers      CS=P0_4  0 answers      CS=P0_5  0 answers      CS=P0_6  0 answers      CS=P0_7  0 answers      CS=P1_2  0 answers      CS=P1_6  0 answers      CS=P1_7  0 answers      CS=P2_0  0 answers      CS=P2_1  0 answers      CS=P2_2  0 answers      CS=P2_3  1 answers   
+18:35:59 DISPLAY ANSWERED: CS=P2_3 CLK=P2_6 DATA=P0_0 READ=P0_0 RST=- SPI RDDID 0x04 id=00023fff
+18:35:59 saved to logs/hw.json: lcd_hits, lcd (full detail in the file)
+18:35:59 trying QSPI-AMOLED wake-up...
+18:36:00 painted RED - look at the screen
+18:36:02 painted GREEN - look at the screen
+18:36:03 painted BLUE - look at the screen
+18:36:05 >>> Did the screen light up / change colour? (y/n) 18:36:09 trying 3-wire 9-bit LCD wake-up...
+18:36:10 >>> Red now? (y/n) 18:36:14 no picture on these pins.
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-183503-tool5.txt
