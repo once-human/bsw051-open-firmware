@@ -1,0 +1,11 @@
+== tool3 auto @ 20261102-180514
+18:05:28 connected: 00:E0:12:34:56:78 firmware v3
+18:05:28 firmware v3  uptime 0m58s  last reset: power-on / hardware reset (best guess, chip says it may be unreliable)
+18:05:28 watchdog: ARMED (8 s)  | heartbeats 58
+18:05:28 pins being driven: none
+18:05:28 >>> [1/6] Hold the watch. Press Enter: P0_6 goes HIGH for 0.5 s, then LOW for 0.5 s 18:06:19 >>> Did it vibrate at all? (y/n) 18:06:32 >>> [2/6] Hold the watch. Press Enter: P0_7 goes HIGH for 0.5 s, then LOW for 0.5 s 18:06:35 >>> Did it vibrate at all? (y/n) 18:06:36 >>> [3/6] Hold the watch. Press Enter: P4_3 goes HIGH for 0.5 s, then LOW for 0.5 s 18:06:40 >>> Did it vibrate at all? (y/n) 18:06:41 >>> [4/6] Hold the watch. Press Enter: P4_0 goes HIGH for 0.5 s, then LOW for 0.5 s 18:06:44 >>> Did it vibrate at all? (y/n) 18:06:45 >>> [5/6] Hold the watch. Press Enter: P4_1 goes HIGH for 0.5 s, then LOW for 0.5 s 18:06:49 >>> Did it vibrate at all? (y/n) 18:06:50 >>> [6/6] Hold the watch. Press Enter: P4_2 goes HIGH for 0.5 s, then LOW for 0.5 s 18:06:55 >>> Did it vibrate at all? (y/n) 18:06:56 released 0 pins
+18:06:56 none of them buzzed (on charger-only power the motor may also just lack current) - moving on
+18:06:56 saved to logs/hw.json: {'motor': None}
+18:06:56 >>> Is the BATTERY connected right now? (y/n) 18:07:04 skipping the battery test (unplugging the charger would switch the watch off)
+18:07:07 WATCH DISCONNECTED (lost power?). Results so far are in logs/hw.json. Run: bash waitfor.sh
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-180514-tool3.txt
