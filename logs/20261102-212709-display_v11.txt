@@ -1,0 +1,56 @@
+== display_v11  @ 20261102-212709
+21:27:19 connected: 00:E0:12:34:56:78 firmware v11
+21:27:19 start: uptime 6 s, last reset: power-on / hardware reset
+21:27:19 === no_rail: WATCH THE SCREEN. Starting in 3 s.
+21:27:23    SPIC2 setup
+21:27:23    screen power P0_1
+21:27:23    reset P2_0 high
+21:27:24    reset P2_0 low
+21:27:24    reset P2_0 high
+21:27:26 before init: TE pulses in 0.5 s = 0 | regs (reg/wires): {'04/0': '20000000', '04/1': '09555555', '0A/0': '08080808', '0A/1': '00d555d5', 'DA/0': '40404040', 'DA/1': '25557555', 'DB/0': '00000000', 'DB/1': '00555555', 'DC/0': '00000000', 'DC/1': '00555555'}
+21:27:26    panel answers on the bus: YES | panel running frames: no
+21:27:26    init 1/22 reg FF00
+21:27:26    init 2/22 reg FF80
+21:27:27    init 3/22 reg C083
+21:27:27    init 4/22 reg C089
+21:27:27    init 5/22 reg C093
+21:27:27    init 6/22 reg C099
+21:27:27    init 7/22 reg B283
+21:27:28    init 8/22 reg 3A00
+21:27:28    init 9/22 reg 5100
+21:27:28    init 10/22 reg 3500
+21:27:28    init 11/22 reg C0C4
+21:27:29    init 12/22 reg C380
+21:27:29    init 13/22 reg C390
+21:27:29    init 14/22 reg C3A0
+21:27:29    init 15/22 reg C5DF
+21:27:30    init 16/22 reg 1100
+21:27:30    init 17/22 reg 2900
+21:27:30    init 18/22 reg FF00
+21:27:31    init 19/22 reg C5E2
+21:27:31    init 20/22 reg C5E5
+21:27:31    init 21/22 reg C482
+21:27:31    init 22/22 reg C489
+21:27:31    display on (stock second 0x29)
+21:27:32    brightness low
+21:27:33 after init: TE pulses in 0.5 s = 26 | regs (reg/wires): {'04/0': '20000000', '04/1': '08555555', '0A/0': '9c9c9c9c', '0A/1': '83f5d7f5', 'DA/0': '40404040', 'DA/1': '20557555', 'DB/0': '00000000', 'DB/1': '00155555', 'DC/0': '00000000', 'DC/1': '00155555'}
+21:27:33    panel answers on the bus: YES | panel running frames: YES
+21:27:33    paint everything black
+21:27:34    WHITE SQUARE - look now
+21:27:38    brighter
+21:27:42    WHOLE SCREEN RED - look now
+21:27:48    one-wire range x
+21:27:49    one-wire range y
+21:27:49    GREEN SQUARE (slow path) - look now
+21:27:57 end: TE pulses in 0.5 s = 25 | regs (reg/wires): {'04/0': '20000000', '04/1': '08155555', '0A/0': '9c9c9c9c', '0A/1': '82f5d7f5', 'DA/0': '40404040', 'DA/1': '20557555', 'DB/0': '00000000', 'DB/1': '00155555', 'DC/0': '00000000', 'DC/1': '00155555'}
+21:27:57    panel answers on the bus: YES | panel running frames: YES
+21:27:57 no_rail: all steps survived (34 s)
+21:27:57 === rail_soft: WATCH THE SCREEN. Starting in 3 s.
+21:28:00    rail P2_5 soft start (2.5 s ramp)
+21:28:01 !!! DROPPED AT: rail P2_5 soft start (2.5 s ramp) (0.6 s in)
+21:28:01 hands off - waiting up to 40 s for the watch to return by itself
+21:28:15 connected: 00:E0:12:34:56:78 firmware v11
+21:28:15 came back by itself: True | uptime 14 s, last reset: power-on / hardware reset
+21:28:16 >>> What showed on the SCREEN? (white square / red / green square / flicker / nothing): 21:28:22 >>> Did the MOTOR buzz during the test? (yes / no): 21:28:24 saved to logs/hw.json: display_v11 (full detail in the file)
+21:28:24 RESULT saw: nothing | motor: no
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-212709-display_v11.txt
