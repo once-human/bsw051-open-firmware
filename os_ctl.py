@@ -10,6 +10,9 @@
    bash run.sh os_ctl tap X Y | swipe left|right|up|down | press | longpress | crown up|down   fake input
    bash run.sh os_ctl i2c ADDR W1,W2.. N   raw read on the touch bus, e.g.  i2c 2E 20,00,00,2C 8
    bash run.sh os_ctl probe             search for the touch chip again
+ v19:
+   bash run.sh os_ctl power            supply voltage, battery %, low-battery mode, last screen start (voltage sag)
+   OS always starts by itself (autostart key ignored); "stop" only pauses it for 60 s.
  v18:
    bash run.sh os_ctl buzz tick|soft|tap|click|double|success|long|bump|alarm|boot|all|stop   play a haptic on the watch
    bash run.sh os_ctl set haptic 0-3    off / light / medium / strong        set hap_inv 1  if every haptic feels like a long buzz
@@ -131,6 +134,16 @@ async def main():
                         f"crown total {s32(r, 30)} (/{r[34]} per click) | haptics lvl {r[25]} plays {u32(r, 26)}")
                     last = cur
             await asyncio.sleep(0.25)
+    elif w == "power":
+        r = await cmd(c, [0x37])
+        if r and r[0] == 0xB7 and len(r) >= 48:
+            real, low = r[39] & 1, r[39] >> 1 & 1
+            log(f"supply {u16(r, 36)} mV now, {u16(r, 46)} mV smoothed | "
+                f"{'battery ' + str(r[38]) + '%' if real else 'charger only (no battery seen: VBAT never >= 3.6 V)'}"
+                f"{' | LOW-BATTERY MODE' if low else ''}")
+            log(f"last screen start: idle {u16(r, 42)} mV, lowest {u16(r, 40)} mV, supply waits {r[44]}")
+        else:
+            log("needs v19:", r and bytes(r).hex())
     elif w == "watch":
         log("live status every second, Ctrl+C to stop")
         while True:

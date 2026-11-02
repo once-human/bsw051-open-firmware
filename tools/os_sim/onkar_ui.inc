@@ -1,5 +1,5 @@
 /* ====================================================================================
- * ONKAR OS user interface (v18: haptics everywhere, crown on the face switches faces). Portable C on top of onkar_gfx.inc (also runs in sim/sim.c).
+ * ONKAR OS user interface (v19: scroll detents, crown press/release clicks, low-battery mode, always starts). Portable C on top of onkar_gfx.inc (also runs in sim/sim.c).
  *
  * Navigation (watchOS-like):
  *   watch face  -- swipe left/right: next face (follows the finger) -- swipe up from the bottom: control centre
@@ -7,14 +7,16 @@
  *   app list    -- drag / crown: scroll with inertia -- tap: open app -- button: back to the face
  *   apps        -- swipe right (from anywhere that isn't a canvas): back, follows the finger -- button: face
  *   button long press: screen off. Screen off: tap, button or crown wakes it.
+ *   battery < 6% (real battery only): low-battery mode = dark, touch/crown/haptics off, button shows the battery for 4 s.
  * Platform (onkar_os.inc or the simulator) provides the plat_* functions below.
  * ==================================================================================== */
 
 typedef struct { uint8_t bright, always_on, autostart, timeout, face, accent, haptic, spare2; } T_UI_CFG;   /* haptic 0 off 1 light 2 medium 3 strong */
 
 /* haptic patterns (the platform plays them; 1 ms accurate on the watch) */
-enum { H_TICK, H_SOFT, H_TAP, H_CLICK, H_DOUBLE, H_SUCCESS, H_LONG, H_BUMP, H_ALARM, H_BOOT, H_N };
+enum { H_TICK, H_SOFT, H_TAP, H_CLICK, H_DOUBLE, H_SUCCESS, H_LONG, H_BUMP, H_ALARM, H_BOOT, H_SCROLL, H_PRESS, H_RELEASE, H_N };
 static void plat_haptic(uint8_t id);
+static int plat_batt(int *mv);          /* 0..100 %, or -1 = no battery seen (charger-only supply) */
 
 static uint32_t plat_ms(void);
 static void plat_bright(uint8_t v);
@@ -98,11 +100,12 @@ static void civil(uint32_t days, int *y, int *m, int *d)    /* days since 1970-0
 static void inval(int x0, int y0, int x1, int y1) { gfx_invalidate(x0 + g_ox, y0 + g_oy, x1 + g_ox, y1 + g_oy); }
 
 /* ------------------------------------------------------------------ UI state */
-enum { S_BOOT, S_FACE, S_APPS, S_STOPWATCH, S_TIMER, S_SKETCH, S_FLASH, S_BREATHE, S_SETTINGS, S_ABOUT, S_N };
+enum { S_BOOT, S_FACE, S_APPS, S_STOPWATCH, S_TIMER, S_SKETCH, S_FLASH, S_BREATHE, S_SETTINGS, S_ABOUT, S_LOW, S_N };
 static uint8_t scr = S_BOOT, scr_prev;
 static bool full_dirty = true;
 static uint32_t boot_t0, last_input, last_sec = 0xFFFFFFFF, last_min = 0xFFFFFFFF;
 static bool sleeping, aod, sleep_pending;
+static bool lowbat;             /* low-battery mode (set by the platform) */
 static anim_t bright_an;
 static bool last_bt;
 
@@ -121,11 +124,12 @@ static int t_hx[6], t_hy[6]; static uint32_t t_ht[6]; static uint8_t t_hn;
 static bool swallow;            /* touch that woke the screen */
 
 /* scroll lists */
-typedef struct { float pos, vel, max, d0; anim_t an; bool drag, anim; uint32_t lt; } scroll_t;
+typedef struct { float pos, vel, max, d0, rowh; anim_t an; bool drag, anim, edge; uint32_t lt, ht; int row; } scroll_t;
 static scroll_t sc_apps, sc_set, sc_about;
 
 /* face paging + control centre */
 static anim_t face_an;          /* fractional face index while swiping */
+static int face_det;            /* face the finger is over (detent tick when it changes) */
 static bool face_drag;
 static anim_t cc_an;            /* control centre 0 hidden .. 1 shown */
 static bool cc_drag;
@@ -189,7 +193,7 @@ static void draw_boot(uint32_t now)
     }
     float wa = clampf(((float)t - 900.f) / 450.f, 0, 1);
     g_text_c(CX, 360, FL, C_WHITE, (uint8_t)(255 * e_out(wa)), "ONKAR");
-    g_text_c(CX, 404, FS, C_SEC, (uint8_t)(255 * e_out(clampf(((float)t - 1100.f) / 450.f, 0, 1))), "OS 18");
+    g_text_c(CX, 404, FS, C_SEC, (uint8_t)(255 * e_out(clampf(((float)t - 1100.f) / 450.f, 0, 1))), "OS 19");
     inval(CX - 140, 60, CX + 140, 340);
     if (t >= 900 && t < 1600) { inval(0, 350, LCD_W, 440); }
 }
@@ -379,6 +383,11 @@ static void draw_cc(uint32_t now)
     char b[8]; uint32_t h, m, sec; time_hm(&h, &m, &sec);
     char *p = u_num(b, h); *p++ = ':'; u_2(p, m);
     g_text_c(CX, 30, FM, C_WHITE, 255, b);
+    {
+        int mv, pc = plat_batt(&mv);
+        if (pc >= 0) { p = u_num(b, (uint32_t)pc); u_s(p, "%"); }
+        g_text_r(LCD_W - 34, 34, FS, pc < 0 ? C_SEC : pc < 20 ? C_RED : C_GREEN, 255, pc < 0 ? "Plugged" : b);
+    }
     for (int i = 0; i < CC_N; i++)
     {
         float x, y; cc_btn_pos(i, &x, &y);
@@ -445,13 +454,26 @@ static void draw_apps(uint32_t now)
 /* ------------------------------------------------------------------ scroll physics */
 static float rubber(float over) { return over * 0.45f / (1.f + over / 260.f); }
 
+/* detent: a light tick each time a row passes (finger or inertia), at most one per 30 ms */
+static void sc_tick(scroll_t *s, uint32_t now)
+{
+    if (s->pos < 0 || s->pos > s->max) { return; }
+    int r = (int)(s->pos / s->rowh);
+    if (r != s->row) { s->row = r; if (now - s->ht > 30) { s->ht = now; plat_haptic(H_SCROLL); } }
+}
+
 static void sc_drag(scroll_t *s, float dy, bool start)
 {
-    if (start) { s->d0 = s->pos; s->drag = true; s->anim = false; s->vel = 0; }
+    uint32_t now = plat_ms();
+    if (start) { s->d0 = s->pos; s->drag = true; s->anim = false; s->vel = 0; s->edge = false; s->row = (int)(clampf(s->pos, 0, s->max) / s->rowh); }
     float raw = s->d0 - dy;
+    bool over = raw < 0 || raw > s->max;
+    if (over && !s->edge && s->max > 0) { plat_haptic(H_BUMP); }        /* finger pulls past the end */
+    s->edge = over;
     if (raw < 0) { s->pos = -rubber(-raw); }
     else if (raw > s->max) { s->pos = s->max + rubber(raw - s->max); }
     else { s->pos = raw; }
+    if (!start) { sc_tick(s, now); }
 }
 
 static void sc_release(scroll_t *s, float vy, uint32_t now)
@@ -478,6 +500,7 @@ static bool sc_step(scroll_t *s, uint32_t now)       /* true while moving */
     if (s->anim)
     {
         s->pos = an_val(&s->an, now);
+        s->row = (int)(clampf(s->pos, 0, s->max) / s->rowh);    /* crown already ticked */
         if (!an_busy(&s->an, now)) { s->anim = false; }
         return true;
     }
@@ -494,6 +517,7 @@ static bool sc_step(scroll_t *s, uint32_t now)       /* true while moving */
     }
     if (fabsf(s->vel) < 0.02f) { s->vel = 0; return false; }
     s->pos += s->vel * dt;
+    sc_tick(s, now);
     s->vel *= pow_n(0.9965f, dt);
     if (s->pos < 0 || s->pos > s->max) { s->vel *= pow_n(0.9f, dt); }
     return true;
@@ -732,7 +756,7 @@ static void draw_breathe(uint32_t now)
 }
 
 /* ------------------------------------------------------------------ settings */
-enum { ST_BRIGHT, ST_AOD, ST_AUTO, ST_TIMEOUT, ST_HAPTIC, ST_FACE, ST_ACCENT, ST_N };
+enum { ST_BRIGHT, ST_AOD, ST_TIMEOUT, ST_HAPTIC, ST_FACE, ST_ACCENT, ST_N };       /* v19: no "start on power": always on */
 static const char *const HAP_NAMES[4] = {"Off", "Light", "Medium", "Strong"};
 static anim_t tg_an[3];
 #define SET_TOP 66
@@ -758,11 +782,11 @@ static void draw_settings(uint32_t now)
                 g_rrect(34, y + 46, 22 + (LCD_W - 68 - 22) * k, 22, 11, ACC, a);
             }
             break;
-        case ST_AOD: case ST_AUTO:
-            g_text(34, (int)y + 25, FM, C_WHITE, a, i == ST_AOD ? "Always on" : "Start on power");
+        case ST_AOD:
+            g_text(34, (int)y + 25, FM, C_WHITE, a, "Always on");
             {
-                uint8_t v = i == ST_AOD ? uc->always_on : uc->autostart;
-                anim_t *an = &tg_an[i - ST_AOD];
+                uint8_t v = uc->always_on;
+                anim_t *an = &tg_an[0];
                 if (an->b != v) { an_go(an, v, 220, now, E_OUT); }
                 float k = an_val(an, now);
                 g_rrect(LCD_W - 34 - 64, y + 24, 64, 38, 19, g_mix(C_CARD3, C_GREEN, k), a);
@@ -821,7 +845,6 @@ static void settings_tap(int x, int y, uint32_t now)
             plat_haptic(H_TICK);
             break;
         case ST_AOD: uc->always_on ^= 1; plat_haptic(H_CLICK); break;
-        case ST_AUTO: uc->autostart ^= 1; plat_haptic(H_CLICK); break;
         case ST_TIMEOUT: uc->timeout = (uint8_t)((uc->timeout + 1) % N_TIMEOUT); plat_haptic(H_TICK); break;
         case ST_HAPTIC: uc->haptic = (uint8_t)((uc->haptic + 1) & 3); plat_haptic(H_CLICK); break;    /* plays at the new strength */
         case ST_FACE: uc->face = (uint8_t)((uc->face + 1) % N_FACE); an_set(&face_an, uc->face); plat_haptic(H_TICK); break;
@@ -857,6 +880,23 @@ static void draw_about(uint32_t now)
     if ((now / 1000) != last_sec) { inval(0, 58, LCD_W, LCD_H); }
 }
 
+/* ------------------------------------------------------------------ low battery */
+static void draw_low(uint32_t now)
+{
+    (void)now;
+    int mv, pc = plat_batt(&mv);
+    if (pc < 0) { pc = 0; }
+    char b[8]; char *p = u_num(b, (uint32_t)pc); u_s(p, "%");
+    g_rrect(CX - 70, 120, 140, 230, 26, C_CARD3, 255);
+    g_rrect(CX - 62, 128, 124, 214, 20, C_BG, 255);
+    g_rrect(CX - 26, 104, 52, 18, 7, C_CARD3, 255);
+    float h = 198.f * clampf(pc / 100.f, 0.04f, 1.f);
+    g_rrect(CX - 54, 136 + 198 - h, 108, h, 14, C_RED, 255);
+    g_text_c(CX, 362, FM, C_WHITE, 255, b);
+    g_text_c(CX, 412, FS, C_SEC, 255, "Low battery - charge");
+    gfx_invalidate_all();
+}
+
 /* ------------------------------------------------------------------ scene dispatch */
 static void draw_scene(uint8_t s, uint32_t now)
 {
@@ -872,6 +912,7 @@ static void draw_scene(uint8_t s, uint32_t now)
     case S_BREATHE: draw_breathe(now); break;
     case S_SETTINGS: draw_settings(now); break;
     case S_ABOUT: draw_about(now); break;
+    case S_LOW: draw_low(now); break;
     default: break;
     }
 }
@@ -941,15 +982,15 @@ static void wake(uint32_t now)
     if (sleeping) { plat_display(true); }
     sleeping = false; aod = false; sleep_pending = false;
     an_set(&bright_an, from);
-    an_go(&bright_an, uc->bright, 260, now, E_OUT);
+    an_go(&bright_an, lowbat ? g_min(uc->bright, 70) : uc->bright, 260, now, E_OUT);
     full_dirty = true;
 }
 
 static void go_sleep(uint32_t now)
 {
-    if (scr != S_FACE && scr != S_BOOT && !(scr == S_TIMER && tm_state) && !sw_run) { ui_go(S_FACE, 0, now); }
+    if (scr != S_FACE && scr != S_BOOT && scr != S_LOW && !(scr == S_TIMER && tm_state) && !sw_run) { ui_go(S_FACE, 0, now); }
     if (cc_an.b > 0) { an_set(&cc_an, 0); }
-    if (uc->always_on) { aod = true; an_go(&bright_an, g_max(uc->bright / 6, 6), 500, now, E_INOUT); }
+    if (uc->always_on && !lowbat) { aod = true; an_go(&bright_an, g_max(uc->bright / 6, 6), 500, now, E_INOUT); }
     else { an_go(&bright_an, 0, 300, now, E_INOUT); sleep_pending = true; }
 }
 
@@ -1038,7 +1079,7 @@ static void on_tap(int x, int y, uint32_t now)
 
 static void ui_touch(bool down, int x, int y, uint32_t now)
 {
-    if (scr == S_BOOT) { return; }
+    if (scr == S_BOOT || lowbat) { return; }
     if (down && ts == TS_IDLE && (sleeping || aod || sleep_pending)) { wake(now); swallow = true; }
     if (swallow) { if (!down) { swallow = false; } return; }
     if (down) { last_input = now; }
@@ -1069,7 +1110,7 @@ static void ui_touch(bool down, int x, int y, uint32_t now)
             if (cc_an.b > 0.5f) { if (t_axis == 2) { cc_drag = true; } else if (t_y0 > 330) { t_axis = 4; } }
             else if (scr == S_FACE)
             {
-                if (t_axis == 1) { face_drag = true; an_set(&face_an, uc->face); }
+                if (t_axis == 1) { face_drag = true; an_set(&face_an, uc->face); face_det = uc->face; }
                 else if (t_y0 > LCD_H - 110 && dy < 0) { cc_drag = true; an_set(&cc_an, 0); }
             }
             else if (scr == S_SETTINGS && t_axis == 1 && t_y0 >= set_row_y(ST_BRIGHT) && t_y0 < set_row_y(ST_BRIGHT) + 86) { t_axis = 4; }
@@ -1110,6 +1151,8 @@ static void ui_touch(bool down, int x, int y, uint32_t now)
             if (f < 0) { f = -rubber(-f * LCD_W) / LCD_W; }
             if (f > N_FACE - 1) { f = N_FACE - 1 + rubber((f - N_FACE + 1) * LCD_W) / LCD_W; }
             an_set(&face_an, f);
+            int det = (int)lroundf(clampf(f, 0, N_FACE - 1));
+            if (det != face_det) { face_det = det; plat_haptic(H_SCROLL); }    /* passing the half-way point */
         }
         else if (tr_live) { an_set(&tr, clampf(dx / (float)LCD_W, 0, 1)); }
         else if (t_axis == 2)
@@ -1183,7 +1226,7 @@ static void ui_touch(bool down, int x, int y, uint32_t now)
 
 static void ui_crown(int d, uint32_t now)
 {
-    if (scr == S_BOOT) { return; }
+    if (scr == S_BOOT || lowbat) { return; }
     if (asleep()) { wake(now); plat_haptic(H_SOFT); return; }
     last_input = now;
     if (cc_an.b > 0.5f || scr == S_FLASH)
@@ -1217,13 +1260,21 @@ static void ui_crown(int d, uint32_t now)
     }
 }
 
+/* crown press: a firm click the moment it goes down, a lighter one when it comes back up (like a real switch) */
+static void ui_button_edge(bool down, uint32_t now)
+{
+    (void)now;
+    if (scr == S_BOOT || lowbat) { return; }
+    plat_haptic(down ? H_PRESS : H_RELEASE);
+}
+
 static void ui_button(bool long_press, uint32_t now)
 {
     if (scr == S_BOOT) { return; }
-    if (asleep()) { wake(now); plat_haptic(H_TAP); return; }
+    if (lowbat) { if (!long_press) { full_dirty = true; wake(now); } return; }     /* shows the battery, 4 s */
+    if (asleep()) { wake(now); return; }
     last_input = now;
     if (long_press) { plat_haptic(H_LONG); go_sleep(now); return; }
-    plat_haptic(H_TAP);
     if (cc_an.b > 0.5f) { an_go(&cc_an, 0, 260, now, E_OUT); return; }
     if (scr == S_FACE) { ui_go(S_APPS, 3, now); }
     else if (scr == S_APPS) { ui_go(S_FACE, 4, now); }
@@ -1242,7 +1293,8 @@ static void ui_init(T_UI_CFG *c, uint32_t now)
     last_input = now;
     sc_apps.max = g_max(0, APP_TOP + N_APPS * APP_ROW + 20 - LCD_H);
     sc_set.max = g_max(0, SET_TOP + ST_N * 96 + 20 - LCD_H);
-    an_set(&tg_an[0], uc->always_on); an_set(&tg_an[1], uc->autostart);
+    sc_apps.rowh = APP_ROW; sc_set.rowh = 96; sc_about.rowh = 74;
+    an_set(&tg_an[0], uc->always_on);
     char k[24], v[32]; int n = 0; while (plat_info(n, k, v)) { n++; }
     sc_about.max = (float)g_max(0, 70 + n * 74 + 20 - LCD_H);
 }
@@ -1255,6 +1307,22 @@ static void ui_boot_lit(uint32_t now)
     an_go(&bright_an, uc->bright, 500, now, E_OUT);
 }
 
+
+/* low-battery mode on/off (platform decides from the battery voltage) */
+static void ui_lowbat(bool on, uint32_t now)
+{
+    if (on == lowbat) { return; }
+    lowbat = on;
+    if (on)
+    {
+        tm_state = 0; sw_run = false; br_state = 0; an_set(&cc_an, 0); ts = TS_IDLE;
+        plat_haptic(H_DOUBLE);                       /* the last haptic until it is charged */
+        ui_go(S_LOW, 0, now);
+        wake(now);
+        an_go(&bright_an, g_min(uc->bright, 70), 300, now, E_OUT);
+    }
+    else { ui_go(S_FACE, 0, now); wake(now); an_go(&bright_an, uc->bright, 300, now, E_OUT); plat_haptic(H_SUCCESS); }
+}
 
 /* returns true while it wants the next frame immediately (animating) */
 static bool ui_frame(uint32_t now)
@@ -1294,7 +1362,7 @@ static bool ui_frame(uint32_t now)
     }
 
     /* timeouts */
-    uint32_t to = TIMEOUTS[uc->timeout % N_TIMEOUT] * 1000u;
+    uint32_t to = lowbat ? 4000u : TIMEOUTS[uc->timeout % N_TIMEOUT] * 1000u;
     bool hold = asleep() || scr == S_FLASH || (scr == S_BREATHE && br_state == 1) || tm_state == 3 || ts != TS_IDLE;
     if (!hold && scr != S_BOOT && now - last_input > to) { go_sleep(now); }
 
@@ -1305,8 +1373,8 @@ static bool ui_frame(uint32_t now)
         if (t > 2500 && bright_an.b > 0 && !an_busy(&bright_an, now)) { an_go(&bright_an, 0, 220, now, E_INOUT); }
         if (t > 2750 && !an_busy(&bright_an, now))
         {
-            plat_haptic(H_BOOT);
-            scr = S_FACE; full_dirty = true;
+            if (!lowbat) { plat_haptic(H_BOOT); }
+            scr = lowbat ? S_LOW : S_FACE; full_dirty = true;
             an_go(&bright_an, uc->bright, 420, now, E_OUT);
             last_input = now;
         }

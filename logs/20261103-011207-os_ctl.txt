@@ -1,0 +1,9 @@
+== os_ctl stop @ 20261103-011207
+01:12:17 connected: 00:E0:12:34:56:78 firmware v18
+01:12:17 state: off | showing: boot animation | face: big numbers | brightness 180 | boot failures 23 | start on power on | clock synced
+01:12:17 speed: last frame 41.3 ms (2.7 ms of it waiting for the send), 164864 px | 0.0 fps | slowest frame since last status 41.3 ms | frames 1 | ramp step 500 ms
+01:12:17 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+01:12:17 state: off | showing: boot animation | face: big numbers | brightness 180 | boot failures 23 | start on power on | clock synced
+01:12:17 speed: last frame 41.3 ms (2.7 ms of it waiting for the send), 164864 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 1 | ramp step 500 ms
+01:12:17 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261103-011207-os_ctl.txt

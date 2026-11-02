@@ -14,6 +14,7 @@ static bool plat_bt(void) { return sink & 1; }
 static uint32_t plat_now_s(void) { return sink; }
 static bool plat_time_ok(void) { return 1; }
 static void plat_haptic(uint8_t id) { (void)id; }
+static int plat_batt(int *mv) { *mv = 0; return -1; }
 static void plat_save(void) { sink = 3; }
 static bool plat_info(int i, char *k, char *v) { if (i > 3) return false; k[0] = v[0] = 0; return true; }
 #include "onkar_ui.inc"

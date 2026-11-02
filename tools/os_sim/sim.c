@@ -36,7 +36,9 @@ static bool plat_bt(void) { return sim_bt; }
 static uint32_t plat_now_s(void) { return epoch0 + t_ms / 1000; }
 static bool plat_time_ok(void) { return true; }
 static int saves;
-static const char *const HN[] = {"tick", "soft", "tap", "click", "double", "success", "long", "bump", "alarm", "boot"};
+static const char *const HN[] = {"tick", "soft", "tap", "click", "double", "success", "long", "bump", "alarm", "boot", "scroll", "press", "release"};
+static int sim_pct = -1;
+static int plat_batt(int *mv) { *mv = sim_pct < 0 ? 3290 : 3500 + sim_pct * 7; return sim_pct; }
 static void plat_haptic(uint8_t id) { printf("t=%u haptic %s\n", t_ms, HN[id]); }
 static void plat_save(void) { saves++; }
 static bool plat_info(int i, char *k, char *v)
@@ -118,7 +120,7 @@ static void drag(int x0, int y0, int x1, int y1, int ms, bool lift)
     if (lift) { t_ms += 16; touch(false, x1, y1); }
 }
 static void crown(int d) { ui_crown(d, t_ms); frame(); }
-static void button(bool lp) { ui_button(lp, t_ms); frame(); }
+static void button(bool lp) { if (!lp) { ui_button_edge(true, t_ms); ui_button_edge(false, t_ms); } ui_button(lp, t_ms); frame(); }
 
 static int check(void)
 {
@@ -214,6 +216,13 @@ int main(int argc, char **argv)
     run(20000); printf("  display after timeout: %s, bright %d\n", s_disp ? "ON" : "off", s_bright);
     button(false); run(400); shot("woken_button");
     button(true); run(600); printf("  after long press: display %s\n", s_disp ? "ON" : "off");
+    sim_pct = 72; button(false); run(400); drag(184, 430, 184, 200, 200, true); run(500); shot("cc_battery");
+    button(false); run(400);
+    sim_pct = 4; ui_lowbat(true, t_ms); run(500); shot("lowbat");
+    tap(184, 224); crown(2); run(100); printf("  low mode, after tap+crown: screen %d (S_LOW=%d)\n", scr, S_LOW);
+    run(5000); printf("  low mode after 5 s: display %s\n", s_disp ? "ON" : "off");
+    button(false); run(400); shot("lowbat_button");
+    sim_pct = 40; ui_lowbat(false, t_ms); run(600); shot("lowbat_exit");
     ui_dfu(); write_ppm("dfu", fb, true);
     printf("frames %u (%u sent), avg ui_frame %.1f us on this laptop, saves %d, %d/%d screenshots consistent\n",
            frames, sent_frames, render_ns / frames / 1000.0, saves, shots - bad_shots, shots);

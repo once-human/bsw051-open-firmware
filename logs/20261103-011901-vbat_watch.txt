@@ -1,0 +1,833 @@
+== vbat_watch 80 @ 20261103-011901
+01:19:10 connected: 00:E0:12:34:56:78 firmware v19
+01:19:10 VBAT 3297 mV | wait step 0 | fails 6 | lowest 3297
+01:19:10 VBAT 3302 mV | wait step 0 | fails 6 | lowest 3297
+01:19:11 VBAT 3299 mV | wait step 0 | fails 6 | lowest 3297
+01:19:11 VBAT 3297 mV | wait step 0 | fails 6 | lowest 3297
+01:19:11 VBAT 3299 mV | wait step 0 | fails 6 | lowest 3297
+01:19:11 VBAT 3297 mV | wait step 0 | fails 6 | lowest 3297
+01:19:12 VBAT 3302 mV | wait step 0 | fails 6 | lowest 3297
+01:19:12 VBAT 3290 mV | wait step 0 | fails 6 | lowest 3290
+01:19:12 VBAT 3290 mV | wait step 0 | fails 6 | lowest 3290
+01:19:12 VBAT 3288 mV | wait step 0 | fails 6 | lowest 3288
+01:19:13 VBAT 3291 mV | wait step 0 | fails 6 | lowest 3288
+01:19:13 VBAT 3299 mV | wait step 0 | fails 6 | lowest 3288
+01:19:13 VBAT 3291 mV | wait step 0 | fails 6 | lowest 3288
+01:19:13 VBAT 3295 mV | wait step 0 | fails 6 | lowest 3288
+01:19:13 VBAT 3302 mV | wait step 0 | fails 6 | lowest 3288
+01:19:14 VBAT 3302 mV | wait step 0 | fails 6 | lowest 3288
+01:19:14 VBAT 3289 mV | wait step 0 | fails 6 | lowest 3288
+01:19:14 VBAT 3296 mV | wait step 0 | fails 6 | lowest 3288
+01:19:14 VBAT 3293 mV | wait step 0 | fails 6 | lowest 3288
+01:19:15 VBAT 3286 mV | wait step 0 | fails 6 | lowest 3286
+01:19:15 VBAT 3283 mV | wait step 0 | fails 6 | lowest 3283
+01:19:15 VBAT 3293 mV | wait step 0 | fails 6 | lowest 3283
+01:19:16 VBAT 3294 mV | wait step 0 | fails 6 | lowest 3283
+01:19:16 VBAT 3296 mV | wait step 0 | fails 6 | lowest 3283
+01:19:16 command 0x02 failed: (<BleakGATTProtocolErrorCode.UNLIKELY_ERROR: 14>, 'GATT Protocol Error: Unlikely Error')
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 command 0x02 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 command 0x30 failed: [org.bluez.Error.Failed] Not connected
+01:19:16 VBAT None mV | ? step -1 | fails ? | lowest 3283
+01:19:16 !!! dropped
+01:19:27 connected: 00:E0:12:34:56:78 firmware v19
+01:19:27 VBAT 3291 mV | wait step 0 | fails 7 | lowest 3291
+01:19:27 VBAT 3293 mV | wait step 0 | fails 7 | lowest 3291
+01:19:28 VBAT 3291 mV | wait step 0 | fails 7 | lowest 3291
+01:19:28 VBAT 3290 mV | wait step 0 | fails 7 | lowest 3290
+01:19:28 VBAT 3292 mV | wait step 0 | fails 7 | lowest 3290
+01:19:28 VBAT 3298 mV | wait step 0 | fails 7 | lowest 3290
+01:19:28 VBAT 3294 mV | wait step 0 | fails 7 | lowest 3290
+01:19:29 VBAT 3297 mV | wait step 0 | fails 7 | lowest 3290
+01:19:29 VBAT 3303 mV | wait step 0 | fails 7 | lowest 3290
+01:19:29 VBAT 3289 mV | wait step 0 | fails 7 | lowest 3289
+01:19:29 VBAT 3299 mV | wait step 0 | fails 7 | lowest 3289
+01:19:30 VBAT 3294 mV | wait step 0 | fails 7 | lowest 3289
+01:19:30 VBAT 3300 mV | wait step 0 | fails 7 | lowest 3289
+01:19:30 VBAT 3290 mV | wait step 0 | fails 7 | lowest 3289
+01:19:30 VBAT 3287 mV | wait step 0 | fails 7 | lowest 3287
+01:19:31 VBAT 3301 mV | wait step 0 | fails 7 | lowest 3287
+01:19:31 VBAT 3295 mV | wait step 0 | fails 7 | lowest 3287
+01:19:31 VBAT 3298 mV | wait step 0 | fails 7 | lowest 3287
+01:19:31 VBAT 3291 mV | wait step 0 | fails 7 | lowest 3287
+01:19:31 VBAT 3298 mV | wait step 0 | fails 7 | lowest 3287
+01:19:32 VBAT 3292 mV | wait step 0 | fails 7 | lowest 3287
+01:19:32 VBAT 3292 mV | wait step 0 | fails 7 | lowest 3287
+01:19:32 VBAT 3292 mV | wait step 0 | fails 7 | lowest 3287
+01:19:32 VBAT 3288 mV | wait step 0 | fails 7 | lowest 3287
+01:19:32 VBAT 3297 mV | wait step 0 | fails 7 | lowest 3287
+01:19:33 VBAT 3295 mV | wait step 0 | fails 7 | lowest 3287
+01:19:33 VBAT 3297 mV | wait step 0 | fails 7 | lowest 3287
+01:19:33 VBAT 3295 mV | wait step 0 | fails 7 | lowest 3287
+01:19:33 VBAT 3290 mV | wait step 0 | fails 7 | lowest 3287
+01:19:34 VBAT 3289 mV | wait step 0 | fails 7 | lowest 3287
+01:19:34 VBAT 3301 mV | wait step 0 | fails 7 | lowest 3287
+01:19:34 VBAT 3291 mV | wait step 0 | fails 7 | lowest 3287
+01:19:34 VBAT 3296 mV | wait step 0 | fails 7 | lowest 3287
+01:19:34 VBAT 3293 mV | wait step 0 | fails 7 | lowest 3287
+01:19:35 VBAT 3289 mV | wait step 0 | fails 7 | lowest 3287
+01:19:35 VBAT 3299 mV | wait step 0 | fails 7 | lowest 3287
+01:19:35 VBAT 3294 mV | wait step 0 | fails 7 | lowest 3287
+01:19:35 VBAT 3298 mV | wait step 0 | fails 7 | lowest 3287
+01:19:36 VBAT 3298 mV | wait step 0 | fails 7 | lowest 3287
+01:19:36 VBAT 3294 mV | wait step 0 | fails 7 | lowest 3287
+01:19:36 VBAT 3290 mV | wait step 0 | fails 7 | lowest 3287
+01:19:36 VBAT 3295 mV | wait step 0 | fails 7 | lowest 3287
+01:19:36 VBAT 3295 mV | wait step 0 | fails 7 | lowest 3287
+01:19:37 VBAT 3298 mV | ramp step 1 | fails 8 | lowest 3287
+01:19:37 VBAT 3316 mV | ramp step 1 | fails 8 | lowest 3287
+01:19:38 VBAT 3316 mV | ramp step 2 | fails 8 | lowest 3287
+01:19:38 VBAT 3313 mV | ramp step 3 | fails 8 | lowest 3287
+01:19:38 VBAT 3302 mV | ramp step 4 | fails 8 | lowest 3287
+01:19:38 VBAT 3306 mV | ramp step 5 | fails 8 | lowest 3287
+01:19:39 VBAT 3307 mV | ramp step 6 | fails 8 | lowest 3287
+01:19:39 VBAT 3291 mV | ramp step 7 | fails 8 | lowest 3287
+01:19:39 VBAT 3277 mV | ramp step 7 | fails 8 | lowest 3277
+01:19:39 VBAT 3264 mV | ramp step 8 | fails 8 | lowest 3264
+01:19:39 VBAT 3256 mV | ramp step 9 | fails 8 | lowest 3256
+01:19:40 VBAT 3237 mV | ramp step 10 | fails 8 | lowest 3237
+01:19:40 VBAT 3242 mV | ramp step 11 | fails 8 | lowest 3237
+01:19:40 VBAT 3233 mV | ramp step 11 | fails 8 | lowest 3233
+01:19:40 VBAT 3232 mV | ramp step 12 | fails 8 | lowest 3232
+01:19:40 VBAT 3227 mV | ramp step 13 | fails 8 | lowest 3227
+01:19:41 !!! dropped
+01:19:52 connected: 00:E0:12:34:56:78 firmware v19
+01:19:53 VBAT 3294 mV | wait step 0 | fails 8 | lowest 3294
+01:19:53 VBAT 3291 mV | wait step 0 | fails 8 | lowest 3291
+01:19:53 VBAT 3300 mV | wait step 0 | fails 8 | lowest 3291
+01:19:53 VBAT 3291 mV | wait step 0 | fails 8 | lowest 3291
+01:19:54 VBAT 3291 mV | wait step 0 | fails 8 | lowest 3291
+01:19:54 VBAT 3294 mV | wait step 0 | fails 8 | lowest 3291
+01:19:54 VBAT 3291 mV | wait step 0 | fails 8 | lowest 3291
+01:19:54 VBAT 3290 mV | wait step 0 | fails 8 | lowest 3290
+01:19:54 VBAT 3293 mV | wait step 0 | fails 8 | lowest 3290
+01:19:55 VBAT 3300 mV | wait step 0 | fails 8 | lowest 3290
+01:19:55 VBAT 3293 mV | wait step 0 | fails 8 | lowest 3290
+01:19:55 VBAT 3301 mV | wait step 0 | fails 8 | lowest 3290
+01:19:55 VBAT 3298 mV | wait step 0 | fails 8 | lowest 3290
+01:19:56 VBAT 3294 mV | wait step 0 | fails 8 | lowest 3290
+01:19:56 VBAT 3295 mV | wait step 0 | fails 8 | lowest 3290
+01:19:56 VBAT 3299 mV | wait step 0 | fails 8 | lowest 3290
+01:19:57 VBAT 3310 mV | ramp step 1 | fails 9 | lowest 3290
+01:19:57 VBAT 3315 mV | ramp step 2 | fails 9 | lowest 3290
+01:19:57 VBAT 3320 mV | ramp step 3 | fails 9 | lowest 3290
+01:19:58 VBAT 3310 mV | ramp step 4 | fails 9 | lowest 3290
+01:19:58 VBAT 3307 mV | ramp step 4 | fails 9 | lowest 3290
+01:19:58 VBAT 3301 mV | ramp step 5 | fails 9 | lowest 3290
+01:19:58 VBAT 3288 mV | ramp step 6 | fails 9 | lowest 3288
+01:19:58 VBAT 3274 mV | ramp step 7 | fails 9 | lowest 3274
+01:19:59 VBAT 3255 mV | ramp step 8 | fails 9 | lowest 3255
+01:19:59 VBAT 3299 mV | ramp step 9 | fails 9 | lowest 3255
+01:19:59 VBAT 3288 mV | ramp step 10 | fails 9 | lowest 3255
+01:19:59 VBAT 3238 mV | ramp step 11 | fails 9 | lowest 3238
+01:20:00 VBAT 3225 mV | ramp step 11 | fails 9 | lowest 3225
+01:20:00 VBAT 3244 mV | ramp step 12 | fails 9 | lowest 3225
+01:20:00 !!! dropped
+01:20:13 connected: 00:E0:12:34:56:78 firmware v19
+01:20:13 VBAT 3287 mV | wait step 0 | fails 9 | lowest 3287
+01:20:13 VBAT 3287 mV | wait step 0 | fails 9 | lowest 3287
+01:20:14 VBAT 3300 mV | wait step 0 | fails 9 | lowest 3287
+01:20:14 VBAT 3294 mV | wait step 0 | fails 9 | lowest 3287
+01:20:15 VBAT 3291 mV | wait step 0 | fails 9 | lowest 3287
+01:20:15 VBAT 3299 mV | wait step 0 | fails 9 | lowest 3287
+01:20:15 VBAT 3303 mV | wait step 0 | fails 9 | lowest 3287
+01:20:16 VBAT 3290 mV | ramp step 1 | fails 10 | lowest 3287
+01:20:17 VBAT 3320 mV | ramp step 2 | fails 10 | lowest 3287
+01:20:17 VBAT 3313 mV | ramp step 3 | fails 10 | lowest 3287
+01:20:17 VBAT 3316 mV | ramp step 5 | fails 10 | lowest 3287
+01:20:18 VBAT 3322 mV | ramp step 6 | fails 10 | lowest 3287
+01:20:18 VBAT 3347 mV | ramp step 8 | fails 10 | lowest 3287
+01:20:18 VBAT 3363 mV | ramp step 9 | fails 10 | lowest 3287
+01:20:19 VBAT 3357 mV | ramp step 10 | fails 10 | lowest 3287
+01:20:19 VBAT 3417 mV | ramp step 12 | fails 10 | lowest 3287
+01:20:20 !!! dropped
+01:20:31 connected: 00:E0:12:34:56:78 firmware v19
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261103-011901-vbat_watch.txt

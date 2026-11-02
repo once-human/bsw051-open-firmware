@@ -352,3 +352,31 @@ boot slow with no visible boot animation, crown did nothing, no haptics. Asked f
   (cause unknown - possibly motor current on charger power; watch for this). After that reboot the screen came up by itself.
 - Open questions for the user: do haptics feel like crisp taps (if they feel like long buzzes: os_ctl set hap_inv 1)?
   Does one crown click = one step (else os_ctl set crown_div 4 or 1)? Did the boot logo show?
+
+## UPDATE 01:27 (Nov 3) - v19 RUNNING; root cause of "OS never starts" since 00:48 was MY v18 crown bug
+- ROOT CAUSE: at RUN entry the OS read QDEC_GetAxisCount(). In crown mode 1 (set on the watch 00:48) the QDEC clock is never
+  enabled -> reading the clock-gated block FROZE the chip -> watchdog 8 s later -> boot loop (user saw a short flicker).
+  Every v18/v19 start after 00:48 got through the whole P2_5 ramp and died right there. Fixed: QDEC only read in crown mode 0
+  (RUN entry + 0x37 diag). Lesson: never touch a peripheral whose clock may be off (0x38 peek can still do that - dev only).
+- Supply facts (new: vbat_watch.py logs chip VBAT via ADC every ~0.25 s): charger only = 3.29 V idle (battery would be
+  3.7-4.2 V), sags to ~3.07-3.10 V around ramp steps 17-21, recovers at full duty. 120 ms ramp steps died at ~10% 3/3
+  (01:19-01:20); 500 ms steps pass (5/5). So: ramp step 500 ms on charger power, 120 ms once a real battery is seen.
+- firmware/v19 (146540 B, src tgz = what is on the watch, flashed 01:24):
+  * Always starts (autostart setting ignored, "Start on power" row removed; laptop `os_ctl stop` = pause 60 s only).
+    Boot wait 0.3 s / 1.5 s / 3 s by failure count; 15 s after 6+ failures in a row (keeps OTA reachable - safety rule).
+    NO connection hold (user explicitly asked to remove the 45 s hold). New firmware version -> failure count reset.
+  * P2_5 ramp ends at 99.96% and stays on the PWM (pwm_stop + GPIO high glitched the pin low). Ramp step waits while
+    VBAT > 180 mV under idle (40 ms polls, max 1 s; rarely triggers - the deaths were never slow sags).
+  * Brightness cap after the ramp: 0 -> +8/tick while VBAT holds, -24 when it sags, 5 s; then free.
+  * Haptic timers start 1 s into RUN. New patterns: SCROLL {100,4} (list row / face passing under the finger, inertia too,
+    max 1 per 30 ms; BUMP when dragging past a list end), PRESS {100,16} on button/crown-press DOWN, RELEASE {75,7} on UP.
+    Button short press no longer plays TAP (press/release do it). Crown rotation = TICK, ends = BUMP (unchanged).
+  * Battery: VBAT read every 10 s (EMA). "Real battery" = VBAT ever >= 3.6 V (charger-only never is). <6% for 30 s ->
+    low-battery mode: S_LOW screen (battery outline + %), brightness <= 70, touch reads/crown/haptics off, 4 s timeout,
+    button shows it again, OS tick 100 ms while dark; >= 10% (charging) leaves it. UNTESTED (no battery).
+    Control centre shows battery % (or "Plugged"); About has "Power". Bluetooth advertising 200 ms -> 50 ms.
+  * 0x37 reply now 48 B: [36] VBAT mV now, [38] %, [39] bit0 real battery bit1 low mode, [40] ramp min mV, [42] idle mV,
+    [44] supply waits, [45] state, [46] smoothed mV. `bash run.sh os_ctl power` prints it.
+- 01:26: RUNNING, touch 0x2E, user navigating (25 touches, 15 button presses), boot failures back to 0 after 60 s.
+- Not yet confirmed by the user: unplug/replug auto-start, new scroll/press haptics feel, crown_div (1 click = 1 step?).
+- Repo: github.com/once-human/bsw051-open-firmware (PUBLIC). User wants changes pushed there as we go.

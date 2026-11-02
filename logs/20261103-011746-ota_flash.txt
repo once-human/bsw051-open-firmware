@@ -1,0 +1,24 @@
+== ota_flash --go firmware/v19/app_MP.bin @ 20261103-011746
+01:17:47 === App from app_MP.bin (146028 bytes)
+01:18:00   battery raw=0 (0%)
+01:18:01   buffer=2048 mtu=247 packet=240 packets/buffer=8
+01:18:01   target info: 100601810000e000000000
+01:18:04   App: 19212/146028 bytes (13%) 3s
+01:18:06   App: 38412/146028 bytes (26%) 5s
+01:18:09   App: 57612/146028 bytes (39%) 8s
+01:18:11   App: 76812/146028 bytes (52%) 10s
+01:18:14   App: 96012/146028 bytes (65%) 13s
+01:18:17   App: 115212/146028 bytes (78%) 16s
+01:18:19   App: 134412/146028 bytes (92%) 18s
+01:18:21   App: 146028/146028 bytes (100%) 20s
+01:18:21   VALIDATE: 100301
+01:18:21   ACTIVATE + RESET (0x04) - watch reboots now. KEEP IT ON THE CHARGER.
+01:18:21   (disconnect during activate is normal: (<BleakGATTProtocolErrorCode.UNLIKELY_ERROR: 14>, 'GATT Protocol Error: Unlikely Error') )
+01:18:21 waiting for the watch to come back...
+01:18:46   found 00:E0:12:34:56:78 name='ONKAR-LIFE'
+01:18:47 connect failed: failed to discover services, device disconnected
+01:18:47 watch NOT visible - unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+01:18:56   found 00:E0:12:34:56:78 name='ONKAR-LIFE'
+01:18:58   ALIVE. versions now: ['1.0.0.0', '0.0.2.1', '0.0.440.4', '1.8.0.28', '0.0.0.0']
+01:19:00 ALL DONE
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261103-011746-ota_flash.txt

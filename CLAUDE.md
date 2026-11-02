@@ -21,6 +21,9 @@ Custom firmware for a Fire-Boltt BSW051 smartwatch (Realtek RTL8762D, BLE), flas
   No battery fitted right now: charger only. The screen start (P2_5 ramp) hangs/resets the chip at ~10% duty when the
   charger supply is weak - intermittent, not a code bug (see HANDOFF 00:50).
 
+- QDEC block: never counts on this board, and its clock is OFF in crown mode 1: reading QDEC registers then FREEZES the chip.
+- Charger-only supply = 3.29 V (VBAT ADC), sags to ~3.1 V during the P2_5 ramp; ramp needs 500 ms steps without a battery.
+
 ## Hard safety rules
 - Never touch P1_3 / P1_4 (freezes the watch). Never put anything risky (e.g. P2_5) unconditionally at boot:
   a boot loop would kill Bluetooth flashing, which is the only way in.

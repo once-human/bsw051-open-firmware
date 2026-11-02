@@ -1,0 +1,8 @@
+== os_ctl power @ 20261103-012649
+01:26:58 connected: 00:E0:12:34:56:78 firmware v19
+01:26:58 supply 3291 mV now, 3297 mV smoothed | charger only (no battery seen: VBAT never >= 3.6 V)
+01:26:58 last screen start: idle 3314 mV, lowest 3097 mV, supply waits 3
+01:26:58 state: RUNNING | showing: settings | face: big numbers | brightness 255 | boot failures 0 | start on power on | clock synced
+01:26:58 speed: last frame 47.1 ms (1.6 ms of it waiting for the send), 164864 px | 17.0 fps | slowest frame since last status 72.5 ms | frames 892 | ramp step 500 ms
+01:26:58 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 1698 touches 41 | last x,y 296,183 | button presses 34 (P3_1 now 1) | crown -4 | INT P2_4 1/266 changes
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261103-012649-os_ctl.txt
