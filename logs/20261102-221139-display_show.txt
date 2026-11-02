@@ -1,0 +1,149 @@
+== display_show  @ 20261102-221139
+22:11:46 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:11:51 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:12:03 connected: 00:E0:12:34:56:78 firmware v13
+22:12:04 === Screen comes up, then 5 pictures. WATCH THE SCREEN.
+22:12:04    SPIC2 setup
+22:12:04    screen power P0_1
+22:12:05    reset P2_0 high
+22:12:05    reset P2_0 low
+22:12:05    reset P2_0 high
+22:12:05    init reg FF00
+22:12:06    init reg FF80
+22:12:06    init reg C083
+22:12:06    init reg C089
+22:12:06    init reg C093
+22:12:07    init reg C099
+22:12:07    init reg B283
+22:12:07    init reg 3A00
+22:12:07    init reg 5100
+22:12:08    init reg 3500
+22:12:08    init reg C0C4
+22:12:08    init reg C380
+22:12:08    init reg C390
+22:12:08    init reg C3A0
+22:12:09    init reg C5DF
+22:12:09    init reg 1100
+22:12:09    init reg 2900
+22:12:10    init reg FF00
+22:12:10    init reg C5E2
+22:12:10    init reg C5E5
+22:12:10    init reg C482
+22:12:10    init reg C489
+22:12:11    display on
+22:12:11    brightness 38%
+22:12:11    black screen first
+22:12:12 soft-starting P2_5 (the screen's high-voltage supply)...
+22:12:12       P2_5 0%
+22:12:12          display off
+22:12:12          display on
+22:12:13       P2_5 0%
+22:12:14          display off
+22:12:14          display on
+22:12:15       P2_5 2%
+22:12:15          display off
+22:12:16          display on
+22:12:16 !!! DROPPED AT:       display on
+22:12:30 connected: 00:E0:12:34:56:78 firmware v13
+22:12:30 came back by itself: True | uptime 38 s, last reset: power-on / hardware reset
+22:12:30 pictures shown before the drop: 0 -> trying again
+22:12:30    SPIC2 setup
+22:12:30    screen power P0_1
+22:12:31    reset P2_0 high
+22:12:31    reset P2_0 low
+22:12:32    reset P2_0 high
+22:12:32    init reg FF00
+22:12:32    init reg FF80
+22:12:32    init reg C083
+22:12:33    init reg C089
+22:12:33    init reg C093
+22:12:33    init reg C099
+22:12:33    init reg B283
+22:12:34    init reg 3A00
+22:12:34    init reg 5100
+22:12:34    init reg 3500
+22:12:34    init reg C0C4
+22:12:35    init reg C380
+22:12:35    init reg C390
+22:12:35    init reg C3A0
+22:12:35    init reg C5DF
+22:12:36    init reg 1100
+22:12:36    init reg 2900
+22:12:36    init reg FF00
+22:12:36    init reg C5E2
+22:12:37    init reg C5E5
+22:12:37    init reg C482
+22:12:37    init reg C489
+22:12:38    display on
+22:12:38    brightness 38%
+22:12:38    black screen first
+22:12:38 soft-starting P2_5 (the screen's high-voltage supply)...
+22:12:38       P2_5 0%
+22:12:38          display off
+22:12:39          display on
+22:12:40       P2_5 0%
+22:12:40          display off
+22:12:40          display on
+22:12:42       P2_5 2%
+22:12:42          display off
+22:12:42          display on
+22:12:43       P2_5 4%
+22:12:44          display off
+22:12:44          display on
+22:12:45       P2_5 6%
+22:12:45          display off
+22:12:46          display on
+22:12:47       P2_5 8%
+22:12:47          display off
+22:12:47          display on
+22:12:49       P2_5 10%
+22:12:49          display off
+22:12:49          display on
+22:12:51       P2_5 12%
+22:12:51          display off
+22:12:51          display on
+22:12:52       P2_5 16%
+22:12:53          display off
+22:12:53          display on
+22:12:54       P2_5 20%
+22:12:54          display off
+22:12:55          display on
+22:12:56       P2_5 24%
+22:12:56          display off
+22:12:56          display on
+22:12:58       P2_5 30%
+22:12:58          display off
+22:12:58          display on
+22:13:00       P2_5 40%
+22:13:00          display off
+22:13:00          display on
+22:13:01       P2_5 50%
+22:13:02          display off
+22:13:02          display on
+22:13:03       P2_5 60%
+22:13:03          display off
+22:13:04          display on
+22:13:05       P2_5 80%
+22:13:05          display off
+22:13:05          display on
+22:13:07       P2_5 96%
+22:13:07          display off
+22:13:07          display on
+22:13:09       P2_5 100%
+22:13:09          display off
+22:13:09          display on
+22:13:10 >>> PICTURE 1: whole screen RED - LOOK AT THE SCREEN
+22:13:11       whole screen RED
+22:13:15 >>> PICTURE 2: whole screen GREEN - LOOK AT THE SCREEN
+22:13:16       whole screen GREEN
+22:13:20 >>> PICTURE 3: whole screen BLUE - LOOK AT THE SCREEN
+22:13:21       whole screen BLUE
+22:13:25 >>> PICTURE 4: black + white square in the middle - LOOK AT THE SCREEN
+22:13:25       black + white square in the middle (part)
+22:13:26       black + white square in the middle
+22:13:30 >>> PICTURE 5: four quarters: red top-left, green top-right, blue bottom-left, white bottom-right - LOOK AT THE SCREEN
+22:13:30       four quarters: red top-left, green top-right, blue bottom-left, white bottom-right (part)
+22:13:31       four quarters: red top-left, green top-right, blue bottom-left, white bottom-right (part)
+22:13:31       four quarters: red top-left, green top-right, blue bottom-left, white bottom-right (part)
+22:13:31       four quarters: red top-left, green top-right, blue bottom-left, white bottom-right
+22:13:38 >>> What did you see? Type the picture numbers you saw correctly (e.g. 1 2 3 4 5), or 'only white', or 'nothing': 
