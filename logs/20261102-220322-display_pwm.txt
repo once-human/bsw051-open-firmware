@@ -1,0 +1,33 @@
+== display_pwm  @ 20261102-220322
+22:03:31 connected: 00:E0:12:34:56:78 firmware v13
+22:03:31 === Panel goes white (no light expected yet), then P2_5 is fed in rising doses. WATCH THE SCREEN.
+22:03:32    SPIC2 setup
+22:03:32    screen power P0_1
+22:03:33    reset P2_0 high
+22:03:33    reset P2_0 low
+22:03:33    reset P2_0 high
+22:03:34    init reg FF00
+22:03:34    init reg FF80
+22:03:35 !!! DROPPED AT: init reg FF80 (0.0 s after it was sent)
+22:04:22 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:04:27 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:04:37 connected: 00:E0:12:34:56:78 firmware v13
+22:04:37 came back by itself: False | uptime 10 s, last reset: power-on / hardware reset
+Traceback (most recent call last):
+  File "/home/onkar/Projects/dafit-watch/display_pwm.py", line 76, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/onkar/Projects/dafit-watch/display_pwm.py", line 58, in main
+    log(f"{key}: last step that survived = {res[key]['ok_up_to']} us")
+                                            ~~~~~~~~^^^^^^^^^^^^
+KeyError: 'ok_up_to'
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-220322-display_pwm.txt

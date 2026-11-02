@@ -1,0 +1,105 @@
+== display_pwm  @ 20261102-220516
+22:05:25 connected: 00:E0:12:34:56:78 firmware v13
+22:05:25 === Panel goes white (no light expected yet), then P2_5 is fed in rising doses. WATCH THE SCREEN.
+22:05:25    SPIC2 setup
+22:05:26    screen power P0_1
+22:05:27    reset P2_0 high
+22:05:27    reset P2_0 low
+22:05:27    reset P2_0 high
+22:05:28    init reg FF00
+22:05:28    init reg FF80
+22:05:28    init reg C083
+22:05:28    init reg C089
+22:05:28    init reg C093
+22:05:29    init reg C099
+22:05:29    init reg B283
+22:05:29    init reg 3A00
+22:05:29    init reg 5100
+22:05:30    init reg 3500
+22:05:30    init reg C0C4
+22:05:30    init reg C380
+22:05:30    init reg C390
+22:05:30    init reg C3A0
+22:05:31    init reg C5DF
+22:05:31    init reg 1100
+22:05:31    init reg 2900
+22:05:32    init reg FF00
+22:05:32    init reg C5E2
+22:05:32    init reg C5E5
+22:05:32    init reg C482
+22:05:32    init reg C489
+22:05:33    display on
+22:05:33 !!! DROPPED AT: display on
+Traceback (most recent call last):
+  File "/home/onkar/Projects/dafit-watch/tool5.py", line 81, in cmd
+    await c.write_gatt_char(W, bytes(b), response=True)
+  File "/home/onkar/watchenv/lib/python3.14/site-packages/bleak/__init__.py", line 835, in write_gatt_char
+    await self._backend.write_gatt_char(characteristic, data, response)
+  File "/home/onkar/watchenv/lib/python3.14/site-packages/bleak/backends/bluezdbus/client.py", line 834, in write_gatt_char
+    assert_gatt_reply(reply)
+    ~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/onkar/watchenv/lib/python3.14/site-packages/bleak/backends/bluezdbus/utils.py", line 108, in assert_gatt_reply
+    raise BleakGATTProtocolError(
+        BleakGATTProtocolErrorCode(int(match.group(1), 16))
+    )
+bleak.exc.BleakGATTProtocolError: (<BleakGATTProtocolErrorCode.UNLIKELY_ERROR: 14>, 'GATT Protocol Error: Unlikely Error')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/onkar/Projects/dafit-watch/display_v11.py", line 19, in step
+    r = await cmd(c, b, wait)
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/onkar/Projects/dafit-watch/tool5.py", line 84, in cmd
+    raise WatchGone()
+tool5.WatchGone
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/onkar/Projects/dafit-watch/display_pwm.py", line 47, in main
+    await white(c)
+  File "/home/onkar/Projects/dafit-watch/display_pwm.py", line 27, in white
+    await panel_up(c)
+  File "/home/onkar/Projects/dafit-watch/display_lit.py", line 49, in panel_up
+    await step(c, "display on", [0x1E, 0x29, 0x00, 0])
+  File "/home/onkar/Projects/dafit-watch/display_v11.py", line 24, in step
+    raise Dropped(name)
+display_v11.Dropped: display on
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/onkar/Projects/dafit-watch/display_pwm.py", line 85, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/onkar/Projects/dafit-watch/display_pwm.py", line 61, in main
+    c = await back(c, res, key, e)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/onkar/Projects/dafit-watch/display_lit.py", line 60, in back
+    c = await connect()
+        ^^^^^^^^^^^^^^^
+  File "/home/onkar/Projects/dafit-watch/tool5.py", line 146, in connect
+    await c.start_notify(N, lambda _h, d: q.put_nowait(bytes(d)))
+  File "/home/onkar/watchenv/lib/python3.14/site-packages/bleak/__init__.py", line 904, in start_notify
+    await self._backend.start_notify(
+        characteristic, wrapped_callback, bluez=bluez, cb=cb, **kwargs
+    )
+  File "/home/onkar/watchenv/lib/python3.14/site-packages/bleak/backends/bluezdbus/client.py", line 988, in start_notify
+    assert_gatt_reply(reply, start_notify=True)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/onkar/watchenv/lib/python3.14/site-packages/bleak/backends/bluezdbus/utils.py", line 108, in assert_gatt_reply
+    raise BleakGATTProtocolError(
+        BleakGATTProtocolErrorCode(int(match.group(1), 16))
+    )
+bleak.exc.BleakGATTProtocolError: (<BleakGATTProtocolErrorCode.UNLIKELY_ERROR: 14>, 'GATT Protocol Error: Unlikely Error')
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-220516-display_pwm.txt
