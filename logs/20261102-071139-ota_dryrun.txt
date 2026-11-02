@@ -1,0 +1,48 @@
+== ota_dryrun  @ 20261102-071139
+battery %: 11
+
+## IC type (0x0b)
+  -> write 0b
+    <- notify 100b0109
+   status=1 ic_type=9
+
+## image versions (0x06 per image id)
+  -> write 069027
+    <- notify 1006010100000000000000
+   OTA header  0x2790: status=1 version=0x00000001 (0.0.0.1) offset=0
+  -> write 069127
+    <- notify 1006010020000800000000
+   SecureBoot  0x2791: status=1 version=0x08002000 (0.0.2.1) offset=0
+  -> write 069227
+    <- notify 10060100f00e5800000000
+   RomPatch    0x2792: status=1 version=0x580ef000 (0.0.239.11) offset=0
+  -> write 069327
+    <- notify 1006010100009000000000
+   App         0x2793: status=1 version=0x90000001 (1.0.0.18) offset=0
+  -> write 069427
+    <- notify 1006010000000000000000
+   AppData1    0x2794: status=1 version=0x00000000 (0.0.0.0) offset=0
+  -> write 069527
+    <- notify 100601bb06100400000000
+   AppData2    0x2795: status=1 version=0x041006bb (11.107.16640.0) offset=0
+  -> write 069627
+    <- notify 100601bb06100400000000
+   AppData3    0x2796: status=1 version=0x041006bb (11.107.16640.0) offset=0
+  -> write 069727
+    <- notify 100601bb06100400000000
+   AppData4    0x2797: status=1 version=0x041006bb (11.107.16640.0) offset=0
+  -> write 069827
+    <- notify 100601bb06100400000000
+   AppData5    0x2798: status=1 version=0x041006bb (11.107.16640.0) offset=0
+  -> write 069927
+    <- notify 100601bb06100400000000
+   AppData6    0x2799: status=1 version=0x041006bb (11.107.16640.0) offset=0
+  -> write 069a27
+    <- notify 100601bb06100400000000
+   UpperStack  0x279a: status=1 version=0x041006bb (11.107.16640.0) offset=0
+
+## 1-byte 0x0d (device info on some firmware)
+  -> write 0d
+    <- notify 100dff
+DONE
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-071139-ota_dryrun.txt
