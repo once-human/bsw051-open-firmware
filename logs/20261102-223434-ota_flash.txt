@@ -1,0 +1,10 @@
+== ota_flash --go firmware/v14/app_MP.bin @ 20261102-223434
+22:34:34 === App from app_MP.bin (108532 bytes)
+22:35:09 connect failed: Device with address 00:E0:12:34:56:78 was not found.
+22:35:09 watch NOT visible - unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:35:43 connect failed: Device with address 00:E0:12:34:56:78 was not found.
+22:35:43 watch NOT visible - unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:36:16 connect failed: Device with address 00:E0:12:34:56:78 was not found.
+22:36:16 watch NOT visible - unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:36:50 connect failed: Device with address 00:E0:12:34:56:78 was not found.
+22:36:50 watch NOT visible - unplug + replug the charger (I keep trying forever, Ctrl+C to quit)

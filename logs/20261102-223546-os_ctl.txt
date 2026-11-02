@@ -1,0 +1,6 @@
+== os_ctl  @ 20261102-223546
+22:35:53 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:35:58 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:36:03 watch NOT visible for 11 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:36:09 watch NOT visible for 16 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-223546-os_ctl.txt

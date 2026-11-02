@@ -1,0 +1,26 @@
+== os_ctl  @ 20261102-224304
+22:43:11 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:43:16 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:43:21 watch NOT visible for 11 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:43:27 watch NOT visible for 16 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:43:32 watch NOT visible for 22 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:43:37 watch NOT visible for 27 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:43:43 watch NOT visible for 32 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:43:48 watch NOT visible for 38 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:43:53 watch NOT visible for 43 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:43:59 watch NOT visible for 48 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:44:04 watch NOT visible for 54 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:44:09 watch NOT visible for 59 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:44:15 watch NOT visible for 64 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:44:20 watch NOT visible for 70 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:44:25 watch NOT visible for 75 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:44:31 watch NOT visible for 80 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:44:36 watch NOT visible for 86 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:44:41 watch NOT visible for 91 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:44:47 watch NOT visible for 96 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:44:52 watch NOT visible for 102 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:45:02 connected: 00:E0:12:34:56:78 firmware v14
+22:45:02 state: powering up | screen: clock | brightness 144 | boot failures 1 | start at boot on | drawing mode 0 | frames 1
+22:45:02 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:45:02 pins (level/changes): P2_2 0/0  P2_4 0/0  P3_1 1/0 | crown 0 | button auto presses 0
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-224304-os_ctl.txt
