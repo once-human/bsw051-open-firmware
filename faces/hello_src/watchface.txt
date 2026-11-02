@@ -1,0 +1,8 @@
+fileType       C
+fileID         0x81
+dataCount      1
+blobCount      2
+faceNumber     50003
+
+#              TYPE  INDEX      X    Y    W    H    FILENAME
+faceData       0x01    000      0    0  368  448    background000.bmp   # BACKGROUND (no clock layer on purpose)
