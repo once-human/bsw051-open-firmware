@@ -1,0 +1,13 @@
+fileType       C
+fileID         0x81
+dataCount      2
+blobCount      5
+faceNumber     50005
+animationFrames 3
+blobCompression 0 RLE_BASIC
+blobCompression 1 NONE
+blobCompression 2 NONE
+blobCompression 3 NONE
+blobCompression 4 NONE
+faceData       0x01    000      0    0  368  448    background000.bmp
+faceData       0xf6    001     34   94  300  260    001.bmp
