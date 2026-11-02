@@ -1,0 +1,15 @@
+== display_stock  @ 20261102-202055
+20:21:02 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+20:21:07 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+20:21:16 connected: 00:E0:12:34:56:78 firmware v9
+20:21:16 >>> Look at the WATCH SCREEN for ~30 s and remember every COLOUR you see. Press Enter. 20:21:46 RED   : power P0_1 P0_3 + stock reset + stock init + paint
+20:21:52 GREEN : power P0_1 P0_3 P2_7 P2_3 + stock reset + stock init + paint
+20:21:52    watch dropped during GREEN - reconnecting
+20:21:52 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+20:21:59 watch seen but connect failed (BleakError) - retry 1
+20:22:10 connected: 00:E0:12:34:56:78 firmware v9
+20:22:10 BLUE  : power P0_1 P0_3 P2_7 P2_3 P1_1 + stock reset + stock init + paint
+20:22:17 WHITE : power P0_1  + stock reset + stock init + paint
+20:22:22 >>> Which colour(s) did you see? (red / green / blue / white / none): 20:22:38 saved to logs/hw.json: {'display_stock': {'seen': ''}}
+20:22:38 RESULT: you saw: none
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-202055-display_stock.txt
