@@ -1,0 +1,17 @@
+== ota_handshake  @ 20261102-072145
+## Step A: find AES byte order (App header)
+  -> START_DFU App [A standard] header=0900010993270000f48c0000 pkt=015eac331cae087883240576c9e71a7fba
+    <- notify 100101
+     RESULT: OK (accepted)
+
+AES order confirmed: A standard
+
+## Step B: would the watch take these parts?
+  -> START_DFU RomPatch 0.0.440.4 [A standard] header=0900010192270000a4920000 pkt=0113af4ca7724e1049bb7ff54ca078d81e
+    <- notify 100101
+     RESULT: OK (accepted)
+  -> START_DFU UpperStack 1.1.5.0 [A standard] header=090001099a27000068cb0100 pkt=019cc9349b98d70e212c55498009246018
+    <- notify 100101
+     RESULT: OK (accepted)
+DONE
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-072145-ota_handshake.txt

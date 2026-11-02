@@ -1,0 +1,66 @@
+== ota_flash --go sdk/rtl8762d-hmi-sdk-master/bin/default_bin/disable_bank_switch/bank0/Patch_MP_release_0.0.440.4_40523e24-68cfee95979f2d48cb91a09a27e2d46d.bin sdk/rtl8762d-hmi-sdk-master/bin/default_bin/disable_bank_switch/bank0/upperstack_MP_000_1.1.5.0_4dfd3ece-9a5a77e4de97ef454957219962a8a257.bin sdk/rtl8762d-hmi-sdk-master/board/evb_stack_img/silent_ota_gcc/bin/app_MP.bin @ 20261102-074059
+07:40:59 === RomPatch from Patch_MP_release_0.0.440.4_40523e24-68cfee95979f2d48cb91a09a27e2d46d.bin (38564 bytes)
+07:41:07   found D7:B1:8B:17:BA:3E name='BSW051'
+07:41:22   battery raw=101 (charging 1%)
+07:41:24   buffer=2048 mtu=247 packet=240 packets/buffer=8
+07:41:24   target info: 10060100f00e5800000000
+07:41:25   buffer at offset 12 failed: 100a060c000000
+07:41:25   attempt 1 failed, nothing activated. Retrying.
+07:41:41   found D7:B1:8B:17:BA:3E name='BSW051'
+07:41:46   battery raw=101 (charging 1%)
+07:41:47   buffer=2048 mtu=247 packet=240 packets/buffer=8
+07:41:47   target info: 10060100f00e5800000000
+07:41:55   RomPatch: 19212/38564 bytes (49%) 7s
+07:42:02   RomPatch: 38412/38564 bytes (99%) 15s
+07:42:02   RomPatch: 38564/38564 bytes (100%) 15s
+07:42:02   VALIDATE: 100301
+07:42:02   ACTIVATE + RESET (0x04) - watch reboots now. KEEP IT ON THE CHARGER.
+07:42:03   (disconnect during activate is normal: (<BleakGATTProtocolErrorCode.UNLIKELY_ERROR: 14>, 'GATT Protocol Error: Unlikely Error') )
+07:42:03 waiting for the watch to come back...
+07:42:26   found D7:B1:8B:17:BA:3E name='BSW051'
+07:42:32   ALIVE. versions now: ['1.0.0.0', '0.0.2.1', '0.0.440.4', '1.0.0.18']
+07:42:35 === UpperStack from upperstack_MP_000_1.1.5.0_4dfd3ece-9a5a77e4de97ef454957219962a8a257.bin (118632 bytes)
+07:42:43   found D7:B1:8B:17:BA:3E name='BSW051'
+07:42:49   battery raw=101 (charging 1%)
+07:42:50   buffer=2048 mtu=247 packet=240 packets/buffer=8
+07:42:50   target info: 1006010000000000000000
+07:42:51   buffer at offset 12 failed: 100a060c000000
+07:42:51   attempt 1 failed, nothing activated. Retrying.
+07:43:06   found D7:B1:8B:17:BA:3E name='BSW051'
+07:43:13   battery raw=101 (charging 1%)
+07:43:14   buffer=2048 mtu=247 packet=240 packets/buffer=8
+07:43:15   target info: 1006010000000000000000
+07:43:24   UpperStack: 19212/118632 bytes (16%) 9s
+07:43:34   UpperStack: 38412/118632 bytes (32%) 19s
+07:43:44   UpperStack: 57612/118632 bytes (48%) 29s
+07:43:54   UpperStack: 76812/118632 bytes (64%) 39s
+07:44:05   UpperStack: 96012/118632 bytes (80%) 50s
+07:44:15   UpperStack: 115212/118632 bytes (97%) 60s
+07:44:16   UpperStack: 118632/118632 bytes (100%) 61s
+07:44:16   VALIDATE: 100301
+07:44:16   ACTIVATE + RESET (0x04) - watch reboots now. KEEP IT ON THE CHARGER.
+07:44:17   (disconnect during activate is normal: (<BleakGATTProtocolErrorCode.UNLIKELY_ERROR: 14>, 'GATT Protocol Error: Unlikely Error') )
+07:44:17 waiting for the watch to come back...
+07:44:40   found D7:B1:8B:17:BA:3E name='BSW051'
+07:44:46   ALIVE. versions now: ['1.0.0.0', '0.0.2.1', '0.0.440.4', '1.0.0.18']
+07:44:50 === App from app_MP.bin (37108 bytes)
+07:44:58   found D7:B1:8B:17:BA:3E name='BSW051'
+07:45:03   battery raw=101 (charging 1%)
+07:45:05   buffer=2048 mtu=247 packet=240 packets/buffer=8
+07:45:05   target info: 1006010100009000000000
+07:45:07   buffer at offset 12 failed: 100a060c000000
+07:45:07   attempt 1 failed, nothing activated. Retrying.
+07:45:23   found D7:B1:8B:17:BA:3E name='BSW051'
+07:45:28   battery raw=101 (charging 1%)
+07:45:29   buffer=2048 mtu=247 packet=240 packets/buffer=8
+07:45:29   target info: 1006010100009000000000
+07:45:37   App: 19212/37108 bytes (51%) 7s
+07:45:43   App: 37108/37108 bytes (100%) 14s
+07:45:43   VALIDATE: 100301
+07:45:43   ACTIVATE + RESET (0x04) - watch reboots now. KEEP IT ON THE CHARGER.
+07:45:43   (disconnect during activate is normal: (<BleakGATTProtocolErrorCode.UNLIKELY_ERROR: 14>, 'GATT Protocol Error: Unlikely Error') )
+07:45:43 waiting for the watch to come back...
+07:46:07   found 00:E0:12:34:56:78 name='ONKAR-LIFE'
+07:46:09   ALIVE. versions now: ['1.0.0.0', '0.0.2.1', '0.0.440.4', '1.8.0.28', '0.0.0.0']
+07:46:11 ALL DONE
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-074059-ota_flash.txt

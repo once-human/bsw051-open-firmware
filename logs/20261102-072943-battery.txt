@@ -1,0 +1,3 @@
+== battery  @ 20261102-072943
+BATTERY 1% CHARGING (raw 101)
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-072943-battery.txt
