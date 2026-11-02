@@ -1,0 +1,125 @@
+== fingerprint  @ 20261102-063914
+## advertisement
+name: BSW051 | rssi: -63
+service_uuids: ['00001800-0000-1000-8000-00805f9b34fb', '00001801-0000-1000-8000-00805f9b34fb', '0000180a-0000-1000-8000-00805f9b34fb', '0000180d-0000-1000-8000-00805f9b34fb', '0000180f-0000-1000-8000-00805f9b34fb', '00006287-3c17-d293-8e48-14fe2e4da212', '0000d0ff-3c17-d293-8e48-14fe2e4da212', '0000fee7-0000-1000-8000-00805f9b34fb', '0000feea-0000-1000-8000-00805f9b34fb']
+manufacturer_data: {61679: 'd7b18b17ba3e'}
+service_data: {'0000feea-0000-1000-8000-00805f9b34fb': '4f4b4a03030085'}
+tx_power: None
+
+## other nearby devices with similar names (classic/second radio?)
+
+## GATT
+/home/onkar/watchenv/lib/python3.14/site-packages/bleak/backends/bluezdbus/client.py:646: UserWarning: Using default MTU value. Call _acquire_mtu() or set _mtu_size first to avoid this warning.
+  warnings.warn(
+mtu: 23
+SERVICE 00001800-0000-1000-8000-00805f9b34fb  (Generic Access Profile)  handle=5
+   CHAR 00002a00-0000-1000-8000-00805f9b34fb  read  handle=6  (Device Name)
+        = b'BSW051\x00'  hex=42535730353100
+   CHAR 00002aa6-0000-1000-8000-00805f9b34fb  read  handle=12  (Central Address Resolution)
+   CHAR 00002a04-0000-1000-8000-00805f9b34fb  read  handle=10  (Peripheral Preferred Connection Parameters)
+        = b'\x00\x00\x00\x00\x00\x00\x00\x00'  hex=0000000000000000
+   CHAR 00002a01-0000-1000-8000-00805f9b34fb  read  handle=8  (Appearance)
+        = b'\xc1\x00'  hex=c100
+SERVICE 0000feea-0000-1000-8000-00805f9b34fb  (Swirl Networks: Inc.)  handle=66
+   CHAR 0000fee3-0000-1000-8000-00805f9b34fb  notify  handle=72  (Anki: Inc.)
+      DESC 00002902-0000-1000-8000-00805f9b34fb handle=74 (Client Characteristic Configuration)
+   CHAR 0000fee1-0000-1000-8000-00805f9b34fb  read,notify  handle=67  (Anhui Huami Information Technology Co.)
+      DESC 00002902-0000-1000-8000-00805f9b34fb handle=69 (Client Characteristic Configuration)
+   CHAR 0000fee5-0000-1000-8000-00805f9b34fb  write-without-response  handle=75  (Nordic Semiconductor ASA)
+   CHAR 0000fee2-0000-1000-8000-00805f9b34fb  write-without-response  handle=70  (Anki: Inc.)
+   CHAR 0000fee6-0000-1000-8000-00805f9b34fb  write-without-response  handle=77  (Seed Labs: Inc.)
+   CHAR 0000fee4-0000-1000-8000-00805f9b34fb  read  handle=79  (Nordic Semiconductor ASA)
+SERVICE 0000180f-0000-1000-8000-00805f9b34fb  (Battery Service)  handle=54
+   CHAR 00002a19-0000-1000-8000-00805f9b34fb  read,notify  handle=55  (Battery Level)
+        = b'\x0b'  hex=0b
+      DESC 00002902-0000-1000-8000-00805f9b34fb handle=57 (Client Characteristic Configuration)
+SERVICE 00006287-3c17-d293-8e48-14fe2e4da212  (Unknown)  handle=87
+   CHAR 00006387-3c17-d293-8e48-14fe2e4da212  write-without-response  handle=88  (Unknown)
+   CHAR 00006487-3c17-d293-8e48-14fe2e4da212  write,notify  handle=90  (Unknown)
+      DESC 00002902-0000-1000-8000-00805f9b34fb handle=92 (Client Characteristic Configuration)
+SERVICE 0000fee7-0000-1000-8000-00805f9b34fb  (Tencent Holdings Limited)  handle=81
+   CHAR 0000fec9-0000-1000-8000-00805f9b34fb  read  handle=85  (Apple: Inc.)
+   CHAR 0000fea1-0000-1000-8000-00805f9b34fb  read,notify  handle=82  (Intrepid Control Systems: Inc.)
+      DESC 00002902-0000-1000-8000-00805f9b34fb handle=84 (Client Characteristic Configuration)
+SERVICE 0000180a-0000-1000-8000-00805f9b34fb  (Device Information)  handle=35
+   CHAR 00002a24-0000-1000-8000-00805f9b34fb  read  handle=38  (Model Number String)
+        = b''  hex=
+   CHAR 00002a28-0000-1000-8000-00805f9b34fb  read  handle=46  (Software Revision String)
+        = b'MOY-OKJ5-2.0.3'  hex=4d4f592d4f4b4a352d322e302e33
+   CHAR 00002a29-0000-1000-8000-00805f9b34fb  read  handle=36  (Manufacturer Name String)
+        = b'MOYOUNG-V2'  hex=4d4f594f554e472d5632
+   CHAR 00002a27-0000-1000-8000-00805f9b34fb  read  handle=42  (Hardware Revision String)
+        = b''  hex=
+   CHAR 00002a23-0000-1000-8000-00805f9b34fb  read  handle=48  (System ID)
+        = b'\x00\x01\x02\x00\x00\x03\x04\x05'  hex=0001020000030405
+   CHAR 00002a50-0000-1000-8000-00805f9b34fb  read  handle=52  (PnP ID)
+        = b'\x01]\x00\x00\x00\x00\x01'  hex=015d0000000001
+   CHAR 00002a26-0000-1000-8000-00805f9b34fb  read  handle=44  (Firmware Revision String)
+        = b''  hex=
+   CHAR 00002a2a-0000-1000-8000-00805f9b34fb  read  handle=50  (IEEE 11073-20601 Regulatory Cert. Data List)
+        = b'\xfe\x00experimental'  hex=fe006578706572696d656e74616c
+   CHAR 00002a25-0000-1000-8000-00805f9b34fb  read  handle=40  (Serial Number String)
+        = b'639b3d4d'  hex=3633396233643464
+SERVICE 00001801-0000-1000-8000-00805f9b34fb  (Generic Attribute Profile)  handle=1
+   CHAR 00002a05-0000-1000-8000-00805f9b34fb  indicate  handle=2  (Service Changed)
+      DESC 00002902-0000-1000-8000-00805f9b34fb handle=4 (Client Characteristic Configuration)
+SERVICE 0000180d-0000-1000-8000-00805f9b34fb  (Heart Rate)  handle=58
+   CHAR 00002a39-0000-1000-8000-00805f9b34fb  write  handle=64  (Heart Rate Control Point)
+   CHAR 00002a37-0000-1000-8000-00805f9b34fb  notify  handle=59  (Heart Rate Measurement)
+      DESC 00002902-0000-1000-8000-00805f9b34fb handle=61 (Client Characteristic Configuration)
+   CHAR 00002a38-0000-1000-8000-00805f9b34fb  read  handle=62  (Body Sensor Location)
+SERVICE 0000d0ff-3c17-d293-8e48-14fe2e4da212  (Unknown)  handle=14
+   CHAR 0000fff3-0000-1000-8000-00805f9b34fb  read  handle=33  (Vendor specific)
+   CHAR 0000ffd4-0000-1000-8000-00805f9b34fb  read  handle=21  (Vendor specific)
+   CHAR 0000fff1-0000-1000-8000-00805f9b34fb  read  handle=27  (Vendor specific)
+   CHAR 0000ffd1-0000-1000-8000-00805f9b34fb  write-without-response  handle=15  (Vendor specific)
+   CHAR 0000ffd8-0000-1000-8000-00805f9b34fb  write-without-response  handle=25  (Vendor specific)
+   CHAR 0000ffd2-0000-1000-8000-00805f9b34fb  read  handle=17  (Vendor specific)
+   CHAR 0000fff2-0000-1000-8000-00805f9b34fb  write  handle=29  (Vendor specific)
+   CHAR 0000ffe0-0000-1000-8000-00805f9b34fb  read  handle=31  (Vendor specific)
+   CHAR 0000ffd3-0000-1000-8000-00805f9b34fb  read  handle=19  (Vendor specific)
+   CHAR 0000ffd5-0000-1000-8000-00805f9b34fb  read  handle=23  (Vendor specific)
+
+## bluetoothctl info
+Device D7:B1:8B:17:BA:3E (public)
+	Name: BSW051
+	Alias: BSW051
+	Appearance: 0x00c1 (193)
+	Paired: no
+	Bonded: no
+	Trusted: no
+	Blocked: no
+	Connected: no
+	LegacyPairing: no
+	CablePairing: no
+	UUID: Generic Access Profile    (00001800-0000-1000-8000-00805f9b34fb)
+	UUID: Generic Attribute Profile (00001801-0000-1000-8000-00805f9b34fb)
+	UUID: Device Information        (0000180a-0000-1000-8000-00805f9b34fb)
+	UUID: Heart Rate                (0000180d-0000-1000-8000-00805f9b34fb)
+	UUID: Battery Service           (0000180f-0000-1000-8000-00805f9b34fb)
+	UUID: Vendor specific           (00006287-3c17-d293-8e48-14fe2e4da212)
+	UUID: Vendor specific           (0000d0ff-3c17-d293-8e48-14fe2e4da212)
+	UUID: Tencent Holdings Limited. (0000fee7-0000-1000-8000-00805f9b34fb)
+	UUID: Swirl Networks, Inc.      (0000feea-0000-1000-8000-00805f9b34fb)
+	Modalias: bluetooth:v005Dp0000d0100
+	ManufacturerData.Key: 0xf0ef (61679)
+	ManufacturerData.Value:
+  d7 b1 8b 17 ba 3e                                .....>          
+	ServiceData.0000feea-0000-1000-8000-00805f9b34fb:
+  4f 4b 4a 03 03 00 85                             OKJ....         
+	AdvertisingFlags:
+  06                                               .               
+
+Device 46:4D:34:D0:A3:E3 46-4D-34-D0-A3-E3
+Device 01:B6:EC:B6:53:DB SWAN
+Device 41:90:8D:A9:A2:EA 41-90-8D-A9-A2-EA
+Device 6A:30:10:3D:86:AA 6A-30-10-3D-86-AA
+Device 51:49:8B:99:2F:40 51-49-8B-99-2F-40
+Device 68:D0:8F:07:76:1D 68-D0-8F-07-76-1D
+Device D7:B1:8B:17:BA:3E BSW051
+Device 00:A4:1C:48:D1:21 JBL Live 770NC
+Device C9:20:1A:F6:7A:86 ZEB-K5000MW
+Device 08:12:87:50:03:34 OnePlus Nord Buds 3 Pro
+
+DONE
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-063914-fingerprint.txt
