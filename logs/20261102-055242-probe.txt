@@ -1,0 +1,56 @@
+== probe @ 20261102-055242
+time 2026-11-02 05:52:42
+/home/onkar/watchenv/lib/python3.14/site-packages/bleak/backends/bluezdbus/client.py:646: UserWarning: Using default MTU value. Call _acquire_mtu() or set _mtu_size first to avoid this warning.
+  warnings.warn(
+connected, mtu_size = 23
+battery % = 12
+notifications on FEE3 started
+
+## display device function: current
+  -> cmd=37 (0x25) frame=feea200525
+
+## display device function: list all supported
+  -> cmd=37 (0x25) frame=feea200625ff
+
+## which watch face is showing
+  -> cmd=41 (0x29) frame=feea200529
+  <- raw feea20062901
+  <- packet cmd=41 (0x29) payload=01
+
+## how many watch faces supported
+  -> cmd=132 (0x84) frame=feea200584
+  <- raw feea200884ffff35
+  <- packet cmd=132 (0x84) payload=ffff35
+
+## watch face layout (custom face settings)
+  -> cmd=57 (0x39) frame=feea200539
+  <- raw feea203339010000ffff0b000a0d0e0005050c080f0408020401000b020c020f0b090704050c0c00070b017000c801c000f300
+  <- packet cmd=57 (0x39) payload=010000ffff0b000a0d0e0005050c080f0408020401000b020c020f0b090704050c0c00070b017000c801c000f300
+
+## quick view / raise wrist
+  -> cmd=40 (0x28) frame=feea200528
+  <- raw feea20062801
+  <- packet cmd=40 (0x28) payload=01
+
+## time system 12/24h
+  -> cmd=39 (0x27) frame=feea200527
+  <- raw feea20062701
+  <- packet cmd=39 (0x27) payload=01
+
+## device version
+  -> cmd=46 (0x2e) frame=feea20052e
+  <- raw feea20062e01
+  <- packet cmd=46 (0x2e) payload=01
+
+## language
+  -> cmd=43 (0x2b) frame=feea20052b
+  <- raw feea200e2b0000001fff00000000
+  <- packet cmd=43 (0x2b) payload=0000001fff00000000
+
+## power saving
+  -> cmd=164 (0xa4) frame=feea2005a4
+  <- raw feea2007a40001
+  <- packet cmd=164 (0xa4) payload=0001
+
+DONE
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-055242-probe.txt
