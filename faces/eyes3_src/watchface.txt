@@ -1,0 +1,8 @@
+fileType       C
+fileID         0x81
+dataCount      2
+blobCount      42
+faceNumber     50007
+animationFrames 40
+faceData       0x01    000      0    0  368  448    background000.bmp
+faceData       0xf7    001     44  154  280  140    001.bmp
