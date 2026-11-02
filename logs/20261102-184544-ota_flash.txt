@@ -1,0 +1,9 @@
+== ota_flash --go firmware/v7/app_MP.bin @ 20261102-184544
+18:45:44 === App from app_MP.bin (51300 bytes)
+18:46:19 connect failed: Device with address 00:E0:12:34:56:78 was not found.
+18:46:19 watch not visible yet, retrying...
+18:46:52 connect failed: Device with address 00:E0:12:34:56:78 was not found.
+18:46:52 watch not visible yet, retrying...
+18:46:52 watch not found - stopping
+18:46:52 STOPPED: image failed before activation. Watch still runs its previous firmware.
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-184544-ota_flash.txt
