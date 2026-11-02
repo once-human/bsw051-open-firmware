@@ -1,0 +1,31 @@
+== os_diag  @ 20261103-003958
+00:40:07 connected: 00:E0:12:34:56:78 firmware v18
+00:40:07 firmware v18  uptime 0m27s  last reset: WATCHDOG fired (it froze and rebooted itself) (best guess, chip says it may be unreliable)
+00:40:07 watchdog: ARMED (8 s)  | heartbeats 27
+00:40:07 pins being driven: none
+00:40:07 === attempt 1: screen start, ramp step >= 100 ms
+00:40:08    powering up | step 1/26 | P2_5 0.4% | boot failures 1
+00:40:09    powering up | step 4/26 | P2_5 4.0% | boot failures 1
+00:40:09    powering up | step 7/26 | P2_5 7.2% | boot failures 1
+00:40:09    powering up | step 10/26 | P2_5 9.2% | boot failures 1
+00:40:10 !!! WATCH DROPPED. last seen: powering up, P2_5 9.2%
+00:40:23 connected: 00:E0:12:34:56:78 firmware v18
+00:40:23 firmware v18  uptime 0m07s  last reset: WATCHDOG fired (it froze and rebooted itself) (best guess, chip says it may be unreliable)
+00:40:23 watchdog: ARMED (8 s)  | heartbeats 7
+00:40:23 pins being driven: none
+00:40:23 === attempt 2: screen start, ramp step >= 100 ms
+00:40:24    powering up | step 3/26 | P2_5 2.0% | boot failures 0
+00:40:24    powering up | step 4/26 | P2_5 4.0% | boot failures 0
+00:40:25    powering up | step 5/26 | P2_5 5.2% | boot failures 0
+00:40:25    powering up | step 6/26 | P2_5 6.4% | boot failures 0
+00:40:26    powering up | step 7/26 | P2_5 7.2% | boot failures 0
+00:40:26    powering up | step 8/26 | P2_5 8.0% | boot failures 0
+00:40:27    powering up | step 9/26 | P2_5 8.6% | boot failures 0
+00:40:27    powering up | step 10/26 | P2_5 9.2% | boot failures 0
+00:40:28 !!! WATCH DROPPED. last seen: powering up, P2_5 9.2%
+00:40:41 connected: 00:E0:12:34:56:78 firmware v18
+00:40:41 firmware v18  uptime 0m13s  last reset: WATCHDOG fired (it froze and rebooted itself) (best guess, chip says it may be unreliable)
+00:40:41 watchdog: ARMED (8 s)  | heartbeats 13
+00:40:41 pins being driven: none
+00:40:41 RESULT: [{'ok': False, 'why': 'dropped', 'last': (2, 10)}, {'ok': False, 'why': 'dropped', 'last': (2, 10)}]
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261103-003958-os_diag.txt

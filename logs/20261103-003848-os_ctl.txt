@@ -1,0 +1,7 @@
+== os_ctl set ramp 10 @ 20261103-003848
+00:38:57 connected: 00:E0:12:34:56:78 firmware v18
+00:38:58 saved
+00:38:58 state: powering up | showing: boot animation | face: big numbers | brightness 180 | boot failures 5 | start on power on | clock synced
+00:38:58 speed: last frame 41.2 ms (2.7 ms of it waiting for the send), 164864 px | 0.0 fps | slowest frame since last status 41.2 ms | frames 1 | ramp step 1000 ms
+00:38:58 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261103-003848-os_ctl.txt

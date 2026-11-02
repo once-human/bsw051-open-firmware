@@ -1,0 +1,33 @@
+== os_diag  @ 20261103-003407
+00:34:16 connected: 00:E0:12:34:56:78 firmware v18
+00:34:16 firmware v18  uptime 1m53s  last reset: WATCHDOG fired (it froze and rebooted itself) (best guess, chip says it may be unreliable)
+00:34:16 watchdog: ARMED (8 s)  | heartbeats 113
+00:34:16 pins being driven: none
+00:34:16 === attempt 1: screen start, 1 s per power step
+00:34:16 ramp 1 s/step saved
+00:34:17    powering up | step 1/18 | P2_5 0.4% | boot failures 1
+00:34:18    powering up | step 2/18 | P2_5 0.8% | boot failures 1
+00:34:19    powering up | step 3/18 | P2_5 2.0% | boot failures 1
+00:34:20    powering up | step 4/18 | P2_5 4.0% | boot failures 1
+00:34:21    powering up | step 5/18 | P2_5 6.0% | boot failures 1
+00:34:22    powering up | step 6/18 | P2_5 8.0% | boot failures 1
+00:34:23 !!! WATCH DROPPED. last seen: powering up, P2_5 8.0%
+00:34:37 connected: 00:E0:12:34:56:78 firmware v18
+00:34:37 firmware v18  uptime 0m04s  last reset: WATCHDOG fired (it froze and rebooted itself) (best guess, chip says it may be unreliable)
+00:34:37 watchdog: ARMED (8 s)  | heartbeats 4
+00:34:37 pins being driven: none
+00:34:37 === attempt 2: screen start, 1 s per power step
+00:34:37 ramp 1 s/step saved
+00:34:38    powering up | step 1/18 | P2_5 0.4% | boot failures 1
+00:34:39    powering up | step 2/18 | P2_5 0.8% | boot failures 1
+00:34:40    powering up | step 3/18 | P2_5 2.0% | boot failures 1
+00:34:41    powering up | step 4/18 | P2_5 4.0% | boot failures 1
+00:34:42    powering up | step 5/18 | P2_5 6.0% | boot failures 1
+00:34:43    powering up | step 6/18 | P2_5 8.0% | boot failures 1
+00:34:44 !!! WATCH DROPPED. last seen: powering up, P2_5 8.0%
+00:34:57 connected: 00:E0:12:34:56:78 firmware v18
+00:34:57 firmware v18  uptime 0m03s  last reset: WATCHDOG fired (it froze and rebooted itself) (best guess, chip says it may be unreliable)
+00:34:57 watchdog: ARMED (8 s)  | heartbeats 3
+00:34:57 pins being driven: none
+00:34:57 RESULT: [{'ok': False, 'why': 'dropped', 'last': (2, 6)}, {'ok': False, 'why': 'dropped', 'last': (2, 6)}]
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261103-003407-os_diag.txt

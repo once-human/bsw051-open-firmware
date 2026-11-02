@@ -1,0 +1,6 @@
+== tool5 status @ 20261103-001656
+00:17:06 connected: 00:E0:12:34:56:78 firmware v17
+00:17:06 firmware v17  uptime 7m56s  last reset: power-on / hardware reset (best guess, chip says it may be unreliable)
+00:17:06 watchdog: ARMED (8 s)  | heartbeats 476
+00:17:06 pins being driven: none
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261103-001656-tool5.txt

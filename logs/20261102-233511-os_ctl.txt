@@ -1,0 +1,6 @@
+== os_ctl  @ 20261102-233511
+23:35:20 connected: 00:E0:12:34:56:78 firmware v16
+23:35:21 state: RUNNING | showing: settings | face: big numbers | brightness 180 | boot failures 1 | start on power on | clock synced
+23:35:21 speed: last frame 94.9 ms (0.6 ms of it waiting for the send), 164864 px | 7.0 fps | slowest frame since last status 140.2 ms | frames 184 | ramp step 120 ms
+23:35:21 touch: 0x2E on SCL P0_5 SDA P1_2 | reads 340 touches 12 | last x,y 151,349 | button presses 1 (P3_1 now 1) | crown 0 | INT P2_4 1/28 changes
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-233511-os_ctl.txt

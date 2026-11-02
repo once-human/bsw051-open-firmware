@@ -1,0 +1,47 @@
+== os_ctl watch @ 20261102-234203
+23:42:12 connected: 00:E0:12:34:56:78 firmware v16
+23:42:13 live status every second, Ctrl+C to stop
+23:42:13 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 255 | boot failures 3 | start on power on | clock synced
+23:42:13 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+23:42:13 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+23:42:14 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 255 | boot failures 3 | start on power on | clock synced
+23:42:14 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+23:42:14 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+23:42:15 state: powering up | showing: boot animation | face: big numbers | brightness 255 | boot failures 4 | start on power on | clock synced
+23:42:15 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 1000 ms
+23:42:15 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+23:42:16 state: powering up | showing: boot animation | face: big numbers | brightness 255 | boot failures 4 | start on power on | clock synced
+23:42:16 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 1000 ms
+23:42:16 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+23:42:17 state: powering up | showing: boot animation | face: big numbers | brightness 255 | boot failures 4 | start on power on | clock synced
+23:42:17 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 1000 ms
+23:42:17 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+23:42:18 state: powering up | showing: boot animation | face: big numbers | brightness 255 | boot failures 4 | start on power on | clock synced
+23:42:18 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 1000 ms
+23:42:18 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+23:42:19 state: powering up | showing: boot animation | face: big numbers | brightness 255 | boot failures 4 | start on power on | clock synced
+23:42:19 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 1000 ms
+23:42:19 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+23:42:20 state: powering up | showing: boot animation | face: big numbers | brightness 255 | boot failures 4 | start on power on | clock synced
+23:42:20 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 1000 ms
+23:42:20 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+Traceback (most recent call last):
+  File "/home/onkar/Projects/dafit-watch/os_ctl.py", line 109, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/onkar/Projects/dafit-watch/os_ctl.py", line 100, in main
+    show(await cmd(c, [0x30, 2]))
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/onkar/Projects/dafit-watch/tool5.py", line 70, in cmd
+    raise WatchGone()
+tool5.WatchGone
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-234203-os_ctl.txt

@@ -1,4 +1,5 @@
-"""Get control back from ONKAR OS v14 + test whether Bluetooth survives the screen.  Ctrl+C to stop.
+"""Get control back from ONKAR OS (v14+) + test whether Bluetooth survives the screen.  Ctrl+C to stop.
+   v16 also works: it turns "start on power" off. Turn it back on with:  bash run.sh os_ctl set autostart 1
    bash run.sh os_rescue
 v14 stops being visible over Bluetooth once its screen is running; for ~6 s after power-up it still advertises.
 This script waits for that moment (you: unplug + replug the charger when it beeps twice), connects at once and:
@@ -60,8 +61,10 @@ async def main():
     r = await cmd(c, [0x32, 1, 0], 2)
     log("autostart OFF:", "ok" if r and r[0] == 0xB2 else r)
     await cmd(c, [0x30, 0], 2)
-    r = await cmd(c, [0x32, 9, 1], 2)
-    log("drawing mode 1:", "ok" if r and r[0] == 0xB2 else r)
+    v = await cmd(c, [0x01], 2)
+    if v and v[3] < 16:                    # v14/v15 only: key 9 is the drawing mode there (in v16 it means "full rows")
+        r = await cmd(c, [0x32, 9, 1], 2)
+        log("drawing mode 1:", "ok" if r and r[0] == 0xB2 else r)
     beep("found")
     await status(c)                       # uptime + why it last restarted (power loss vs watchdog)
     show(await cmd(c, [0x30, 2]))

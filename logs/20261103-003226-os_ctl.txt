@@ -1,0 +1,186 @@
+== os_ctl watch @ 20261103-003226
+00:32:35 connected: 00:E0:12:34:56:78 firmware v18
+00:32:35 live status every second, Ctrl+C to stop
+00:32:36 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:36 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:36 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:37 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:37 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:37 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:38 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:38 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:38 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:39 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:39 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:39 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:40 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:40 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:40 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:41 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:41 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:41 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:42 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:42 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:42 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:43 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:43 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:43 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:44 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:44 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:44 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:45 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:45 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:45 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:46 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:46 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:46 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:47 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:47 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:47 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:48 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:48 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:48 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:50 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:50 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:50 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:51 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:51 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:51 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:52 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:52 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:52 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:53 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:53 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:53 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:54 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:54 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:54 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:55 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:55 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:55 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:56 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:56 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:56 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:57 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:57 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:57 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:58 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:58 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:58 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:32:59 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:32:59 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:32:59 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:00 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:00 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:00 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:01 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:01 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:01 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:03 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:03 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:03 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:04 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:04 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:04 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:05 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:05 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:05 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:06 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:06 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:06 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:07 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:07 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:07 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:08 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:08 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:08 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:09 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:09 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:09 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:10 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:10 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:10 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:11 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:11 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:11 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:12 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:12 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:12 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:13 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:13 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:13 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:14 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:14 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:14 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:15 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:15 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:15 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:17 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:17 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:17 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:18 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:18 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:18 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:19 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:19 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:19 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:20 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:20 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:20 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:21 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:21 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:21 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:22 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:22 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:22 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:23 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:23 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:23 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:24 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:24 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:24 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:25 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:25 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:25 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:26 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:26 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:26 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:27 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:27 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:27 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:28 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:28 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:28 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:30 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:30 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:30 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:31 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:31 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:31 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:32 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:32 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:32 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:33 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:33 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:33 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:34 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:34 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:34 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:35 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:35 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:35 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:36 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:36 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:36 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:37 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:37 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:37 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:38 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:38 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:38 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:39 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:39 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:39 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+00:33:40 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 180 | boot failures 4 | start on power on | clock synced
+00:33:40 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+00:33:40 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes

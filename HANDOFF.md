@@ -3,7 +3,10 @@
 Paste this whole file into the new chat. Files live in ~/Projects/dafit-watch (Arch laptop, kitty).
 More detail: FIRMWARE_PLAN.md (full history) and logs/ (every run is logged by run.sh).
 
-## START HERE - current state (21:45). Older sections below are history; where they disagree, this section wins.
+**NOTE (added 00:10): the "21:45 snapshot" block below is OUT OF DATE (screen was dark, v12 then). The newest UPDATE at the
+BOTTOM of this file wins (screen lit at 22:12, ONKAR OS v14-v17 since).**
+
+## 21:45 snapshot (SUPERSEDED - kept for the hardware/stock facts in it)
 - Watch runs OUR firmware v12 (BLE ONKAR-LIFE, 00:E0:12:34:56:78), still flashable over Bluetooth. Source + image: firmware/v12/.
 - SCREEN STILL DARK. No light in any test. Panel logic is proven working; lighting power is probably missing.
 - User is close to done and accepts bricking. Won't go to a repair shop or buy parts for this cheap watch.
@@ -266,3 +269,86 @@ Not a hardware person. Wants plain language, automatic scripts, one command, and
   autostart back on: `bash run.sh os_ctl set autostart 1`. os_rescue.py = grab the watch in the 6 s window after boot.
 - firmware/v15 flashed 22:51. Untested yet: touch protocol (CHSC5816 guess), crown (crown count stayed 0 in v14 test,
   user may not have turned it).
+
+## UPDATE 23:45 - v16 "ONKAR OS 16" flashed and running
+- New architecture (src in firmware/v16/onkar_v16_src.tgz; laptop simulator + same sources in tools/os_sim/):
+  * onkar_gfx.inc: portable anti-aliased renderer. Display list of float primitives (rounded rects, rings, arcs, capsule
+    lines, 4-bit anti-aliased text/icons), only the dirty rectangle is rendered, in 12-row strips, double-buffered with GDMA
+    (each strip = own 2A/2B window + 2C write = the proven "mode 1"). Inner loops run from RAM (.app.data_ram.text),
+    vsqrt inline, text decoded once per strip.
+  * onkar_ui.inc: portable UI. Boot animation (3 rings + ONKAR), faces Stack / Analog (smooth second hand) / Modular,
+    swipe left/right between faces (follows the finger), swipe up from bottom = control centre (flashlight, always-on,
+    screen off, BT, next face, settings, brightness slider), button = app list / back home, long press = screen off.
+    Apps: Stopwatch (laps), Timer (crown sets minutes), Sketch, Flashlight, Breathe, Settings, About (live fps/frame time).
+    Inertia scrolling + crown scrolling, back-swipe from the left edge, pressed states, fades for wake/sleep.
+  * onkar_os.inc: hardware core (panel/power/touch/button/crown from v15) + plat_* glue + status/commands.
+  * fonts: tools/gen_font2.py (Adwaita Sans variable + Material Symbols Rounded; F_L only has the letters the UI uses).
+- Settings magic ONK2 (fresh defaults): autostart ON, bright 180, timeout 15 s. Starts 3 s after power-up; failed-start
+  counter -> back-off 3 s/120 ms ramp steps, 3 s/300 ms, 12 s/1 s, 48 s, 120 s. Counter cleared after 60 s running.
+  Always retries. Clock: laptop sets it (any os_ctl call); saved to FTL every 5 min and restored after a power cut
+  (shown as "not synced").
+- 0x32 keys v16: 1 autostart 2 bright 3 ramp 4 touch_flags(bit3 = reverse crown) 5 button 7 touch_rst 8 always_on
+  9 full_rows (send whole rows instead of partial-width windows) 10 te_sync 12 timeout 13 face 14 accent.
+  0x30 02 status is 80 bytes: frame time/wait/pixels/fps/slowest at 52..71 (os_ctl prints them).
+- Measured on the watch: build 1 = 95 ms per full-screen frame (CPU bound, SPI send only 0.6 ms). Build 2 (RAM code,
+  inline vsqrt, single-pass text) = 43 ms. Build 3 (solid spans in circles/rounded rects) flashed 23:41 - see os_ctl.
+  Touch + button confirmed working in v16 (user navigated to Settings / app list).
+- Size: app 148.3 KB of 148 KB slot (0x25000 = 151552 B) -> ~3 KB left. Next space savers: F_H 206 -> 190 px,
+  drop unused onkar_tool debug commands (onkar_tool_handle is 8.7 KB).
+- Not verified yet: crown direction/feel, partial-width windows on this panel (if corners show garbage: os_ctl set full_rows 1).
+
+## UPDATE 23:52 - root cause of bad colours found; v17 built (NOT flashed yet)
+- Every build up to v16 called spic2_stock_init(false): P0_6/P0_7 (QSPI D2/D3) never routed to SPIC2, so 2 of every 4 pixel
+  bits were floating -> patchy fills, grey shown green, white as dim teal, noisy edges. Stock and Realtek's
+  qspi_lcd_platform.c claim them. (P0_7 was once suspected as the motor; the motor is P0_0.) Byte order was fine.
+- "build 3 crash" was really resets during the P2_5 ramp (before any frame) at brightness 255 on charger power, not the span code.
+- te_sync wait (up to 20 ms busy wait per frame) made 43 ms frames run at 14.5 fps. v17 defaults te_sync 0.
+- firmware/v17: D2/D3 claimed, te_sync off, settings magic ONK3 (fresh defaults: bright 180, autostart on), status byte 79 = 17.
+  Flash: bash run.sh ota_flash --go firmware/v17/app_MP.bin && bash run.sh os_ctl
+- os_ctl/os_rescue still say v16 in places (key handling is the same), not updated yet.
+- Still to do: shorter boot animation that a touch skips, remove Sketch/Breathe, reset reason in status, profile frame time.
+
+## UPDATE 00:05 (Nov 3) - v17 IS WORKING; "not turning on" = power drops + back-off + screen sleep
+- v17 flashed 23:55 / 23:58 fine. User reported "not turning on". Logs: the first starts reset the watch during the P2_5 ramp
+  (23:59:01, ~5 s into a 1 s/step ramp, same as v16 at 23:42). Each failure raises the boot-failure counter -> back-off
+  3 s / 12 s / 48 s / 120 s before the next try, so the watch looked dead for minutes. Last reset reason = power-on (power dip,
+  not watchdog) -> charger-only supply, not a software bug.
+- os_diag.py (new, `bash run.sh os_diag`): sets ramp 1 s/step, starts the screen, logs each ramp step + P2_5 duty until RUNNING,
+  and after a drop reconnects and prints the reset reason. 00:02 run: watch had ALREADY come up by itself (~00:01:50 after the
+  120 s back-off), run past 60 s (failures back to 0), then SLEPT after the 15 s screen timeout -> looked off.
+- `os_ctl press` woke it at 00:02:45: RUNNING, watch face, 25 ms frames, touch chip 0x2E found.
+- Settings now: ramp 100 (1 s per step, ~18 s to light up - slower but gentler; back to default: `os_ctl set ramp 10`).
+- If it looks off: press the button (P3_1) first. Longer screen-on: `bash run.sh os_ctl set timeout 4` (5 min) or `set always_on 1`.
+- Still open: the ramp still sometimes browns out on charger power; only fix is a better supply (battery). Not verified with user
+  yet that the v17 colours (D2/D3 fix) look right.
+
+## UPDATE 00:50 (Nov 3) - v18: haptics + crown working; screen start still intermittent on charger power
+User feedback on v17: colour fix worked, frame rate good, face swiping a bit jittery (OS will be redesigned later anyway),
+boot slow with no visible boot animation, crown did nothing, no haptics. Asked for haptics everywhere.
+- firmware/v18 (src tgz = exactly what is on the watch, 144312 B; build tree as before):
+  * Haptics: motor P0_0 (LOW = on, stock PWM2_N). TIM2 = 25 kHz PWM on P0_0 (timer_pwm2), TIM3 = 1 kHz tick, ISR in RAM
+    (onkar_tim3_isr; patterns + tables in RAM; no flash reads, no calls). Between patterns P0_0 is parked as plain HIGH output.
+    Patterns: tick soft tap click double success long bump alarm boot; 3 ms 100% kick on ERM start; level Off/Light/Medium/
+    Strong scales duty + length. Timers are started only after the screen is up (never at boot) or by the laptop (0x36/0x37)
+    while the OS is off. Hooks everywhere: crown detents (bump at list ends), button tap / long, taps, toggles, face snap,
+    control centre, back-swipe, brightness slider every 10%, stopwatch, timer (alarm repeats every 1.5 s), Breathe
+    (accelerating taps on inhale, quiet on exhale), boot. Settings has a "Haptics" row.
+  * Crown: QDEC never counts on this board (QDEC CR_Y=0x800010A0, SR_Y stays 0 while turning). Crown mode 1 = software
+    quadrature in the same 1 kHz ISR: CONFIRMED working 00:48 (both pins toggle, count follows direction). Set on the watch
+    (0x32 16 1, saved). Source default is still crown_mode 0 -> make it 1 in the next build. crown_div (counts per click)
+    = 2, NOT yet confirmed with the user. Crown on the watch face now switches faces.
+  * Boot: logo drawn into panel memory before the ramp, fades in after it (brightness 0 during the ramp), held, then face.
+    Boot wait 2 s; back-off 2/2/6/12/30 s (was up to 120 s); ramp steps 120/250/500 ms; finer RAMP table through 4-30%.
+  * Removed old screen bring-up commands 11 15-17 19-1B 1D-1F 20 22-24 (saved 7.5 KB; old display_*.py tests need v17).
+  * New BLE cmds: 36 id = play haptic (FF stop), 37 = crown/haptic diag, 38 addr n = peek peripheral registers.
+    0x32 keys 15 haptic 16 crown 17 crown_div 18 hap_inv 19 fastramp. os_ctl: buzz NAME|all, crown (live view), peek, set ...
+  * os_diag.py [ramp_ms]: starts the screen, logs each ramp step, reconnects after a drop and prints the reset reason.
+- SCREEN START PROBLEM (also hit v16 23:42 and v17 23:59): with a weak charger supply the chip HANGS (watchdog reset 8 s
+  later) the moment the P2_5 ramp reaches ~9.5-10% duty (~24 us pulses of 250 us). Deterministic per session: 6/6 at
+  00:31-00:40, at 1 s, 0.5 s and 120 ms steps, with and without a lit logo. fastramp=1 (6->96% in 0.4 s from RAM, IRQs
+  off) made it WORSE (power-on reset) -> real supply collapse, not flash/XIP. Left fastramp=0. It passes at other times
+  (22:07, 00:01, 00:09, 00:47 all came up) -> charger contact/supply quality. Best fix: battery or firm charger contact.
+- 00:46 motor test with the screen off: all 10 patterns played, watch stayed up. The watch did a power-on reset at ~00:47:10
+  (cause unknown - possibly motor current on charger power; watch for this). After that reboot the screen came up by itself.
+- Open questions for the user: do haptics feel like crisp taps (if they feel like long buzzes: os_ctl set hap_inv 1)?
+  Does one crown click = one step (else os_ctl set crown_div 4 or 1)? Did the boot logo show?

@@ -1,0 +1,26 @@
+== os_ctl crown @ 20261103-004756
+00:48:05 connected: 00:E0:12:34:56:78 firmware v18
+00:48:06 TURN THE CROWN. live view, Ctrl+C to stop
+00:48:06 mode pins | pins A(P1_0)=1 B(P2_6)=1 | edges A 0 B 0 | pin count 0 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 0 (/2 per click) | haptics lvl 2 plays 11
+00:48:10 mode pins | pins A(P1_0)=0 B(P2_6)=1 | edges A 3 B 0 | pin count 1 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 0 (/2 per click) | haptics lvl 2 plays 11
+00:48:11 mode pins | pins A(P1_0)=1 B(P2_6)=1 | edges A 20 B 4 | pin count 4 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 4 (/2 per click) | haptics lvl 2 plays 13
+00:48:11 mode pins | pins A(P1_0)=1 B(P2_6)=1 | edges A 38 B 8 | pin count 0 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 0 (/2 per click) | haptics lvl 2 plays 15
+00:48:11 mode pins | pins A(P1_0)=1 B(P2_6)=1 | edges A 42 B 10 | pin count -2 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total -2 (/2 per click) | haptics lvl 2 plays 16
+00:48:12 mode pins | pins A(P1_0)=1 B(P2_6)=1 | edges A 48 B 14 | pin count 6 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 6 (/2 per click) | haptics lvl 2 plays 20
+00:48:12 mode pins | pins A(P1_0)=1 B(P2_6)=1 | edges A 68 B 14 | pin count 6 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 6 (/2 per click) | haptics lvl 2 plays 20
+00:48:12 mode pins | pins A(P1_0)=0 B(P2_6)=1 | edges A 73 B 14 | pin count 7 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 7 (/2 per click) | haptics lvl 2 plays 20
+00:48:13 mode pins | pins A(P1_0)=1 B(P2_6)=1 | edges A 76 B 18 | pin count 12 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 12 (/2 per click) | haptics lvl 2 plays 23
+00:48:13 mode pins | pins A(P1_0)=1 B(P2_6)=1 | edges A 82 B 24 | pin count 10 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 10 (/2 per click) | haptics lvl 2 plays 26
+00:48:13 mode pins | pins A(P1_0)=1 B(P2_6)=1 | edges A 84 B 40 | pin count 6 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 6 (/2 per click) | haptics lvl 2 plays 28
+00:48:21 mode pins | pins A(P1_0)=1 B(P2_6)=1 | edges A 92 B 48 | pin count 14 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 14 (/2 per click) | haptics lvl 2 plays 37
+00:48:21 mode pins | pins A(P1_0)=0 B(P2_6)=0 | edges A 99 B 53 | pin count 16 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 14 (/2 per click) | haptics lvl 2 plays 39
+00:48:21 mode pins | pins A(P1_0)=0 B(P2_6)=1 | edges A 101 B 54 | pin count 19 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 19 (/2 per click) | haptics lvl 2 plays 41
+00:48:22 mode pins | pins A(P1_0)=1 B(P2_6)=1 | edges A 106 B 60 | pin count 26 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 26 (/2 per click) | haptics lvl 2 plays 45
+00:48:22 mode pins | pins A(P1_0)=0 B(P2_6)=0 | edges A 113 B 67 | pin count 40 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 38 (/2 per click) | haptics lvl 2 plays 51
+00:48:22 mode pins | pins A(P1_0)=1 B(P2_6)=1 | edges A 114 B 68 | pin count 40 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 40 (/2 per click) | haptics lvl 2 plays 52
+00:48:23 mode pins | pins A(P1_0)=1 B(P2_6)=1 | edges A 130 B 78 | pin count 26 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 26 (/2 per click) | haptics lvl 2 plays 59
+00:48:23 mode pins | pins A(P1_0)=0 B(P2_6)=1 | edges A 133 B 78 | pin count 27 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 27 (/2 per click) | haptics lvl 2 plays 59
+00:48:23 mode pins | pins A(P1_0)=1 B(P2_6)=1 | edges A 142 B 84 | pin count 16 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 16 (/2 per click) | haptics lvl 2 plays 64
+00:48:24 mode pins | pins A(P1_0)=0 B(P2_6)=1 | edges A 149 B 92 | pin count 27 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 27 (/2 per click) | haptics lvl 2 plays 69
+00:48:24 mode pins | pins A(P1_0)=1 B(P2_6)=0 | edges A 154 B 95 | pin count 31 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 28 (/2 per click) | haptics lvl 2 plays 70
+00:48:25 mode pins | pins A(P1_0)=0 B(P2_6)=1 | edges A 157 B 98 | pin count 35 | QDEC SR_Y 0x00000000 CR_Y 0x800010A0 INT 0x00000000 | crown total 35 (/2 per click) | haptics lvl 2 plays 73

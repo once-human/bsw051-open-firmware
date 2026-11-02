@@ -1,0 +1,6 @@
+== os_ctl  @ 20261102-234118
+23:41:28 connected: 00:E0:12:34:56:78 firmware v16
+23:41:28 state: waiting for boot delay | showing: boot animation | face: big numbers | brightness 255 | boot failures 3 | start on power on | clock synced
+23:41:28 speed: last frame 0.0 ms (0.0 ms of it waiting for the send), 0 px | 0.0 fps | slowest frame since last status 0.0 ms | frames 0 | ramp step 0 ms
+23:41:28 touch: not found | reads 0 touches 0 | last x,y 0,0 | button presses 0 (P3_1 now 1) | crown 0 | INT P2_4 0/0 changes
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-234118-os_ctl.txt

@@ -1,0 +1,22 @@
+== os_diag  @ 20261103-004336
+00:43:47 connected: 00:E0:12:34:56:78 firmware v18
+00:43:47 firmware v18  uptime 0m25s  last reset: WATCHDOG fired (it froze and rebooted itself) (best guess, chip says it may be unreliable)
+00:43:47 watchdog: ARMED (8 s)  | heartbeats 25
+00:43:47 pins being driven: none
+00:43:47 === attempt 1: screen start, ramp step >= 100 ms
+00:43:48    powering up | step 1/26 | P2_5 0.4% | boot failures 1
+00:43:49 !!! WATCH DROPPED. last seen: powering up, P2_5 0.4%
+00:44:02 connected: 00:E0:12:34:56:78 firmware v18
+00:44:02 firmware v18  uptime 0m08s  last reset: WATCHDOG fired (it froze and rebooted itself) (best guess, chip says it may be unreliable)
+00:44:02 watchdog: ARMED (8 s)  | heartbeats 8
+00:44:02 pins being driven: none
+00:44:02 === attempt 2: screen start, ramp step >= 100 ms
+00:44:03    powering up | step 4/26 | P2_5 4.0% | boot failures 0
+00:44:03    powering up | step 5/26 | P2_5 5.2% | boot failures 0
+00:44:04 !!! WATCH DROPPED. last seen: powering up, P2_5 5.2%
+00:44:17 connected: 00:E0:12:34:56:78 firmware v18
+00:44:17 firmware v18  uptime 0m06s  last reset: power-on / hardware reset (best guess, chip says it may be unreliable)
+00:44:17 watchdog: ARMED (8 s)  | heartbeats 6
+00:44:17 pins being driven: none
+00:44:17 RESULT: [{'ok': False, 'why': 'dropped', 'last': (2, 1)}, {'ok': False, 'why': 'dropped', 'last': (2, 5)}]
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261103-004336-os_diag.txt

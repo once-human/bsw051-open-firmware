@@ -1,0 +1,6 @@
+== tool5 status @ 20261102-234152
+23:42:01 connected: 00:E0:12:34:56:78 firmware v16
+23:42:01 firmware v16  uptime 0m35s  last reset: WATCHDOG fired (it froze and rebooted itself) (best guess, chip says it may be unreliable)
+23:42:01 watchdog: ARMED (8 s)  | heartbeats 34
+23:42:01 pins being driven: none
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-234152-tool5.txt

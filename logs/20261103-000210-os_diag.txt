@@ -1,0 +1,8 @@
+== os_diag  @ 20261103-000210
+00:02:19 connected: 00:E0:12:34:56:78 firmware v17
+00:02:19 firmware v17  uptime 2m47s  last reset: power-on / hardware reset (best guess, chip says it may be unreliable)
+00:02:19 watchdog: ARMED (8 s)  | heartbeats 167
+00:02:19 pins being driven: none
+00:02:19 === attempt 1: screen start, 1 s per power step
+00:02:19 ramp 1 s/step saved
+00:02:20    sleeping | step 18/18 | P2_5 100.0% | boot failures 0
