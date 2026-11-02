@@ -1,0 +1,13 @@
+== display_on  @ 20261102-201127
+20:11:36 connected: 00:E0:12:34:56:78 firmware v9
+20:11:36 >>> Look at the WATCH SCREEN for the next ~30 s and remember every COLOUR you see. Press Enter. 20:12:44    watch dropped during RED - reconnecting
+20:12:44 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+20:12:53 connected: 00:E0:12:34:56:78 firmware v9
+20:12:54 GREEN    pins HIGH: P0_1 P0_3  | screen ID read: {'D0': '00000000', 'D1': '00000000'}
+20:12:59 BLUE     pins HIGH: P0_1 P0_3 P2_7  | screen ID read: {'D0': '00000000', 'D1': '00000000'}
+20:13:03 WHITE    pins HIGH: P0_1 P0_3 P2_7 P2_3  | screen ID read: {'D0': '00000000', 'D1': '00000000'}
+20:13:07 YELLOW   pins HIGH: P0_1 P0_3 P2_7 P2_3 P1_1  | screen ID read: {'D0': '00000000', 'D1': '00000000'}
+20:13:12 MAGENTA  pins HIGH: P0_1 P2_7 P2_3 P1_1  | screen ID read: {'D0': '00000000', 'D1': '00000000'}
+20:13:15 >>> Which colour(s) did you see on the screen? (e.g. red, green ... or none): 20:13:35 saved to logs/hw.json: display_on (full detail in the file)
+20:13:35 RESULT: you saw: none
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-201127-display_on.txt
