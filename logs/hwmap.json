@@ -1,0 +1,12 @@
+{
+ "classes": {},
+ "charger": {},
+ "button": {},
+ "motor": null,
+ "pulses": {},
+ "danger": [
+  "H_0",
+  "H_1",
+  "H_2"
+ ]
+}

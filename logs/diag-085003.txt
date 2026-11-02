@@ -1,0 +1,19 @@
+## 1. what BlueZ knows about the watch
+Device 00:E0:12:34:56:78 not available
+DeviceSet 00:E0:12:34:56:78 not available
+
+## 2. connected devices
+
+## 3. 30 second scan (everything seen)
+SetDiscoveryFilter success
+Discovery started
+[[0;93mCHG[0m] Controller D8:80:83:75:79:B4 Discovering: yes
+[[0;93mCHG[0m] Device 52:14:6B:F8:F1:8B RSSI: 0xffffff9f (-97)
+[[0;93mCHG[0m] Device 52:14:6B:F8:F1:8B TxPower: 0x000c (12)
+[[0;93mCHG[0m] Device 01:B6:EC:B6:53:DB RSSI: 0xffffffa1 (-95)
+[[0;93mCHG[0m] Device 56:76:4D:F7:27:AF RSSI: 0xffffffa1 (-95)
+[[0;91mDEL[0m] Device 55:1A:34:28:75:6D 55-1A-34-28-75-6D
+
+## 4. watch info again after scan
+Device 00:E0:12:34:56:78 not available
+DeviceSet 00:E0:12:34:56:78 not available
