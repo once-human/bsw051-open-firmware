@@ -1,0 +1,126 @@
+== display_discover  @ 20261102-222214
+22:22:21 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:22:29 connected: 00:E0:12:34:56:78 firmware v13
+22:22:29    SPIC2 setup
+22:22:29    screen power P0_1
+22:22:30    reset P2_0 high
+22:22:31    reset P2_0 low
+22:22:31    reset P2_0 high
+22:22:31    init reg FF00
+22:22:31    init reg FF80
+22:22:32    init reg C083
+22:22:32    init reg C089
+22:22:32    init reg C093
+22:22:32    init reg C099
+22:22:33    init reg B283
+22:22:33    init reg 3A00
+22:22:33    init reg 5100
+22:22:33    init reg 3500
+22:22:34    init reg C0C4
+22:22:34    init reg C380
+22:22:34    init reg C390
+22:22:34    init reg C3A0
+22:22:34    init reg C5DF
+22:22:35    init reg 1100
+22:22:35    init reg 2900
+22:22:35    init reg FF00
+22:22:36    init reg C5E2
+22:22:36    init reg C5E5
+22:22:36    init reg C482
+22:22:36    init reg C489
+22:22:37    display on
+22:22:37    brightness 38%
+22:22:37    black screen first
+22:22:37 soft-starting P2_5 (the screen's high-voltage supply)...
+22:22:37       P2_5 0%
+22:22:37          display off
+22:22:38          display on
+22:22:39       P2_5 0%
+22:22:39          display off
+22:22:40          display on
+22:22:41       P2_5 2%
+22:22:41          display off
+22:22:41          display on
+22:22:43       P2_5 4%
+22:22:43          display off
+22:22:43          display on
+22:22:45       P2_5 6%
+22:22:45          display off
+22:22:45          display on
+22:22:46       P2_5 8%
+22:22:47          display off
+22:22:47          display on
+22:22:48       P2_5 10%
+22:22:48          display off
+22:22:49          display on
+22:22:50       P2_5 12%
+22:22:50          display off
+22:22:50          display on
+22:22:52       P2_5 16%
+22:22:52          display off
+22:22:52          display on
+22:22:54       P2_5 20%
+22:22:54          display off
+22:22:54          display on
+22:22:55       P2_5 24%
+22:22:56          display off
+22:22:56          display on
+22:22:57       P2_5 30%
+22:22:57          display off
+22:22:58          display on
+22:22:59       P2_5 40%
+22:22:59          display off
+22:22:59          display on
+22:23:01       P2_5 50%
+22:23:01          display off
+22:23:01          display on
+22:23:03       P2_5 60%
+22:23:03          display off
+22:23:03          display on
+22:23:04       P2_5 80%
+22:23:05          display off
+22:23:05          display on
+22:23:06       P2_5 96%
+22:23:06          display off
+22:23:07          display on
+22:23:08       P2_5 100%
+22:23:08          display off
+22:23:09          display on
+22:23:10    picture
+22:23:10    picture
+22:23:10    picture
+22:23:11    picture
+22:23:11 screen should be on now. Before touching anything, an I2C scan (touch chips may sleep until touched):
+22:23:11    SCL=P0_5 SDA=P1_2: [46]
+22:23:11    SCL=P1_2 SDA=P0_5: []
+22:23:11 >>> PRESS THE BUTTON a few times NOW (12 s)
+22:23:24    PRESS THE BUTTON a few times done. pin changes: {'P3_1': 0, 'P2_4': 0} | idle levels: {'P3_1': 1, 'P2_4': 1}
+22:23:24 >>> TOUCH: keep tapping and swiping the screen NOW (15 s)
+22:23:26    I2C SCL=P0_5 SDA=P1_2: 0x2E touch (Hynitron/HYN)
+22:23:29    I2C SCL=P0_5 SDA=P1_2: 0x2E touch (Hynitron/HYN)
+22:23:31    I2C SCL=P0_5 SDA=P1_2: 0x2E touch (Hynitron/HYN)
+22:23:33    I2C SCL=P0_5 SDA=P1_2: 0x2E touch (Hynitron/HYN)
+22:23:36    I2C SCL=P0_5 SDA=P1_2: 0x2E touch (Hynitron/HYN)
+22:23:38    I2C SCL=P0_5 SDA=P1_2: 0x2E touch (Hynitron/HYN)
+22:23:40    TOUCH: keep tapping and swiping the screen done. pin changes: {'P2_4': 0, 'P3_1': 0} | idle levels: {'P2_4': 1, 'P3_1': 1}
+22:23:40 >>> TURN THE CROWN back and forth NOW (12 s)
+22:23:45    P2_6: 1 -> 0
+22:23:45    P1_0: 0 -> 1
+22:23:45    P2_6: 0 -> 1
+22:23:45    P1_0: 1 -> 0
+22:23:46    P2_6: 1 -> 0
+22:23:46    P1_0: 0 -> 1
+22:23:46    P2_6: 0 -> 1
+22:23:47    P1_0: 1 -> 0
+22:23:47    P2_6: 1 -> 0
+22:23:47    P1_0: 0 -> 1
+22:23:47    P2_6: 0 -> 1
+22:23:52    P2_6: 1 -> 0
+22:23:52    P1_0: 1 -> 0
+22:23:52    P2_6: 0 -> 1
+22:23:52    P1_0: 0 -> 1
+22:23:53    P1_0: 1 -> 0
+22:23:53    TURN THE CROWN back and forth done. pin changes: {'P1_0': 8, 'P2_6': 8} | idle levels: {'P1_0': 0, 'P2_6': 1}
+22:23:53 saved to logs/hw.json: display_discover (full detail in the file)
+22:23:53 RESULT: {'button': {'changes': {'P3_1': 0, 'P2_4': 0}, 'i2c': []}, 'touch': {'changes': {'P2_4': 0, 'P3_1': 0}, 'i2c': [46]}, 'crown': {'changes': {'P1_0': 8, 'P2_6': 8}, 'i2c': []}}
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-222214-display_discover.txt

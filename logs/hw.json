@@ -1,0 +1,715 @@
+{
+ "motor": 21,
+ "float_ok": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  32,
+  33,
+  34,
+  35
+ ],
+ "danger": [
+  11,
+  12
+ ],
+ "pads": {
+  "0": {
+   "mode": "peripheral",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 90,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 03 5a"
+  },
+  "1": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "2": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "3": {
+   "mode": "peripheral",
+   "output": false,
+   "level": 0,
+   "pull": "none",
+   "pinmux": 27,
+   "powered": true,
+   "boot_output": false,
+   "raw": "00 23 1b"
+  },
+  "4": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "5": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "6": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "7": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "8": {
+   "mode": "peripheral",
+   "output": false,
+   "level": 0,
+   "pull": "up",
+   "pinmux": 57,
+   "powered": true,
+   "boot_output": false,
+   "raw": "04 03 39"
+  },
+  "9": {
+   "mode": "peripheral",
+   "output": false,
+   "level": 0,
+   "pull": "up",
+   "pinmux": 56,
+   "powered": true,
+   "boot_output": false,
+   "raw": "04 03 38"
+  },
+  "10": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "11": {
+   "mode": "peripheral",
+   "output": false,
+   "level": 0,
+   "pull": "up",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "04 03 00"
+  },
+  "12": {
+   "mode": "peripheral",
+   "output": false,
+   "level": 0,
+   "pull": "up",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "04 03 00"
+  },
+  "13": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "up",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "04 01 00"
+  },
+  "14": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "15": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "16": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "17": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "18": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "19": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "20": {
+   "mode": "peripheral",
+   "output": false,
+   "level": 0,
+   "pull": "up",
+   "pinmux": 90,
+   "powered": true,
+   "boot_output": false,
+   "raw": "04 03 5a"
+  },
+  "21": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "22": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "23": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "24": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "up",
+   "pinmux": 1,
+   "powered": true,
+   "boot_output": false,
+   "raw": "04 01 01"
+  },
+  "25": {
+   "mode": "peripheral",
+   "output": false,
+   "level": 0,
+   "pull": "up",
+   "pinmux": 2,
+   "powered": true,
+   "boot_output": false,
+   "raw": "04 03 02"
+  },
+  "26": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "27": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "28": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "29": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "30": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "32": {
+   "mode": "peripheral",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 46,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 03 2e"
+  },
+  "33": {
+   "mode": "peripheral",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 47,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 03 2f"
+  },
+  "34": {
+   "mode": "peripheral",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 48,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 03 30"
+  },
+  "35": {
+   "mode": "peripheral",
+   "output": false,
+   "level": 0,
+   "pull": "up",
+   "pinmux": 45,
+   "powered": true,
+   "boot_output": false,
+   "raw": "04 03 2d"
+  },
+  "36": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "37": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  },
+  "38": {
+   "mode": "software",
+   "output": false,
+   "level": 0,
+   "pull": "down",
+   "pinmux": 0,
+   "powered": true,
+   "boot_output": false,
+   "raw": "0c 01 00"
+  }
+ },
+ "backlight": null,
+ "motor_note": "P2_5 HIGH = strong vibration (confirmed with battery). P0_7 also involved (v2 vibe test).",
+ "p2_5_flash": false,
+ "lcd_hits": [
+  {
+   "cs": 19,
+   "clk": 22,
+   "mosi": 0,
+   "miso": 0,
+   "proto": 0,
+   "data": "00023fff",
+   "rst": null
+  }
+ ],
+ "lcd": {
+  "cs": 19,
+  "clk": 22,
+  "mosi": 0,
+  "miso": 0,
+  "proto": 0,
+  "data": "00023fff",
+  "rst": null
+ },
+ "screen_scan": {
+  "hits": [],
+  "user_saw": ""
+ },
+ "screen": null,
+ "i2c_found": {},
+ "power_pins": [
+  0
+ ],
+ "rail_pullups": [
+  13
+ ],
+ "rail_11_1": [
+  13
+ ],
+ "rail_1_1": [
+  0
+ ],
+ "rail_2_1": [
+  1
+ ],
+ "rail_4_1": [
+  2
+ ],
+ "rail_5_1": [
+  4
+ ],
+ "rail_10_1": [
+  5
+ ],
+ "rail_14_1": [
+  10
+ ],
+ "rail_15_1": [
+  14
+ ],
+ "rail_16_1": [
+  15
+ ],
+ "rail_22_1": [
+  18
+ ],
+ "rail_23_1": [
+  22
+ ],
+ "rail_26_1": [
+  23
+ ],
+ "rail_27_1": [
+  26
+ ],
+ "rail_28_1": [
+  27
+ ],
+ "display_on": {
+  "seen": "",
+  "ids": {
+   "GREEN": {
+    "D0": "00000000",
+    "D1": "00000000"
+   },
+   "BLUE": {
+    "D0": "00000000",
+    "D1": "00000000"
+   },
+   "WHITE": {
+    "D0": "00000000",
+    "D1": "00000000"
+   },
+   "YELLOW": {
+    "D0": "00000000",
+    "D1": "00000000"
+   },
+   "MAGENTA": {
+    "D0": "00000000",
+    "D1": "00000000"
+   }
+  }
+ },
+ "display_stock": {
+  "seen": ""
+ },
+ "display_hw": {
+  "seen": ""
+ },
+ "display_steps": {
+  "results": [
+   {
+    "died_at": "SPIC2 hardware setup (0x1D)",
+    "by_itself": true,
+    "uptime": 5,
+    "reset": "power-on / hardware reset",
+    "rebooted": true
+   },
+   {
+    "died_at": "ALL PIXELS ON (white) - 3 s",
+    "by_itself": false,
+    "uptime": 6,
+    "reset": "power-on / hardware reset",
+    "rebooted": true
+   }
+  ],
+  "seen": "nothing"
+ },
+ "display_v11": {
+  "results": {
+   "no_rail": {
+    "before_init": {
+     "te": 0,
+     "regs": {
+      "04/0": "20000000",
+      "04/1": "09555555",
+      "0A/0": "08080808",
+      "0A/1": "00d555d5",
+      "DA/0": "40404040",
+      "DA/1": "25557555",
+      "DB/0": "00000000",
+      "DB/1": "00555555",
+      "DC/0": "00000000",
+      "DC/1": "00555555"
+     },
+     "bus": true
+    },
+    "after_init": {
+     "te": 26,
+     "regs": {
+      "04/0": "20000000",
+      "04/1": "08555555",
+      "0A/0": "9c9c9c9c",
+      "0A/1": "83f5d7f5",
+      "DA/0": "40404040",
+      "DA/1": "20557555",
+      "DB/0": "00000000",
+      "DB/1": "00155555",
+      "DC/0": "00000000",
+      "DC/1": "00155555"
+     },
+     "bus": true
+    },
+    "end": {
+     "te": 25,
+     "regs": {
+      "04/0": "20000000",
+      "04/1": "08155555",
+      "0A/0": "9c9c9c9c",
+      "0A/1": "82f5d7f5",
+      "DA/0": "40404040",
+      "DA/1": "20557555",
+      "DB/0": "00000000",
+      "DB/1": "00155555",
+      "DC/0": "00000000",
+      "DC/1": "00155555"
+     },
+     "bus": true
+    }
+   },
+   "rail_soft": {
+    "died_at": "rail P2_5 soft start (2.5 s ramp)",
+    "by_itself": true,
+    "uptime": 14
+   }
+  },
+  "seen": "nothing",
+  "motor": "no"
+ },
+ "display_lit": {
+  "results": {
+   "regs": {
+    "0A": "9c9c",
+    "0B": "0000",
+    "0C": "0505",
+    "0D": "0000",
+    "0E": "8080",
+    "0F": "c0c0",
+    "52": "0800",
+    "54": "0000",
+    "56": "0000"
+   },
+   "regs_lit": {
+    "0A": "9c9c",
+    "0B": "0000",
+    "0C": "0505",
+    "0D": "1010",
+    "0E": "8080",
+    "0F": "c0c0",
+    "52": "3000",
+    "54": "1000",
+    "56": "0000"
+   }
+  },
+  "seen": "nothing"
+ },
+ "display_p25": {
+  "results": {
+   "died_at": "",
+   "uptime": 13,
+   "longest_ok_ms": 0,
+   "held": false,
+   "charge_died_at": "",
+   "charge_uptime": 17
+  },
+  "seen": "no"
+ },
+ "display_max": {
+  "results": {
+   "regs": {
+    "0A": "9c9c",
+    "0B": "0000",
+    "0C": "0505",
+    "0D": "1010",
+    "0E": "8080",
+    "0F": "c0c0",
+    "52": "ff80",
+    "54": "0000",
+    "56": "0000"
+   },
+   "te": 26,
+   "survived_max": true
+  },
+  "seen": "no"
+ },
+ "display_rail": {
+  "results": {
+   "rail_survived": false,
+   "base": {
+    "died_at": "exact stock rail cycle (P2_5 on)",
+    "by_itself": true,
+    "uptime": 13
+   }
+  },
+  "seen": ""
+ },
+ "display_pwm": {
+  "results": {
+   "250us#1": {
+    "ok_up_to": 250
+   },
+   "25us#1": {
+    "ok_up_to": 25
+   }
+  },
+  "seen": "yes"
+ },
+ "display_discover": {
+  "button": {
+   "changes": {
+    "P3_1": 0,
+    "P2_4": 0
+   },
+   "i2c": []
+  },
+  "touch": {
+   "changes": {
+    "P2_4": 0,
+    "P3_1": 0
+   },
+   "i2c": [
+    46
+   ]
+  },
+  "crown": {
+   "changes": {
+    "P1_0": 8,
+    "P2_6": 8
+   },
+   "i2c": []
+  }
+ }
+}
