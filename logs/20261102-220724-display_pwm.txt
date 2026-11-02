@@ -1,0 +1,167 @@
+== display_pwm  @ 20261102-220724
+22:07:32 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:07:37 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+22:07:45 connected: 00:E0:12:34:56:78 firmware v13
+22:07:45 === Panel goes white (no light expected yet), then P2_5 is fed in rising doses. WATCH THE SCREEN.
+22:07:45    SPIC2 setup
+22:07:46    screen power P0_1
+22:07:46    reset P2_0 high
+22:07:47    reset P2_0 low
+22:07:47    reset P2_0 high
+22:07:47    init reg FF00
+22:07:48    init reg FF80
+22:07:48    init reg C083
+22:07:48    init reg C089
+22:07:48    init reg C093
+22:07:48    init reg C099
+22:07:49    init reg B283
+22:07:49    init reg 3A00
+22:07:49    init reg 5100
+22:07:49    init reg 3500
+22:07:50    init reg C0C4
+22:07:50    init reg C380
+22:07:50    init reg C390
+22:07:51    init reg C3A0
+22:07:51    init reg C5DF
+22:07:51    init reg 1100
+22:07:51    init reg 2900
+22:07:52    init reg FF00
+22:07:52    init reg C5E2
+22:07:52    init reg C5E5
+22:07:52    init reg C482
+22:07:52    init reg C489
+22:07:53    display on
+22:07:53    brightness 25%
+22:07:53    all pixels on (white)
+22:07:55    P2_5 on 1 us of every 250 us (0%)
+22:07:55      display off
+22:07:55      display on
+22:07:59    P2_5 on 2 us of every 250 us (1%)
+22:07:59      display off
+22:07:59      display on
+22:08:03    P2_5 on 5 us of every 250 us (2%)
+22:08:03      display off
+22:08:03      display on
+22:08:07    P2_5 on 10 us of every 250 us (4%)
+22:08:07      display off
+22:08:07      display on
+22:08:10    P2_5 on 15 us of every 250 us (6%)
+22:08:10      display off
+22:08:11      display on
+22:08:14    P2_5 on 20 us of every 250 us (8%)
+22:08:14      display off
+22:08:14      display on
+22:08:17    P2_5 on 25 us of every 250 us (10%)
+22:08:18      display off
+22:08:18      display on
+22:08:21    P2_5 on 30 us of every 250 us (12%)
+22:08:21      display off
+22:08:22      display on
+22:08:25    P2_5 on 40 us of every 250 us (16%)
+22:08:25      display off
+22:08:26      display on
+22:08:29    P2_5 on 50 us of every 250 us (20%)
+22:08:29      display off
+22:08:29      display on
+22:08:32    P2_5 on 60 us of every 250 us (24%)
+22:08:33      display off
+22:08:33      display on
+22:08:36    P2_5 on 75 us of every 250 us (30%)
+22:08:36      display off
+22:08:36      display on
+22:08:40    P2_5 on 100 us of every 250 us (40%)
+22:08:40      display off
+22:08:40      display on
+22:08:44    P2_5 on 125 us of every 250 us (50%)
+22:08:44      display off
+22:08:44      display on
+22:08:47    P2_5 on 150 us of every 250 us (60%)
+22:08:47      display off
+22:08:48      display on
+22:08:51    P2_5 on 200 us of every 250 us (80%)
+22:08:51      display off
+22:08:51      display on
+22:08:54    P2_5 on 240 us of every 250 us (96%)
+22:08:55      display off
+22:08:55      display on
+22:08:59    P2_5 held fully ON
+22:08:59      display off
+22:08:59      display on
+22:09:03 *** 250us#1: SURVIVED every step including fully on
+22:09:03    P2_5 off
+22:09:03 250us#1: last P2_5 step that survived = 250 us
+22:09:03    SPIC2 setup
+22:09:03    screen power P0_1
+22:09:04    reset P2_0 high
+22:09:04    reset P2_0 low
+22:09:04    reset P2_0 high
+22:09:05    init reg FF00
+22:09:05    init reg FF80
+22:09:05    init reg C083
+22:09:05    init reg C089
+22:09:06    init reg C093
+22:09:06    init reg C099
+22:09:06    init reg B283
+22:09:06    init reg 3A00
+22:09:06    init reg 5100
+22:09:07    init reg 3500
+22:09:07    init reg C0C4
+22:09:07    init reg C380
+22:09:08    init reg C390
+22:09:08    init reg C3A0
+22:09:08    init reg C5DF
+22:09:08    init reg 1100
+22:09:09    init reg 2900
+22:09:09    init reg FF00
+22:09:09    init reg C5E2
+22:09:09    init reg C5E5
+22:09:10    init reg C482
+22:09:10    init reg C489
+22:09:10    display on
+22:09:10    brightness 25%
+22:09:10    all pixels on (white)
+22:09:12    P2_5 on 0.5 us of every 25 us (2%)
+22:09:12      display off
+22:09:12      display on
+22:09:16    P2_5 on 1 us of every 25 us (4%)
+22:09:16      display off
+22:09:16      display on
+22:09:19    P2_5 on 2 us of every 25 us (8%)
+22:09:20      display off
+22:09:20      display on
+22:09:24    P2_5 on 3 us of every 25 us (12%)
+22:09:24      display off
+22:09:24      display on
+22:09:27    P2_5 on 4 us of every 25 us (16%)
+22:09:28      display off
+22:09:28      display on
+22:09:31    P2_5 on 5 us of every 25 us (20%)
+22:09:31      display off
+22:09:32      display on
+22:09:35    P2_5 on 7.5 us of every 25 us (30%)
+22:09:35      display off
+22:09:35      display on
+22:09:39    P2_5 on 10 us of every 25 us (40%)
+22:09:39      display off
+22:09:39      display on
+22:09:42    P2_5 on 12.5 us of every 25 us (50%)
+22:09:42      display off
+22:09:43      display on
+22:09:46    P2_5 on 15 us of every 25 us (60%)
+22:09:46      display off
+22:09:46      display on
+22:09:50    P2_5 on 20 us of every 25 us (80%)
+22:09:50      display off
+22:09:50      display on
+22:09:53    P2_5 on 24 us of every 25 us (96%)
+22:09:54      display off
+22:09:54      display on
+22:09:57    P2_5 held fully ON
+22:09:57      display off
+22:09:57      display on
+22:10:01 *** 25us#1: SURVIVED every step including fully on
+22:10:01    P2_5 off
+22:10:01 25us#1: last P2_5 step that survived = 25 us
+22:10:01 >>> Did you see ANY light on the screen, even very faint? (yes / no): 22:10:18 saved to logs/hw.json: {'display_pwm': {'results': {'250us#1': {'ok_up_to': 250}, '25us#1': {'ok_up_to': 25}}, 'seen': 'yes'}}
+22:10:18 RESULT: {'250us#1': {'ok_up_to': 250}, '25us#1': {'ok_up_to': 25}} | you saw: yes
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-220724-display_pwm.txt
