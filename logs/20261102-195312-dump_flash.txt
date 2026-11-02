@@ -1,0 +1,6 @@
+== dump_flash  @ 20261102-195312
+19:53:19 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:53:24 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:53:33 connected: 00:E0:12:34:56:78 firmware v8
+flash v9 first: bash run.sh ota_flash --go firmware/v9/app_MP.bin
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-195312-dump_flash.txt

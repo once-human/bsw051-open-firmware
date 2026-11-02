@@ -1,0 +1,19 @@
+== ota_flash --go firmware/v9/app_MP.bin @ 20261102-195312
+Traceback (most recent call last):
+  File "/home/onkar/Projects/dafit-watch/ota_flash.py", line 164, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/onkar/Projects/dafit-watch/ota_flash.py", line 152, in main
+    args = sys.argv[1:]
+           ^^^
+NameError: name 'sys' is not defined. Did you forget to import 'sys'?
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-195312-ota_flash.txt
