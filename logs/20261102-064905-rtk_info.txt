@@ -1,0 +1,14 @@
+== rtk_info  @ 20261102-064905
+battery %: 11
+skip  ffd1 (write-without-response)  -- not read, never touched
+READ  ffd2 handle=17 len=6 hex=d7b18b17ba3e
+READ  ffd3 handle=19 len=4 hex=00f00e58
+READ  ffd4 handle=21 len=4 hex=01000090
+READ  ffd5 handle=23 len=0 hex=
+skip  ffd8 (write-without-response)  -- not read, never touched
+READ  fff1 handle=27 len=12 hex=0901000700080000f00f0000
+skip  fff2 (write)  -- not read, never touched
+READ  ffe0 handle=31 len=16 hex=010000000020000800f00e5801000090
+READ  fff3 handle=33 len=2 hex=1200
+DONE
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-064905-rtk_info.txt
