@@ -1,0 +1,32 @@
+== ota_flash --go firmware/v11/app_MP.bin @ 20261102-211906
+21:19:06 === App from app_MP.bin (51320 bytes)
+21:19:41 connect failed: Device with address 00:E0:12:34:56:78 was not found.
+21:19:41 watch NOT visible - unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:20:15 connect failed: Device with address 00:E0:12:34:56:78 was not found.
+21:20:15 watch NOT visible - unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:20:48 connect failed: Device with address 00:E0:12:34:56:78 was not found.
+21:20:48 watch NOT visible - unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:21:22 connect failed: Device with address 00:E0:12:34:56:78 was not found.
+21:21:22 watch NOT visible - unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:21:56 connect failed: Device with address 00:E0:12:34:56:78 was not found.
+21:21:56 watch NOT visible - unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:22:29 connect failed: Device with address 00:E0:12:34:56:78 was not found.
+21:22:29 watch NOT visible - unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:23:03 connect failed: Device with address 00:E0:12:34:56:78 was not found.
+21:23:03 watch NOT visible - unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:23:37 connect failed: Device with address 00:E0:12:34:56:78 was not found.
+21:23:37 watch NOT visible - unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:23:51   battery raw=0 (0%)
+21:23:51   buffer=2048 mtu=247 packet=240 packets/buffer=8
+21:23:52   target info: 100601810000e000000000
+21:23:55   App: 19212/51320 bytes (37%) 3s
+21:23:58   App: 38412/51320 bytes (74%) 6s
+21:24:00   App: 51320/51320 bytes (100%) 8s
+21:24:00   VALIDATE: 100301
+21:24:00   ACTIVATE + RESET (0x04) - watch reboots now. KEEP IT ON THE CHARGER.
+21:24:00   (disconnect during activate is normal: (<BleakGATTProtocolErrorCode.UNLIKELY_ERROR: 14>, 'GATT Protocol Error: Unlikely Error') )
+21:24:00 waiting for the watch to come back...
+21:24:25   found 00:E0:12:34:56:78 name='ONKAR-LIFE'
+21:24:28   ALIVE. versions now: ['1.0.0.0', '0.0.2.1', '0.0.440.4', '1.8.0.28', '0.0.0.0']
+21:24:30 ALL DONE
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-211906-ota_flash.txt

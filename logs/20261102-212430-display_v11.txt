@@ -1,0 +1,25 @@
+== display_v11  @ 20261102-212430
+21:24:39 connected: 00:E0:12:34:56:78 firmware v11
+21:24:40 start: uptime 36 s, last reset: 0xd
+21:24:40 === stock: WATCH THE SCREEN. Starting in 3 s.
+21:24:43    stock power-up: rail P2_5, SPIC2 (with P0_6/P0_7), screen power P0_1, reset P2_0
+21:24:44 !!! DROPPED AT: stock power-up: rail P2_5, SPIC2 (with P0_6/P0_7), screen power P0_1, reset P2_0 (0.6 s in)
+21:24:44 hands off - waiting up to 40 s for the watch to return by itself
+21:25:14 watch seen but connect failed (TimeoutError) - retry 1
+21:25:23 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:25:28 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:25:33 watch NOT visible for 11 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:25:39 watch NOT visible for 16 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:25:44 watch NOT visible for 22 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:25:49 watch NOT visible for 27 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:25:57 connected: 00:E0:12:34:56:78 firmware v11
+21:25:57 came back by itself: True | uptime 10 s, last reset: power-on / hardware reset
+21:25:57 === no_d23: WATCH THE SCREEN. Starting in 3 s.
+21:26:01    stock power-up: rail P2_5, SPIC2 (without P0_6/P0_7), screen power P0_1, reset P2_0
+21:26:01 !!! DROPPED AT: stock power-up: rail P2_5, SPIC2 (without P0_6/P0_7), screen power P0_1, reset P2_0 (0.5 s in)
+21:26:01 hands off - waiting up to 40 s for the watch to return by itself
+21:26:15 connected: 00:E0:12:34:56:78 firmware v11
+21:26:15 came back by itself: True | uptime 14 s, last reset: WATCHDOG fired (it froze and rebooted itself)
+21:26:16 >>> What showed on the SCREEN? (white square / red / green square / flicker / nothing): 21:26:34 >>> What showed on the SCREEN? (white square / red / green square / flicker / nothing): 21:26:36 >>> What showed on the SCREEN? (white square / red / green square / flicker / nothing): 21:26:37 >>> Did the MOTOR buzz during the test? (yes / no): 21:26:46 saved to logs/hw.json: display_v11 (full detail in the file)
+21:26:46 RESULT saw: (no answer) | motor: no
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-212430-display_v11.txt
