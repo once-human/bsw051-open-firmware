@@ -1,0 +1,75 @@
+== display_p25  @ 20261102-213301
+21:33:14 connected: 00:E0:12:34:56:78 firmware v11
+21:33:14 === WATCH THE SCREEN from now on. Any flash counts.
+21:33:14    SPIC2 setup
+21:33:14    screen power P0_1
+21:33:15    reset P2_0 high
+21:33:16    reset P2_0 low
+21:33:16    reset P2_0 high
+21:33:16    init reg FF00
+21:33:16    init reg FF80
+21:33:17    init reg C083
+21:33:17    init reg C089
+21:33:17    init reg C093
+21:33:17    init reg C099
+21:33:17    init reg B283
+21:33:18    init reg 3A00
+21:33:18    init reg 5100
+21:33:18    init reg 3500
+21:33:18    init reg C0C4
+21:33:19    init reg C380
+21:33:19    init reg C390
+21:33:19    init reg C3A0
+21:33:19    init reg C5DF
+21:33:20    init reg 1100
+21:33:20    init reg 2900
+21:33:20    init reg FF00
+21:33:20    init reg C5E2
+21:33:21    init reg C5E5
+21:33:21    init reg C482
+21:33:21    init reg C489
+21:33:21    display on
+21:33:22    brightness 38%
+21:33:22    all pixels on
+21:33:22 >>> P2_5 pulse 1 ms
+21:33:23 !!! DROPPED AT: 
+21:33:36 connected: 00:E0:12:34:56:78 firmware v11
+21:33:36 came back by itself: True | uptime 13 s, last reset: power-on / hardware reset
+21:33:36 longest pulse that survived: 0 ms
+21:33:36 === gentle charge: 60 pulses of 1 ms, then hold P2_5 on. WATCH THE SCREEN.
+21:33:37    SPIC2 setup
+21:33:37    screen power P0_1
+21:33:38    reset P2_0 high
+21:33:38    reset P2_0 low
+21:33:39    reset P2_0 high
+21:33:39    init reg FF00
+21:33:39    init reg FF80
+21:33:39    init reg C083
+21:33:40    init reg C089
+21:33:40    init reg C093
+21:33:40    init reg C099
+21:33:40    init reg B283
+21:33:40    init reg 3A00
+21:33:41    init reg 5100
+21:33:41    init reg 3500
+21:33:41    init reg C0C4
+21:33:42    init reg C380
+21:33:42    init reg C390
+21:33:42    init reg C3A0
+21:33:42    init reg C5DF
+21:33:42    init reg 1100
+21:33:43    init reg 2900
+21:33:43    init reg FF00
+21:33:43    init reg C5E2
+21:33:43    init reg C5E5
+21:33:44    init reg C482
+21:33:44    init reg C489
+21:33:44    display on
+21:33:44    brightness 38%
+21:33:44    all pixels on
+21:33:45 !!! DROPPED AT: 
+21:34:02 connected: 00:E0:12:34:56:78 firmware v11
+21:34:02 came back by itself: True | uptime 17 s, last reset: power-on / hardware reset
+21:34:03 >>> Did you see ANY flash or light at any point? (flash / glow / nothing): 21:34:07 >>> Did you see ANY flash or light at any point? (flash / glow / nothing): 21:34:08 >>> Did you see ANY flash or light at any point? (flash / glow / nothing): 21:34:10 saved to logs/hw.json: {'display_p25': {'results': {'died_at': '', 'uptime': 13, 'longest_ok_ms': 0, 'held': False, 'charge_died_at': '', 'charge_uptime': 17}, 'seen': 'no'}}
+21:34:10 RESULT: {'died_at': '', 'uptime': 13, 'longest_ok_ms': 0, 'held': False, 'charge_died_at': '', 'charge_uptime': 17} | you saw: no
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-213301-display_p25.txt
