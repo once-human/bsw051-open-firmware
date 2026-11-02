@@ -1,0 +1,120 @@
+== os_rescue  @ 20261102-224800
+22:48:05 watch not advertising -> UNPLUG the charger, wait 3 s, plug it back in (I'm listening)
+22:48:12 watch seen, connecting now
+22:48:15 autostart OFF: ok
+22:48:15 drawing mode 1: ok
+22:48:16 firmware v14  uptime 0m04s  last reset: power-on / hardware reset (best guess, chip says it may be unreliable)
+22:48:16 watchdog: ARMED (8 s)  | heartbeats 4
+22:48:16 pins being driven: none
+22:48:16 state: off | screen: clock | brightness 144 | boot failures 2 | start at boot off | drawing mode 1 | frames 0
+22:48:16 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:16 pins (level/changes): P2_2 0/0  P2_4 0/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:16 === starting the screen while connected (takes ~25 s to light). WATCH IT: glitchy or clean?
+22:48:17 state: powering up | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 1
+22:48:17 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:17 pins (level/changes): P2_2 0/0  P2_4 0/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:22 state: powering up | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 1
+22:48:22 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:22 pins (level/changes): P2_2 0/0  P2_4 0/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:28 state: powering up | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 1
+22:48:28 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:28 pins (level/changes): P2_2 0/0  P2_4 0/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:33 state: powering up | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 1
+22:48:33 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:33 pins (level/changes): P2_2 0/0  P2_4 0/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:35 state: RUNNING | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 3
+22:48:35 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:35 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:37 state: RUNNING | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 4
+22:48:37 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:37 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:38 state: RUNNING | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 5
+22:48:38 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:38 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:39 state: RUNNING | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 6
+22:48:39 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:39 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:40 state: RUNNING | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 7
+22:48:40 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:40 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:41 state: RUNNING | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 8
+22:48:41 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:41 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:42 state: RUNNING | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 9
+22:48:42 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:42 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:43 state: RUNNING | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 11
+22:48:43 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:43 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:44 state: RUNNING | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 12
+22:48:44 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:44 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:45 state: RUNNING | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 13
+22:48:45 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:45 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:46 state: RUNNING | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 14
+22:48:46 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:46 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:48 state: RUNNING | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 15
+22:48:48 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:48 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:49 state: RUNNING | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 16
+22:48:49 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:49 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:50 state: RUNNING | screen: clock | brightness 144 | boot failures 1 | start at boot off | drawing mode 1 | frames 17
+22:48:50 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:50 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:51 state: RUNNING | screen: clock | brightness 144 | boot failures 0 | start at boot off | drawing mode 1 | frames 18
+22:48:51 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:51 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:52 state: RUNNING | screen: clock | brightness 144 | boot failures 0 | start at boot off | drawing mode 1 | frames 19
+22:48:52 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:52 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/0 | crown 0 | button auto presses 0
+22:48:53 state: RUNNING | screen: eyes | brightness 144 | boot failures 0 | start at boot off | drawing mode 1 | frames 23
+22:48:53 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:53 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/2 | crown 0 | button auto presses 1
+22:48:54 state: RUNNING | screen: eyes | brightness 144 | boot failures 0 | start at boot off | drawing mode 1 | frames 23
+22:48:54 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:54 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/2 | crown 0 | button auto presses 1
+22:48:55 state: RUNNING | screen: paint | brightness 144 | boot failures 0 | start at boot off | drawing mode 1 | frames 24
+22:48:55 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:55 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/4 | crown 0 | button auto presses 2
+22:48:56 state: RUNNING | screen: paint | brightness 144 | boot failures 0 | start at boot off | drawing mode 1 | frames 24
+22:48:56 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:56 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/4 | crown 0 | button auto presses 2
+22:48:57 state: RUNNING | screen: paint | brightness 144 | boot failures 0 | start at boot off | drawing mode 1 | frames 24
+22:48:57 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:57 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/4 | crown 0 | button auto presses 2
+22:48:59 state: RUNNING | screen: paint | brightness 144 | boot failures 0 | start at boot off | drawing mode 1 | frames 24
+22:48:59 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:48:59 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/4 | crown 0 | button auto presses 2
+22:49:00 state: RUNNING | screen: paint | brightness 144 | boot failures 0 | start at boot off | drawing mode 1 | frames 24
+22:49:00 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:49:00 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 0/5 | crown 0 | button auto presses 2
+22:49:01 state: RUNNING | screen: info | brightness 144 | boot failures 0 | start at boot off | drawing mode 1 | frames 26
+22:49:01 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:49:01 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/6 | crown 0 | button auto presses 3
+22:49:02 state: RUNNING | screen: info | brightness 144 | boot failures 0 | start at boot off | drawing mode 1 | frames 28
+22:49:02 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:49:02 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/6 | crown 0 | button auto presses 3
+22:49:03 state: RUNNING | screen: info | brightness 144 | boot failures 0 | start at boot off | drawing mode 1 | frames 29
+22:49:03 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:49:03 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/6 | crown 0 | button auto presses 3
+22:49:04 state: RUNNING | screen: info | brightness 144 | boot failures 0 | start at boot off | drawing mode 1 | frames 31
+22:49:04 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:49:04 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/6 | crown 0 | button auto presses 3
+22:49:05 state: RUNNING | screen: info | brightness 144 | boot failures 0 | start at boot off | drawing mode 1 | frames 32
+22:49:05 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:49:05 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/6 | crown 0 | button auto presses 3
+22:49:06 state: RUNNING | screen: info | brightness 144 | boot failures 0 | start at boot off | drawing mode 1 | frames 35
+22:49:06 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:49:06 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/6 | crown 0 | button auto presses 3
+22:49:06 connection survived the running screen: True
+22:49:06 === disconnecting; is the watch visible while the screen runs? (20 s)
+22:49:11 watch seen, connecting now
+22:49:13 advertising with screen running: YES
+22:49:13 state: RUNNING | screen: info | brightness 144 | boot failures 0 | start at boot off | drawing mode 1 | frames 44
+22:49:13 touch: not found | reads 0 | gestures 0 | last x,y 0,0 | raw 00 00 00 00 00 00 00 00
+22:49:13 pins (level/changes): P2_2 0/0  P2_4 1/0  P3_1 1/6 | crown 0 | button auto presses 3
+22:49:13 screen stopped. autostart stays OFF until: bash run.sh os_ctl set autostart 1
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-224800-os_rescue.txt
