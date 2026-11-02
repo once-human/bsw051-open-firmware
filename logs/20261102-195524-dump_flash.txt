@@ -1,0 +1,74 @@
+== dump_flash  @ 20261102-195524
+19:55:33 connected: 00:E0:12:34:56:78 firmware v9
+19:55:34 watch memory: 1024 KB. Copying from 0x00800000 (already have 0 KB)
+   55 / 1024 KB  (2.1 KB/s, ~8 min left)   19:56:23 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+19:56:30 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:56:38 connected: 00:E0:12:34:56:78 firmware v9
+   110 / 1024 KB  (1.6 KB/s, ~9 min left)      165 / 1024 KB  (1.8 KB/s, ~8 min left)      221 / 1024 KB  (1.8 KB/s, ~7 min left)   19:57:40 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+19:57:47 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:57:55 connected: 00:E0:12:34:56:78 firmware v9
+   276 / 1024 KB  (1.7 KB/s, ~7 min left)      331 / 1024 KB  (1.8 KB/s, ~7 min left)   19:58:55 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+19:59:02 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:59:10 connected: 00:E0:12:34:56:78 firmware v9
+   387 / 1024 KB  (1.7 KB/s, ~6 min left)      442 / 1024 KB  (1.7 KB/s, ~6 min left)   20:00:08 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+20:00:15 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+20:00:23 connected: 00:E0:12:34:56:78 firmware v9
+   497 / 1024 KB  (1.7 KB/s, ~5 min left)      553 / 1024 KB  (1.7 KB/s, ~5 min left)   20:01:22 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+20:01:31 connected: 00:E0:12:34:56:78 firmware v9
+   608 / 1024 KB  (1.7 KB/s, ~4 min left)      663 / 1024 KB  (1.7 KB/s, ~4 min left)      719 / 1024 KB  (1.7 KB/s, ~3 min left)   20:02:33 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+20:02:40 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+20:02:48 connected: 00:E0:12:34:56:78 firmware v9
+   774 / 1024 KB  (1.7 KB/s, ~2 min left)   20:03:29 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+20:03:38 connected: 00:E0:12:34:56:78 firmware v9
+   829 / 1024 KB  (1.7 KB/s, ~2 min left)   20:03:48 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+20:03:59 connected: 00:E0:12:34:56:78 firmware v9
+   885 / 1024 KB  (1.6 KB/s, ~1 min left)   20:05:02 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+20:05:09 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+20:05:16 connected: 00:E0:12:34:56:78 firmware v9
+   940 / 1024 KB  (1.6 KB/s, ~1 min left)      995 / 1024 KB  (1.6 KB/s, ~0 min left)   
+20:06:12 DONE: logs/flash_dump.bin (1024 KB)
+20:06:12 interesting text found in memory (43):
+     ABSCHALTEN Vibrations- / QUICKVIEW UND TURN dass die Helligkeit
+     APAGUE LA VIBRACI
+     Always On Display
+     Automobilismo
+     Auxiliar de idiomas
+     Barco a motor
+     Biliardo
+     Corse automobilistiche
+     DESLIGUE A VIBRA
+     DISATTI VAVIBRAZIONE /VISUALIZZAZIONE RAPIDA DISATTIVA LA LUMINOSIT
+     DISPLAY
+     Display
+     Enciende, apaga la vibraci
+     Flessibilit
+     Flexibilidad
+     Flexibilidade
+     Flexibilit
+     Flexibility
+     Habilite el recordatorio de per
+     MOY-OKJ5-2.0.3
+     Motor Test
+     Motorbootfahren
+     Sailing
+     TEINDRE LES VIBRATIONS/APER
+     Turn off Vibration and Turn Down Brightness
+     Turn off vibration and turn down brightness
+     Turn off vibration, quickview, and turn down the brightness
+     VIBRACI
+     VIBRATION
+     VIBRATION & CLOCHE
+     VIBRATION&GLOCKE
+     VIBRAZIONE
+     VIBRAZIONE E CAMPANA
+     Vibration
+     Vibration&Bell
+     Vibrazione e bassa luminosit
+     com.viber
+     lancha motora
+     lcd_on_off_change_timer
+     le_bond_get_display_key
+     le_bond_passkey_display_confirm
+     teindre les vibrations, faible luminosit
+     tp tp_esd_timer
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-195524-dump_flash.txt
