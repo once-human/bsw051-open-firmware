@@ -1,0 +1,38 @@
+== ota_dryrun2  @ 20261102-071622
+
+## App     SDK 1.8.0.28 (newer than watch 1.0.0.18)
+  -> write 0d9327810000e0
+    <- notify 100dff
+   RESULT: REJECT (status 255)
+
+## App     same as watch 1.0.0.18
+  -> write 0d932701000090
+    <- notify 100dff
+   RESULT: REJECT (status 255)
+
+## App     OLDER 1.0.0.1  (is downgrade blocked?)
+  -> write 0d932701000008
+    <- notify 100dff
+   RESULT: REJECT (status 255)
+
+## Patch   SDK 0.0.440.4 (newer than watch 0.0.239.11)
+  -> write 0d922700801b20
+    <- notify 100dff
+   RESULT: REJECT (status 255)
+
+## Patch   OLDER 0.0.110.13 (downgrade?)
+  -> write 0d922700e00668
+    <- notify 100dff
+   RESULT: REJECT (status 255)
+
+## UpperStack SDK 1.1.5.0 (does watch know this id?)
+  -> write 0d9a2711500000
+    <- notify 100dff
+   RESULT: REJECT (status 255)
+
+## SecureBoot SDK 0.0.2.2
+  -> write 0d912700200010
+    <- notify 100dff
+   RESULT: REJECT (status 255)
+DONE
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-071622-ota_dryrun2.txt
