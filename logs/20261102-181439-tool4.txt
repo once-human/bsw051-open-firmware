@@ -1,0 +1,96 @@
+== tool4 auto @ 20261102-181439
+18:14:49 connected: 00:E0:12:34:56:78 firmware v4
+18:14:49 firmware v4  uptime 0m35s  last reset: 0xd (best guess, chip says it may be unreliable)
+18:14:49 watchdog: ARMED (8 s)  | heartbeats 35
+18:14:49 pins being driven: none
+18:14:49 PIN STATE AT BOOT (read-only, nothing touched):
+18:14:49   P0_0  peripheral in    pull=down func=0x5a raw=0c 03 5a
+18:14:49   P0_1  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P0_2  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P0_3  peripheral in    pull=none func=0x1b raw=00 23 1b
+18:14:49   P0_4  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P0_5  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P0_6  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P0_7  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P1_0  peripheral in    pull=up   func=0x39 raw=04 03 39
+18:14:49   P1_1  peripheral in    pull=up   func=0x38 raw=04 03 38
+18:14:49   P1_2  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P1_3  peripheral in    pull=up   func=0x00 raw=04 03 00
+18:14:49   P1_4  peripheral in    pull=up   func=0x00 raw=04 03 00
+18:14:49   P1_5  software   in    pull=up   func=0x00 raw=04 01 00
+18:14:49   P1_6  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P1_7  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P2_0  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P2_1  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P2_2  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P2_3  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P2_4  peripheral in    pull=up   func=0x5a raw=04 03 5a
+18:14:49   P2_5  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P2_6  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P2_7  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P3_0  software   in    pull=up   func=0x01 raw=04 01 01
+18:14:49   P3_1  peripheral in    pull=up   func=0x02 raw=04 03 02
+18:14:49   P3_2  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P3_3  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P3_4  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P3_5  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P3_6  software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   P4_0  peripheral in    pull=down func=0x2e raw=0c 03 2e
+18:14:49   P4_1  peripheral in    pull=down func=0x2f raw=0c 03 2f
+18:14:49   P4_2  peripheral in    pull=down func=0x30 raw=0c 03 30
+18:14:49   P4_3  peripheral in    pull=up   func=0x2d raw=04 03 2d
+18:14:49   H_0   software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   H_1   software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49   H_2   software   in    pull=down func=0x00 raw=0c 01 00
+18:14:49 Now letting each pin float for 1.5 s, one at a time, to find any pin the watch needs to stay on (35 pins).
+18:14:50   P0_0 ok
+18:14:52   P0_1 ok
+18:14:54   P0_2 ok
+18:14:56   P0_3 ok
+18:14:57   P0_4 ok
+18:14:59   P0_5 ok
+18:15:01   P0_6 ok
+18:15:02   P0_7 ok
+18:15:04   P1_0 ok
+18:15:06   P1_1 ok
+18:15:08   P1_2 ok
+18:15:11 !!! P1_3 IS CRITICAL - floating it killed the watch. It goes on the never-touch list.
+18:15:11 saved to logs/hw.json: {'danger': [11]}
+18:15:11 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+18:15:20 connected: 00:E0:12:34:56:78 firmware v4
+18:15:22 !!! P1_4 IS CRITICAL - floating it killed the watch. It goes on the never-touch list.
+18:15:22 saved to logs/hw.json: {'danger': [11, 12]}
+18:15:22 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+18:15:28 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+18:15:36 connected: 00:E0:12:34:56:78 firmware v4
+18:15:38   P1_5 ok
+18:15:39   P1_6 ok
+18:15:41   P1_7 ok
+18:15:43   P2_0 ok
+18:15:44   P2_1 ok
+18:15:46   P2_2 ok
+18:15:48   P2_3 ok
+18:15:50   P2_4 ok
+18:15:51   P2_5 ok
+18:15:53   P2_6 ok
+18:15:55   P2_7 ok
+18:15:56   P3_0 ok
+18:15:58   P3_1 ok
+18:16:00   P3_2 ok
+18:16:02   P3_3 ok
+18:16:03   P3_4 ok
+18:16:05   P3_5 ok
+18:16:07   P3_6 ok
+18:16:08   P4_0 ok
+18:16:10   P4_1 ok
+18:16:12   P4_2 ok
+18:16:13   P4_3 ok
+18:16:13 safe to use: 33 pins | never touch: ['P1_3', 'P1_4']
+18:16:14 saved to logs/hw.json: pads (full detail in the file)
+18:16:14 skipping ['P1_3', 'P1_4']
+18:16:14 released 0 pins
+18:16:14 pass 1/2: 30 pins, every CS/CLK/DATA combination (can take up to a minute)...
+18:16:21 (write ack slow: BleakGATTProtocolError - still waiting for the answer)
+18:17:44 hunt: no reply None
+18:17:44 WATCH DISCONNECTED (lost power?). Results so far are in logs/hw.json. Re-plug the charger and run the same command again.
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-181439-tool4.txt
