@@ -1,0 +1,36 @@
+== display_rail  @ 20261102-215212
+21:52:19 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:52:24 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:52:29 watch NOT visible for 11 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:52:35 watch NOT visible for 16 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:52:40 watch NOT visible for 22 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:52:45 watch NOT visible for 27 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:52:51 watch NOT visible for 32 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:52:56 watch NOT visible for 38 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:53:01 watch NOT visible for 43 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:53:07 watch NOT visible for 48 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:53:12 watch NOT visible for 54 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:53:17 watch NOT visible for 59 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:53:23 watch NOT visible for 64 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:53:28 watch NOT visible for 70 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:53:33 watch NOT visible for 75 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:53:39 watch NOT visible for 80 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:53:44 watch NOT visible for 86 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:53:49 watch NOT visible for 91 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:53:55 watch NOT visible for 96 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:54:00 watch NOT visible for 102 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:54:05 watch NOT visible for 107 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:54:11 watch NOT visible for 112 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:54:16 watch NOT visible for 117 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:54:21 watch NOT visible for 122 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:54:27 watch NOT visible for 127 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:54:32 watch NOT visible for 133 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:54:41 connected: 00:E0:12:34:56:78 firmware v12
+21:54:41 === Stock rail cycle. Watch the screen.
+21:54:44    exact stock rail cycle (P2_5 on)
+21:54:45 !!! DROPPED AT: exact stock rail cycle (P2_5 on)
+21:54:59 connected: 00:E0:12:34:56:78 firmware v12
+21:54:59 came back by itself: True | uptime 13 s, last reset: WATCHDOG fired (it froze and rebooted itself)
+21:54:59 >>> Did you see ANY light on the screen? (yes / no): 21:54:59 >>> Did you see ANY light on the screen? (yes / no): 21:54:59 >>> Did you see ANY light on the screen? (yes / no): 21:54:59 saved to logs/hw.json: {'display_rail': {'results': {'rail_survived': False, 'base': {'died_at': 'exact stock rail cycle (P2_5 on)', 'by_itself': True, 'uptime': 13}}, 'seen': ''}}
+21:54:59 RESULT: {'rail_survived': False, 'base': {'died_at': 'exact stock rail cycle (P2_5 on)', 'by_itself': True, 'uptime': 13}} | you saw: (no answer)
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-215212-display_rail.txt
