@@ -1,0 +1,10 @@
+== display_rail  @ 20261102-213756
+21:38:05 connected: 00:E0:12:34:56:78 firmware v12
+21:38:06 === Stock rail cycle. Watch the screen.
+21:38:09    exact stock rail cycle (P2_5 on)
+21:38:10 !!! DROPPED AT: exact stock rail cycle (P2_5 on)
+21:38:23 connected: 00:E0:12:34:56:78 firmware v12
+21:38:23 came back by itself: True | uptime 13 s, last reset: WATCHDOG fired (it froze and rebooted itself)
+21:38:24 >>> Did you see ANY light on the screen? (yes / no): 21:41:15 saved to logs/hw.json: {'display_rail': {'results': {'rail_survived': False, 'base': {'died_at': 'exact stock rail cycle (P2_5 on)', 'by_itself': True, 'uptime': 13}}, 'seen': 'no'}}
+21:41:15 RESULT: {'rail_survived': False, 'base': {'died_at': 'exact stock rail cycle (P2_5 on)', 'by_itself': True, 'uptime': 13}} | you saw: no
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-213756-display_rail.txt
