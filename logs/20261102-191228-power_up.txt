@@ -1,0 +1,14 @@
+== power_up  @ 20261102-191228
+19:12:37 connected: 00:E0:12:34:56:78 firmware v8
+19:12:40 pulled-up pins BEFORE switching anything on: none
+19:12:40   switching P2_3 on (0.5 s ramp)...
+19:12:43   P2_3 on: nothing new powered up -> switching it back off
+19:12:43   switching P2_5 on (0.5 s ramp)...
+19:12:43 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+19:12:51 connect attempt 1 failed (BleakError) - retrying
+19:13:14 connect attempt 2 failed (TimeoutError) - retrying
+19:13:17 connect attempt 3 failed (BleakError) - retrying
+19:13:20 connect attempt 4 failed (BleakError) - retrying
+19:13:23 connect attempt 5 failed (BleakError) - retrying
+could not connect 5 times - run: bluetoothctl power off; bluetoothctl power on   then try again
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-191228-power_up.txt

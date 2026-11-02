@@ -1,0 +1,26 @@
+== power_up  @ 20261102-192205
+19:22:12 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:22:17 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:22:22 watch NOT visible for 11 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:22:30 connected: 00:E0:12:34:56:78 firmware v8
+19:22:32 pulled-up pins BEFORE switching anything on: none
+19:22:32   switching P2_3 on (0.5 s ramp)...
+19:22:36   P2_3 on: nothing new powered up -> switching it back off
+19:22:36   switching P2_5 on (0.5 s ramp)...
+19:22:36 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+19:22:45 connected: 00:E0:12:34:56:78 firmware v8
+19:22:45   P2_5 still dropped the watch with a 0.5 s ramp
+19:22:45   switching P2_5 on (2.5 s ramp)...
+19:22:46 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+19:22:57 connected: 00:E0:12:34:56:78 firmware v8
+19:22:57   P2_5 still dropped the watch with a 2.5 s ramp
+19:22:57   switching P1_5 on (0.5 s ramp)...
+19:23:01   P1_5 on: nothing new powered up -> switching it back off
+19:23:02   switching P0_0 on (0.5 s ramp)...
+19:23:06 RAIL UP: with P0_0 on, these pins now have pull-ups: ['P1_5']
+19:23:06 saved to logs/hw.json: {'power_pins': [0], 'rail_pullups': [13]}
+19:23:07 bus CS=P4_3 CLK=P4_0 DATA=P4_2: no answer
+19:23:08 bus CS=P4_3 CLK=P4_0 DATA=P4_1: no answer
+19:23:10 bus CS=P4_0 CLK=P4_3 DATA=P4_2: no answer
+19:23:10 Rail is up but the screen still didn't answer - send this log (I2C chips may now be visible: run is_screen_connected)
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-192205-power_up.txt

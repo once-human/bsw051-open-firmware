@@ -1,0 +1,12 @@
+== power_up  @ 20261102-192803
+19:28:10 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:28:15 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:28:20 watch NOT visible for 11 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:28:28 connected: 00:E0:12:34:56:78 firmware v8
+19:28:30 pulled-up pins BEFORE switching anything on: none
+19:28:30   switching P2_3 on (0.5 s ramp)...
+19:28:34   P2_3 on: nothing new powered up -> switching it back off
+19:28:34   switching P2_5 on (0.5 s ramp)...
+19:28:37 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+19:28:44 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-192803-power_up.txt

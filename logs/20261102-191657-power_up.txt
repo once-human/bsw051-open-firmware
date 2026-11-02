@@ -1,0 +1,29 @@
+== power_up  @ 20261102-191657
+19:17:07 connected: 00:E0:12:34:56:78 firmware v8
+19:17:09 pulled-up pins BEFORE switching anything on: none
+19:17:09   switching P2_3 on (0.5 s ramp)...
+19:17:12   P2_3 on: nothing new powered up -> switching it back off
+19:17:12   switching P2_5 on (0.5 s ramp)...
+19:17:13 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+19:17:22 connected: 00:E0:12:34:56:78 firmware v8
+19:17:22   P2_5 still dropped the watch with a 0.5 s ramp
+19:17:22   switching P2_5 on (2.5 s ramp)...
+19:17:23 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+19:17:29 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:17:34 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:17:39 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:17:44 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:17:49 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:17:54 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:18:01 connected: 00:E0:12:34:56:78 firmware v8
+19:18:01   P2_5 still dropped the watch with a 2.5 s ramp
+19:18:01   switching P1_5 on (0.5 s ramp)...
+19:18:05   P1_5 on: nothing new powered up -> switching it back off
+19:18:05   switching P0_0 on (0.5 s ramp)...
+19:18:08 RAIL UP: with P0_0 on, these pins now have pull-ups: ['P1_5']
+19:18:08 saved to logs/hw.json: {'power_pins': [0], 'rail_pullups': [13]}
+19:18:09 bus CS=P4_3 CLK=P4_0 DATA=P4_2: no answer
+19:18:10 bus CS=P4_3 CLK=P4_0 DATA=P4_1: no answer
+19:18:11 bus CS=P4_0 CLK=P4_3 DATA=P4_2: no answer
+19:18:11 Rail is up but the screen still didn't answer - send this log (I2C chips may now be visible: run is_screen_connected)
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-191657-power_up.txt
