@@ -1,0 +1,57 @@
+== tool5 display @ 20261102-182319
+18:23:28 connected: 00:E0:12:34:56:78 firmware v5
+18:23:28 >>> BACKLIGHT TEST (HIGH): look at the WATCH SCREEN, not the laptop. Press Enter to start (26 pins, ~39 s)    # 1 P0_0 HIGH      # 2 P0_1 HIGH      # 3 P0_2 HIGH      # 4 P0_4 HIGH      # 5 P0_5 HIGH      # 6 P0_6 HIGH      # 7 P0_7 HIGH      # 8 P1_2 HIGH      # 9 P1_6 HIGH      #10 P1_7 HIGH      #11 P2_0 HIGH      #12 P2_1 HIGH      #13 P2_2 HIGH      #14 P2_3 HIGH      #15 P2_5 HIGH   
+18:24:04 saved to logs/hw.json: {'danger': [11, 12, 21]}
+18:24:04 !!! P2_5 driving HIGH killed the watch -> never-touch list.
+18:24:04 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+18:24:13 connected: 00:E0:12:34:56:78 firmware v5
+   #16 P2_6 HIGH      #17 P2_7 HIGH      #18 P3_2 HIGH      #19 P3_3 HIGH      #20 P3_4 HIGH      #21 P3_5 HIGH      #22 P3_6 HIGH      #23 P4_0 HIGH      #24 P4_1 HIGH   
+18:24:26 saved to logs/hw.json: {'danger': [11, 12, 21, 33]}
+18:24:26 !!! P4_1 driving HIGH killed the watch -> never-touch list.
+18:24:26 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+Traceback (most recent call last):
+  File "/home/onkar/Projects/dafit-watch/tool5.py", line 731, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/onkar/Projects/dafit-watch/tool5.py", line 702, in main
+    c = await display(c)
+        ^^^^^^^^^^^^^^^^
+  File "/home/onkar/Projects/dafit-watch/tool5.py", line 467, in display
+    c, held = await backlight(c)
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/onkar/Projects/dafit-watch/tool5.py", line 395, in backlight
+    c = await mark_dead(c, p, f"driving {word}")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/onkar/Projects/dafit-watch/tool5.py", line 376, in mark_dead
+    return await watch_back(c)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/onkar/Projects/dafit-watch/tool5.py", line 314, in watch_back
+    return await connect()
+           ^^^^^^^^^^^^^^^
+  File "/home/onkar/Projects/dafit-watch/tool5.py", line 100, in connect
+    found = await BleakScanner.discover(timeout=5, return_adv=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/onkar/watchenv/lib/python3.14/site-packages/bleak/__init__.py", line 304, in discover
+    async with cls(**kwargs) as scanner:
+               ~~~^^^^^^^^^^
+  File "/home/onkar/watchenv/lib/python3.14/site-packages/bleak/__init__.py", line 162, in __aenter__
+    await self.start()
+  File "/home/onkar/watchenv/lib/python3.14/site-packages/bleak/__init__.py", line 185, in start
+    await self._backend.start()
+  File "/home/onkar/watchenv/lib/python3.14/site-packages/bleak/backends/bluezdbus/scanner.py", line 117, in start
+    adapter_path = manager.get_default_adapter()
+  File "/home/onkar/watchenv/lib/python3.14/site-packages/bleak/backends/bluezdbus/manager.py", line 410, in get_default_adapter
+    raise BleakBluetoothNotAvailableError(
+    ...<2 lines>...
+    )
+bleak.exc.BleakBluetoothNotAvailableError: ('No powered Bluetooth adapters found. Turn on Bluetooth and try again.', <BleakBluetoothNotAvailableReason.POWERED_OFF: 3>)
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-182319-tool5.txt
