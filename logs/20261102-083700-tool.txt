@@ -1,0 +1,33 @@
+== tool lcdprobe @ 20261102-083700
+08:37:13 connected: 00:E0:12:34:56:78 firmware v2
+08:37:13 >>> step 1: read panel ID with nothing changed
+Traceback (most recent call last):
+  File "/home/onkar/Projects/dafit-watch/tool.py", line 127, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/onkar/Projects/dafit-watch/tool.py", line 121, in main
+    elif a[0] == "lcdprobe": await lcdprobe(c)
+                             ^^^^^^^^^^^^^^^^^
+  File "/home/onkar/Projects/dafit-watch/tool.py", line 86, in lcdprobe
+    alive, ids = await lcd_read_id(c); log("    ID reads (D1, D0):", ids, "-> ALIVE" if alive else "-> no answer")
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/onkar/Projects/dafit-watch/tool.py", line 76, in lcd_read_id
+    alive = any(any(x not in ("00"*len(x)//2, "ff"*(len(x)//2)) for x in pair) for pair in out.values())
+            ^^^
+  File "/home/onkar/Projects/dafit-watch/tool.py", line 76, in <genexpr>
+    alive = any(any(x not in ("00"*len(x)//2, "ff"*(len(x)//2)) for x in pair) for pair in out.values())
+                ^^^
+  File "/home/onkar/Projects/dafit-watch/tool.py", line 76, in <genexpr>
+    alive = any(any(x not in ("00"*len(x)//2, "ff"*(len(x)//2)) for x in pair) for pair in out.values())
+                              ~~~~~~~~~~~^^~
+TypeError: unsupported operand type(s) for //: 'str' and 'int'
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-083700-tool.txt

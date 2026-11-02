@@ -1,0 +1,70 @@
+## 1. what BlueZ knows about the watch
+Device 00:E0:12:34:56:78 (public)
+	Name: ONKAR-LIFE
+	Alias: ONKAR-LIFE
+	Appearance: 0x03c1 (961)
+	Icon: input-keyboard
+	Paired: no
+	Bonded: no
+	Trusted: no
+	Blocked: no
+	Connected: yes
+	WakeAllowed: no
+	LegacyPairing: no
+	CablePairing: no
+	UUID: Generic Access Profile    (00001800-0000-1000-8000-00805f9b34fb)
+	UUID: Generic Attribute Profile (00001801-0000-1000-8000-00805f9b34fb)
+	UUID: Device Information        (0000180a-0000-1000-8000-00805f9b34fb)
+	UUID: Battery Service           (0000180f-0000-1000-8000-00805f9b34fb)
+	UUID: Human Interface Device    (00001812-0000-1000-8000-00805f9b34fb)
+	UUID: Vendor specific           (00006287-3c17-d293-8e48-14fe2e4da212)
+	UUID: Unknown                   (0000a00a-0000-1000-8000-00805f9b34fb)
+	UUID: Vendor specific           (0000d0ff-3c17-d293-8e48-14fe2e4da212)
+	Modalias: bluetooth:v005Dp0001d0003
+	ManufacturerData.Key: 0x005d (93)
+	ManufacturerData.Value:
+  04 00                                            ..              
+	AdvertisingFlags:
+  05                                               .               
+	Battery Percentage: 0x00 (0)
+
+## 2. connected devices
+Device 00:E0:12:34:56:78 ONKAR-LIFE
+
+## 3. 30 second scan (everything seen)
+SetDiscoveryFilter success
+Discovery started
+[[0;93mCHG[0m] Controller D8:80:83:75:79:B4 Discovering: yes
+[[0;92mNEW[0m] Device 0D:2F:AF:60:6B:E6 HY320Mini
+[[0;92mNEW[0m] Device 01:B6:EC:B6:53:DB SWAN
+[[0;92mNEW[0m] Device 4B:EF:B2:D8:4A:1D 4B-EF-B2-D8-4A-1D
+
+## 4. watch info again after scan
+Device 00:E0:12:34:56:78 (public)
+	Name: ONKAR-LIFE
+	Alias: ONKAR-LIFE
+	Appearance: 0x03c1 (961)
+	Icon: input-keyboard
+	Paired: no
+	Bonded: no
+	Trusted: no
+	Blocked: no
+	Connected: yes
+	WakeAllowed: no
+	LegacyPairing: no
+	CablePairing: no
+	UUID: Generic Access Profile    (00001800-0000-1000-8000-00805f9b34fb)
+	UUID: Generic Attribute Profile (00001801-0000-1000-8000-00805f9b34fb)
+	UUID: Device Information        (0000180a-0000-1000-8000-00805f9b34fb)
+	UUID: Battery Service           (0000180f-0000-1000-8000-00805f9b34fb)
+	UUID: Human Interface Device    (00001812-0000-1000-8000-00805f9b34fb)
+	UUID: Vendor specific           (00006287-3c17-d293-8e48-14fe2e4da212)
+	UUID: Unknown                   (0000a00a-0000-1000-8000-00805f9b34fb)
+	UUID: Vendor specific           (0000d0ff-3c17-d293-8e48-14fe2e4da212)
+	Modalias: bluetooth:v005Dp0001d0003
+	ManufacturerData.Key: 0x005d (93)
+	ManufacturerData.Value:
+  04 00                                            ..              
+	AdvertisingFlags:
+  05                                               .               
+	Battery Percentage: 0x00 (0)
