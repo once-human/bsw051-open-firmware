@@ -1,0 +1,147 @@
+== display_lit  @ 20261102-212949
+21:29:56 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:30:01 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:30:06 watch NOT visible for 11 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:30:15 connected: 00:E0:12:34:56:78 firmware v11
+21:30:15 === Panel starting. Watch the screen; each beep is a new test.
+21:30:15    SPIC2 setup
+21:30:15    screen power P0_1
+21:30:16    reset P2_0 high
+21:30:16    reset P2_0 low
+21:30:17    reset P2_0 high
+21:30:17    init reg FF00
+21:30:17    init reg FF80
+21:30:17    init reg C083
+21:30:18    init reg C089
+21:30:18    init reg C093
+21:30:18    init reg C099
+21:30:18    init reg B283
+21:30:18    init reg 3A00
+21:30:19    init reg 5100
+21:30:19    init reg 3500
+21:30:19    init reg C0C4
+21:30:19    init reg C380
+21:30:19    init reg C390
+21:30:20    init reg C3A0
+21:30:20    init reg C5DF
+21:30:20    init reg 1100
+21:30:20    init reg 2900
+21:30:21    init reg FF00
+21:30:21    init reg C5E2
+21:30:21    init reg C5E5
+21:30:21    init reg C482
+21:30:22    init reg C489
+21:30:22    display on
+21:30:22    brightness 6%
+21:30:24 registers: {'0A': '9c9c', '0B': '0000', '0C': '0505', '0D': '0000', '0E': '8080', '0F': 'c0c0', '52': '0800', '54': '0000', '56': '0000'} | TE in 0.5 s: 26
+21:30:24 >>> TEST 1: all pixels on, 6% - LOOK AT THE SCREEN
+21:30:24    all pixels on, 6%
+21:30:29 >>> TEST 2: all pixels on, 19% - LOOK AT THE SCREEN
+21:30:29    all pixels on, 19%
+21:30:34 >>> TEST 3: all pixels on, 38% - LOOK AT THE SCREEN
+21:30:34    all pixels on, 38%
+21:30:39 >>> TEST 4: + brightness control on (0x53) - LOOK AT THE SCREEN
+21:30:39    + brightness control on (0x53)
+21:30:45 registers: {'0A': '9c9c', '0B': '0000', '0C': '0505', '0D': '1010', '0E': '8080', '0F': 'c0c0', '52': '3000', '54': '1000', '56': '0000'} | TE in 0.5 s: 26
+21:30:45    SPIC2 setup
+21:30:45    screen power P0_1
+21:30:46    reset P2_0 high
+21:30:46    reset P2_0 low
+21:30:47    reset P2_0 high
+21:30:47    init reg FF00
+21:30:47    init reg FF80
+21:30:47    init reg C083
+21:30:48    init reg C089
+21:30:48    init reg C093
+21:30:48    init reg C099
+21:30:48    init reg B283
+21:30:49    init reg 3A00
+21:30:49    init reg 5100
+21:30:49    init reg 3500
+21:30:49    init reg C0C4
+21:30:50    init reg C380
+21:30:50    init reg C390
+21:30:50    init reg C3A0
+21:30:50    init reg C5DF
+21:30:51    init reg 1100
+21:30:51    init reg 2900
+21:30:51    init reg FF00
+21:30:51    init reg C5E2
+21:30:52    init reg C5E5
+21:30:52    init reg C482
+21:30:52    init reg C489
+21:30:52    display on
+21:30:53    brightness 38%
+21:30:53    all pixels on
+21:30:53 >>> TEST 5: all pixels on + P1_1 soft start - LOOK AT THE SCREEN
+21:30:53    all pixels on + P1_1 soft start
+21:30:59 P1_1: TE in 0.5 s: 26
+21:30:59    SPIC2 setup
+21:31:00    screen power P0_1
+21:31:00    reset P2_0 high
+21:31:01    reset P2_0 low
+21:31:01    reset P2_0 high
+21:31:01    init reg FF00
+21:31:02    init reg FF80
+21:31:02    init reg C083
+21:31:02    init reg C089
+21:31:02    init reg C093
+21:31:02    init reg C099
+21:31:03    init reg B283
+21:31:03    init reg 3A00
+21:31:03    init reg 5100
+21:31:04    init reg 3500
+21:31:04    init reg C0C4
+21:31:04    init reg C380
+21:31:04    init reg C390
+21:31:05    init reg C3A0
+21:31:05    init reg C5DF
+21:31:05    init reg 1100
+21:31:05    init reg 2900
+21:31:06    init reg FF00
+21:31:06    init reg C5E2
+21:31:06    init reg C5E5
+21:31:06    init reg C482
+21:31:06    init reg C489
+21:31:07    display on
+21:31:07    brightness 38%
+21:31:07    all pixels on
+21:31:07 >>> TEST 6: all pixels on + P0_3 soft start - LOOK AT THE SCREEN
+21:31:08    all pixels on + P0_3 soft start
+21:31:14 P0_3: TE in 0.5 s: 26
+21:31:14    SPIC2 setup
+21:31:14    screen power P0_1
+21:31:15    reset P2_0 high
+21:31:15    reset P2_0 low
+21:31:15    reset P2_0 high
+21:31:16    init reg FF00
+21:31:16    init reg FF80
+21:31:16    init reg C083
+21:31:16    init reg C089
+21:31:17    init reg C093
+21:31:17    init reg C099
+21:31:17    init reg B283
+21:31:17    init reg 3A00
+21:31:18    init reg 5100
+21:31:18    init reg 3500
+21:31:18    init reg C0C4
+21:31:18    init reg C380
+21:31:19    init reg C390
+21:31:19    init reg C3A0
+21:31:19    init reg C5DF
+21:31:19    init reg 1100
+21:31:20    init reg 2900
+21:31:20    init reg FF00
+21:31:20    init reg C5E2
+21:31:20    init reg C5E5
+21:31:21    init reg C482
+21:31:21    init reg C489
+21:31:21    display on
+21:31:21    brightness 38%
+21:31:21    all pixels on
+21:31:22 >>> TEST 7: all pixels on + P2_7 soft start - LOOK AT THE SCREEN
+21:31:22    all pixels on + P2_7 soft start
+21:31:28 P2_7: TE in 0.5 s: 26
+21:31:29 >>> Which TEST number first showed ANY light? Type the number, or 'nothing' (1-7): 21:32:29 saved to logs/hw.json: display_lit (full detail in the file)
+21:32:29 RESULT: {'regs': {'0A': '9c9c', '0B': '0000', '0C': '0505', '0D': '0000', '0E': '8080', '0F': 'c0c0', '52': '0800', '54': '0000', '56': '0000'}, 'regs_lit': {'0A': '9c9c', '0B': '0000', '0C': '0505', '0D': '1010', '0E': '8080', '0F': 'c0c0', '52': '3000', '54': '1000', '56': '0000'}} | you saw: nothing
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-212949-display_lit.txt
