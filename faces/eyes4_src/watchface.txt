@@ -1,0 +1,50 @@
+fileType       C
+fileID         0x81
+dataCount      2
+blobCount      42
+faceNumber     50008
+animationFrames 40
+blobCompression 0 RLE_LINE
+blobCompression 1 RLE_LINE
+blobCompression 2 RLE_LINE
+blobCompression 3 RLE_LINE
+blobCompression 4 RLE_LINE
+blobCompression 5 RLE_LINE
+blobCompression 6 RLE_LINE
+blobCompression 7 RLE_LINE
+blobCompression 8 RLE_LINE
+blobCompression 9 RLE_LINE
+blobCompression 10 RLE_LINE
+blobCompression 11 RLE_LINE
+blobCompression 12 RLE_LINE
+blobCompression 13 RLE_LINE
+blobCompression 14 RLE_LINE
+blobCompression 15 RLE_LINE
+blobCompression 16 RLE_LINE
+blobCompression 17 RLE_LINE
+blobCompression 18 RLE_LINE
+blobCompression 19 RLE_LINE
+blobCompression 20 RLE_LINE
+blobCompression 21 RLE_LINE
+blobCompression 22 RLE_LINE
+blobCompression 23 RLE_LINE
+blobCompression 24 RLE_LINE
+blobCompression 25 RLE_LINE
+blobCompression 26 RLE_LINE
+blobCompression 27 RLE_LINE
+blobCompression 28 RLE_LINE
+blobCompression 29 RLE_LINE
+blobCompression 30 RLE_LINE
+blobCompression 31 RLE_LINE
+blobCompression 32 RLE_LINE
+blobCompression 33 RLE_LINE
+blobCompression 34 RLE_LINE
+blobCompression 35 RLE_LINE
+blobCompression 36 RLE_LINE
+blobCompression 37 RLE_LINE
+blobCompression 38 RLE_LINE
+blobCompression 39 RLE_LINE
+blobCompression 40 RLE_LINE
+blobCompression 41 NONE
+faceData       0x01    000      0    0  368  448    background000.bmp
+faceData       0xf7    001     44  154  280  140    001.bmp
