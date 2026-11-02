@@ -1,0 +1,21 @@
+== is_screen_connected  @ 20261102-190009
+19:00:15 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:00:20 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:00:25 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:00:30 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:00:35 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:00:40 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:00:45 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:00:50 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:00:55 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:01:00 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:01:05 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:01:10 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:01:15 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:01:20 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+19:01:28 connected: 00:E0:12:34:56:78 firmware v7
+19:01:30 pins held HIGH by the board (I2C suspects): none
+19:01:38 saved to logs/hw.json: {'i2c_found': {}}
+
+19:01:38 VERDICT: no I2C chip answered at all -> sensors are unpowered or on pins I can't reach. Send this log to Claude.
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-190009-is_screen_connected.txt
