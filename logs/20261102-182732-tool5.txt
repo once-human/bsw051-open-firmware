@@ -1,0 +1,43 @@
+== tool5 display @ 20261102-182732
+18:27:43 connected: 00:E0:12:34:56:78 firmware v5
+18:27:43 >>> BACKLIGHT TEST (HIGH): look at the WATCH SCREEN, not the laptop. Press Enter to start (25 pins, ~38 s)    # 1 P0_0 HIGH      # 2 P0_1 HIGH      # 3 P0_2 HIGH      # 4 P0_4 HIGH      # 5 P0_5 HIGH      # 6 P0_6 HIGH      # 7 P0_7 HIGH      # 8 P1_2 HIGH      # 9 P1_6 HIGH      #10 P1_7 HIGH      #11 P2_0 HIGH      #12 P2_1 HIGH      #13 P2_2 HIGH      #14 P2_3 HIGH      #15 P2_6 HIGH      #16 P2_7 HIGH      #17 P3_2 HIGH      #18 P3_3 HIGH      #19 P3_4 HIGH      #20 P3_5 HIGH      #21 P3_6 HIGH      #22 P4_0 HIGH      #23 P4_1 HIGH      #24 P4_2 HIGH      #25 P4_3 HIGH   
+18:28:33 >>> Did the screen glow at any point? Type the # number you saw (e.g. 7), or just Enter for no: 18:28:42 >>> BACKLIGHT TEST (LOW): look at the WATCH SCREEN, not the laptop. Press Enter to start (25 pins, ~38 s)    # 1 P0_0 LOW      # 2 P0_1 LOW      # 3 P0_2 LOW      # 4 P0_4 LOW      # 5 P0_5 LOW      # 6 P0_6 LOW      # 7 P0_7 LOW      # 8 P1_2 LOW      # 9 P1_6 LOW      #10 P1_7 LOW      #11 P2_0 LOW      #12 P2_1 LOW      #13 P2_2 LOW      #14 P2_3 LOW      #15 P2_6 LOW      #16 P2_7 LOW      #17 P3_2 LOW      #18 P3_3 LOW      #19 P3_4 LOW      #20 P3_5 LOW      #21 P3_6 LOW      #22 P4_0 LOW      #23 P4_1 LOW      #24 P4_2 LOW      #25 P4_3 LOW   
+18:29:28 >>> Did the screen glow at any point? Type the # number you saw (e.g. 7), or just Enter for no: 18:29:31 no backlight found (AMOLED panels have none - that's fine, carrying on)
+18:29:31 saved to logs/hw.json: {'backlight': None}
+18:29:31 Trying the screen on Realtek's reference wiring (CS P4_3, CLK P4_0, DATA P4_2)...
+18:29:31 trying QSPI-AMOLED wake-up...
+18:29:33 painted RED - look at the screen
+18:29:34 painted GREEN - look at the screen
+18:29:36 painted BLUE - look at the screen
+18:29:37 >>> Did the screen light up / change colour? (y/n) 18:29:42 trying 3-wire 9-bit LCD wake-up...
+18:29:43 >>> Red now? (y/n) 18:29:48 no picture on these pins.
+18:29:48 Asking every pin combination for a screen ID (one CS per step, ~1 s each)...
+   CS=P4_3  0 answers      CS=P0_0  0 answers      CS=P0_1  20 answers   
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_0 DATA=P0_7 READ=P0_7 RST=- SPI RDDID 0x04 id=7fffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_0 DATA=P0_7 READ=P0_7 RST=- QSPI-AMOLED read 03-00-04-00 id=7fffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_0 DATA=P0_7 READ=P0_7 RST=- 3-wire 9-bit LCD id=7fffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_2 DATA=P0_5 READ=P0_5 RST=- SPI RDDID 0x04 id=7fffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_2 DATA=P0_5 READ=P0_5 RST=- QSPI-AMOLED read 03-00-04-00 id=7fffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_2 DATA=P0_5 READ=P0_5 RST=- 3-wire 9-bit LCD id=7fffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_2 DATA=P0_7 READ=P0_7 RST=- SPI RDDID 0x04 id=7fffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_2 DATA=P0_7 READ=P0_7 RST=- QSPI-AMOLED read 03-00-04-00 id=7fffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_2 DATA=P0_7 READ=P0_7 RST=- 3-wire 9-bit LCD id=7fffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_2 DATA=P1_2 READ=P1_2 RST=- SPI RDDID 0x04 id=7fffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_2 DATA=P1_2 READ=P1_2 RST=- QSPI-AMOLED read 03-00-04-00 id=7fffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_2 DATA=P1_2 READ=P1_2 RST=- 3-wire 9-bit LCD id=7fffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_2 DATA=P2_3 READ=P2_3 RST=- SPI RDDID 0x04 id=07ffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_2 DATA=P2_3 READ=P2_3 RST=- QSPI-AMOLED read 03-00-04-00 id=07ffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_2 DATA=P2_3 READ=P2_3 RST=- 3-wire 9-bit LCD id=07ffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_2 DATA=P4_1 READ=P4_1 RST=- SPI RDDID 0x04 id=7fffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_2 DATA=P4_1 READ=P4_1 RST=- QSPI-AMOLED read 03-00-04-00 id=7fffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_2 DATA=P4_1 READ=P4_1 RST=- 3-wire 9-bit LCD id=7fffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_4 DATA=P0_5 READ=P0_5 RST=- SPI RDDID 0x04 id=7fffffff
+18:29:48 DISPLAY ANSWERED: CS=P0_1 CLK=P0_4 DATA=P0_5 READ=P0_5 RST=- QSPI-AMOLED read 03-00-04-00 id=7fffffff
+18:29:48 saved to logs/hw.json: lcd_hits, lcd (full detail in the file)
+18:29:48 trying QSPI-AMOLED wake-up...
+18:29:49 painted RED - look at the screen
+18:29:51 painted GREEN - look at the screen
+18:29:53 painted BLUE - look at the screen
+18:29:54 >>> Did the screen light up / change colour? (y/n) 18:29:59 trying 3-wire 9-bit LCD wake-up...
+18:29:59 >>> Red now? (y/n) 18:30:04 no picture on these pins.
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-182732-tool5.txt
