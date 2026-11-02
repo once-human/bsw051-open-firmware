@@ -1,0 +1,16 @@
+== power_up  @ 20261102-193001
+19:30:08 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:30:13 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:30:18 watch NOT visible for 11 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:30:24 watch NOT visible for 16 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:30:29 watch NOT visible for 22 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:30:34 watch NOT visible for 27 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:30:40 watch NOT visible for 32 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:30:45 watch NOT visible for 38 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:30:50 watch NOT visible for 43 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:31:16 watch seen but connect failed (TimeoutError) - retry 1
+19:31:25 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:31:30 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:31:35 watch NOT visible for 11 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:31:41 watch NOT visible for 16 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-193001-power_up.txt

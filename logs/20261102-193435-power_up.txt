@@ -1,0 +1,105 @@
+== power_up  @ 20261102-193435
+19:34:42 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:34:47 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:34:52 watch NOT visible for 11 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:34:58 watch NOT visible for 16 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:35:03 watch NOT visible for 22 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:35:08 watch NOT visible for 27 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:35:14 watch NOT visible for 32 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:35:19 watch NOT visible for 38 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:35:24 watch NOT visible for 43 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:35:30 watch NOT visible for 48 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:35:56 watch seen but connect failed (TimeoutError) - retry 1
+19:36:05 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:36:13 connected: 00:E0:12:34:56:78 firmware v8
+19:36:15 pulled-up pins BEFORE switching anything on: ['P1_3']
+19:36:15 power candidate P2_3 HIGH
+19:36:19 power candidate P1_5 HIGH
+19:36:23 power candidate P1_3 HIGH
+19:36:28   P1_3 HIGH: new pull-ups on ['P1_5'] (something powered up)
+19:36:28 saved to logs/hw.json: {'rail_11_1': [13]}
+19:36:28 power candidate P1_4 HIGH
+19:36:32 power candidate P0_0 HIGH
+19:36:36 power candidate P0_1 HIGH
+19:36:40   P0_1 HIGH: new pull-ups on ['P0_0'] (something powered up)
+19:36:40 saved to logs/hw.json: {'rail_1_1': [0]}
+19:36:40 power candidate P0_2 HIGH
+19:36:44   P0_2 HIGH: new pull-ups on ['P0_1'] (something powered up)
+19:36:44 saved to logs/hw.json: {'rail_2_1': [1]}
+19:36:45 power candidate P0_4 HIGH
+19:36:49   P0_4 HIGH: new pull-ups on ['P0_2'] (something powered up)
+19:36:49 saved to logs/hw.json: {'rail_4_1': [2]}
+19:36:49 power candidate P0_5 HIGH
+19:36:53   P0_5 HIGH: new pull-ups on ['P0_4'] (something powered up)
+19:36:53 saved to logs/hw.json: {'rail_5_1': [4]}
+19:36:53 power candidate P1_2 HIGH
+19:36:57   P1_2 HIGH: new pull-ups on ['P0_5'] (something powered up)
+19:36:57 saved to logs/hw.json: {'rail_10_1': [5]}
+19:36:57 power candidate P1_6 HIGH
+19:37:01   P1_6 HIGH: new pull-ups on ['P1_2'] (something powered up)
+19:37:01 saved to logs/hw.json: {'rail_14_1': [10]}
+19:37:01 power candidate P1_7 HIGH
+19:37:05   P1_7 HIGH: new pull-ups on ['P1_6'] (something powered up)
+19:37:05 saved to logs/hw.json: {'rail_15_1': [14]}
+19:37:06 power candidate P2_0 HIGH
+19:37:10   P2_0 HIGH: new pull-ups on ['P1_7'] (something powered up)
+19:37:10 saved to logs/hw.json: {'rail_16_1': [15]}
+19:37:10 power candidate P2_1 HIGH
+19:37:13 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+19:37:20 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:37:25 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:37:30 watch NOT visible for 11 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:37:36 watch NOT visible for 16 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:37:41 watch NOT visible for 22 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:37:49 connected: 00:E0:12:34:56:78 firmware v8
+19:37:50 power candidate P2_2 HIGH
+19:37:54 power candidate P2_6 HIGH
+19:37:58   P2_6 HIGH: new pull-ups on ['P2_2'] (something powered up)
+19:37:58 saved to logs/hw.json: {'rail_22_1': [18]}
+19:37:58 power candidate P2_7 HIGH
+19:38:02   P2_7 HIGH: new pull-ups on ['P2_6'] (something powered up)
+19:38:02 saved to logs/hw.json: {'rail_23_1': [22]}
+19:38:02 power candidate P3_2 HIGH
+19:38:06   P3_2 HIGH: new pull-ups on ['P2_7'] (something powered up)
+19:38:06 saved to logs/hw.json: {'rail_26_1': [23]}
+19:38:06 power candidate P3_3 HIGH
+19:38:11   P3_3 HIGH: new pull-ups on ['P3_2'] (something powered up)
+19:38:11 saved to logs/hw.json: {'rail_27_1': [26]}
+19:38:11 power candidate P3_4 HIGH
+19:38:15   P3_4 HIGH: new pull-ups on ['P3_3'] (something powered up)
+19:38:15 saved to logs/hw.json: {'rail_28_1': [27]}
+19:38:15 power candidate P3_5 HIGH
+19:38:19 power candidate P3_6 HIGH
+19:38:23 power candidate P2_3 LOW
+19:38:27 power candidate P1_5 LOW
+19:38:32 power candidate P1_3 LOW
+19:38:36 power candidate P1_4 LOW
+19:38:40 power candidate P0_0 LOW
+19:38:45 power candidate P0_1 LOW
+19:38:49 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+19:38:56 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:39:01 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:39:09 connected: 00:E0:12:34:56:78 firmware v8
+19:39:09 power candidate P0_2 LOW
+19:39:13 power candidate P0_4 LOW
+19:39:18 power candidate P0_5 LOW
+19:39:22 power candidate P1_2 LOW
+19:39:26 power candidate P1_6 LOW
+19:39:30 power candidate P1_7 LOW
+19:39:34 power candidate P2_0 LOW
+19:39:39 power candidate P2_1 LOW
+19:39:43 power candidate P2_2 LOW
+19:39:47 power candidate P2_6 LOW
+19:39:51 power candidate P2_7 LOW
+19:39:56 power candidate P3_2 LOW
+19:40:00 power candidate P3_3 LOW
+19:40:04 power candidate P3_4 LOW
+19:40:08 power candidate P3_5 LOW
+19:40:10 (write ack slow: BleakGATTProtocolError - still waiting for the answer)
+19:40:24 The watch went down. Unplug the charger, plug it back in - I'll find it again by myself.
+19:40:31 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:40:36 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+19:40:44 connected: 00:E0:12:34:56:78 firmware v8
+19:40:44 power candidate P3_6 LOW
+19:40:49 No power pin + reset combination made the screen answer. Send this log to Claude.
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-193435-power_up.txt
