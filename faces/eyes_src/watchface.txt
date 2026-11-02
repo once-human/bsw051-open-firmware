@@ -1,0 +1,18 @@
+fileType       C
+fileID         0x81
+dataCount      2
+blobCount      10
+faceNumber     50004
+animationFrames 8
+blobCompression 0 NONE
+blobCompression 1 NONE
+blobCompression 2 NONE
+blobCompression 3 NONE
+blobCompression 4 NONE
+blobCompression 5 NONE
+blobCompression 6 NONE
+blobCompression 7 NONE
+blobCompression 8 NONE
+blobCompression 9 NONE
+faceData       0x01    000      0    0  368  448    background000.bmp
+faceData       0xf7    001     84  150  200  100    eyes000.bmp
