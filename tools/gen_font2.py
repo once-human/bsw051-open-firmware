@@ -13,6 +13,8 @@ SANS = "/usr/share/fonts/Adwaita/AdwaitaSans-Regular.ttf"
 ICONS = "/usr/share/fonts/ttf-material-symbols-variable/MaterialSymbolsRounded[FILL,GRAD,opsz,wght].ttf"
 ASCII = [chr(c) for c in range(32, 127)]
 DIGITS = list("0123456789:.")
+# F_L is only used for a few words + numbers: other glyphs are left empty (saves ~9 KB of flash). Add letters here if the UI needs them.
+L_KEEP = set("0123456789:.'- ONKARTWBHUEFSMDYabcdefghiklmnoprstuvwy")
 GAMMA = 0.85            # >1 thinner, <1 bolder edges: AMOLED + sRGB blending makes thin text look starved
 
 ICON_NAMES = ["timer", "hourglass_top", "brush", "flashlight_on", "self_improvement", "settings", "info",
@@ -22,7 +24,7 @@ FONTS = [
     # name, file, px, axes {opsz, wght} or icon axes, chars, tabular digits
     ("F_S", SANS, 22, (22, 500), ASCII, False),
     ("F_M", SANS, 28, (28, 500), ASCII, False),
-    ("F_L", SANS, 36, (32, 650), ASCII, False),
+    ("F_L", SANS, 36, (32, 650), ASCII, False, L_KEEP),
     ("F_D", SANS, 84, (32, 600), DIGITS, True),
     ("F_H", SANS, 206, (32, 620), DIGITS[:10], True),
     ("F_I", ICONS, 44, None, ICON_NAMES, False),
@@ -75,7 +77,7 @@ def encode(img):
     return bytes(data)
 
 
-def build(name, path, px, axes, chars, tab):
+def build(name, path, px, axes, chars, tab, keep=None):
     f = font_obj(path, px, axes)
     asc, desc = f.getmetrics()
     icon = path == ICONS
@@ -86,7 +88,7 @@ def build(name, path, px, axes, chars, tab):
     for ch in chars:
         l, t, r, b = f.getbbox(ch, anchor="ls")
         adv = round(f.getlength(ch))
-        if r <= l or b <= t:
+        if r <= l or b <= t or (keep is not None and ch not in keep):
             glyphs.append((len(blob), 0, 0, 0, 0, adv))
             continue
         w, h = r - l, b - t

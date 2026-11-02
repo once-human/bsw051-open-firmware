@@ -1,0 +1,11 @@
+# third-party / huge, kept out of the repo (see README)
+sdk/
+sdkparts/
+*.zip
+gb/
+dawft/
+DaFup/
+__pycache__/
+
+# stock firmware dump: the vendor's code, stays local only
+logs/flash_dump.bin
