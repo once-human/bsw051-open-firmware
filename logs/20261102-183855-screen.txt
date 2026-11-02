@@ -1,0 +1,32 @@
+== screen  @ 20261102-183855
+18:39:01 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+18:39:06 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+18:39:11 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+18:39:16 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+18:39:21 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+18:39:26 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+18:39:31 looking for the watch... (if it's dead: unplug the charger, plug it back in)
+18:39:39 connected: 00:E0:12:34:56:78 firmware v6
+18:39:39 >>> Look at the WATCH SCREEN. Press Enter to start (20 steps, ~2 s each) 18:39:44 # 1 reset=none  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:39:47 # 2 reset=P0_0  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:39:49 # 3 reset=P0_1  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:39:51 # 4 reset=P0_2  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:39:53 # 5 reset=P0_4  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:39:56 # 6 reset=P0_5  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:39:58 # 7 reset=P1_2  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:40:00 # 8 reset=P1_6  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:40:02 # 9 reset=P1_7  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:40:05 #10 reset=P2_0  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:40:07 #11 reset=P2_1  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:40:09 #12 reset=P2_2  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:40:11 #13 reset=P2_3  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:40:14 #14 reset=P2_6  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:40:16 #15 reset=P2_7  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:40:18 #16 reset=P3_2  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:40:20 #17 reset=P3_3  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:40:23 #18 reset=P3_4  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:40:25 #19 reset=P3_5  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:40:27 #20 reset=P3_6  ids={'qspi 04': '00000000', 'qspi DA': '00000000', 'spi 04': '00000000', '9bit 04': '00000000', 'spi 0A': '00000000'}
+18:40:28 >>> Did the screen flicker / light up / show anything at ANY step? Type the # number (or Enter for no): 18:41:07 saved to logs/hw.json: {'screen_scan': {'hits': [], 'user_saw': ''}}
+18:41:07 RESULT: no visible reaction | ID answers: none
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-183855-screen.txt
