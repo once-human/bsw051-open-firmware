@@ -1,0 +1,45 @@
+== display_max  @ 20261102-213502
+21:35:09 watch NOT visible for 0 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:35:14 watch NOT visible for 6 s -> unplug + replug the charger (I keep trying forever, Ctrl+C to quit)
+21:35:22 connected: 00:E0:12:34:56:78 firmware v11
+21:35:22 === Panel starting. Watch the screen; each beep is a new test.
+21:35:22    SPIC2 setup
+21:35:23    screen power P0_1
+21:35:24    reset P2_0 high
+21:35:24    reset P2_0 low
+21:35:24    reset P2_0 high
+21:35:24    init reg FF00
+21:35:25    init reg FF80
+21:35:25    init reg C083
+21:35:25    init reg C089
+21:35:25    init reg C093
+21:35:26    init reg C099
+21:35:26    init reg B283
+21:35:26    init reg 3A00
+21:35:26    init reg 5100
+21:35:26    init reg 3500
+21:35:27    init reg C0C4
+21:35:27    init reg C380
+21:35:27    init reg C390
+21:35:27    init reg C3A0
+21:35:28    init reg C5DF
+21:35:28    init reg 1100
+21:35:28    init reg 2900
+21:35:28    init reg FF00
+21:35:28    init reg C5E2
+21:35:29    init reg C5E5
+21:35:29    init reg C482
+21:35:29    init reg C489
+21:35:30    display on
+21:35:30    brightness 38%
+21:35:30    all pixels on
+21:35:30 >>> TEST 1: white, 38% - LOOK AT THE SCREEN
+21:35:31    white, 38%
+21:35:35 >>> TEST 2: white, 63% - LOOK AT THE SCREEN
+21:35:35    white, 63%
+21:35:40 >>> TEST 3: white, 100% - LOOK AT THE SCREEN
+21:35:40    white, 100%
+21:35:48 registers: {'0A': '9c9c', '0B': '0000', '0C': '0505', '0D': '1010', '0E': '8080', '0F': 'c0c0', '52': 'ff80', '54': '0000', '56': '0000'} | TE in 0.5 s: 26
+21:35:49 >>> Which TEST number first showed ANY light? Type the number, or 'nothing' (1-3): 21:35:58 saved to logs/hw.json: display_max (full detail in the file)
+21:35:58 RESULT: {'regs': {'0A': '9c9c', '0B': '0000', '0C': '0505', '0D': '1010', '0E': '8080', '0F': 'c0c0', '52': 'ff80', '54': '0000', '56': '0000'}, 'te': 26, 'survived_max': True} | you saw: no
+== finished. log: /home/onkar/Projects/dafit-watch/logs/20261102-213502-display_max.txt
