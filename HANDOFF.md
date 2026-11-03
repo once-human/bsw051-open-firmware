@@ -380,3 +380,19 @@ boot slow with no visible boot animation, crown did nothing, no haptics. Asked f
 - 01:26: RUNNING, touch 0x2E, user navigating (25 touches, 15 button presses), boot failures back to 0 after 60 s.
 - Not yet confirmed by the user: unplug/replug auto-start, new scroll/press haptics feel, crown_div (1 click = 1 step?).
 - Repo: github.com/once-human/bsw051-open-firmware (PUBLIC). User wants changes pushed there as we go.
+
+## UPDATE 06:00 (Nov 3) - design direction decided: project name "fob", reference book written
+- No firmware change. New file design/fob-book.html (self-contained, fonts embedded): idea, principles, hardware, architecture,
+  interaction, design language, 42 wireframes (several live), motion tokens, the pet, packs/studio, status. Name "fob" is provisional
+  (a single word in the file). Older design/keychain_ui.html is superseded.
+- UI language = his portfolio (repo once-human/1618, site onkaryaglewad.in): giant lowercase Archivo 800, hairlines, bone-on-black,
+  one signal colour. Pet stays retro pixel art. Motion = Apple-like springs + his site's cubic-bezier(0.2,0.7,0.2,1).
+- Decided: touch off in Carry, per-mode memory, torch 2-min auto-off with override, crown = the only button.
+- Next code step (not started): shell with dial + Carry + per-mode memory in the simulator (tools/os_sim), new font (Archivo) and chrome.
+
+## UPDATE 06:50 (Nov 3) - firmware work moved to the new repo: github.com/once-human/fob-os (private)
+- "fob" is the project name. New firmware (boot animation with the beluga, Carry scenes incl. the pet, the dial, Cards, Play, Tools,
+  Settings with sliders, touch everywhere) lives in fob-os (local clone ~/Projects/fob-os), built on this repo's proven v19 hardware core.
+  fob 0.1 (v20) and fob 0.2 (v21) are flashed from there: `bash tools/run.sh ota_flash --go firmware/images/fob_0.2.bin` (run inside fob-os).
+- The design reference is design/fob-book.html here (and public at onkaryaglewad.in/fob/book.html once the portfolio PR once-human/1618#1 is merged).
+- This repo keeps the history up to v19 (the ONKAR OS watch UI). New work goes to fob-os.

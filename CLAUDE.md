@@ -9,7 +9,9 @@ Custom firmware for a Fire-Boltt BSW051 smartwatch (Realtek RTL8762D, BLE), flas
 - Watch BLE: name ONKAR-LIFE, address 00:E0:12:34:56:78. Shared helpers (connect/beep/cmd): tool5.py.
 - Firmware source: firmware/vN/onkar_vN_src.tgz. Build: copy sdk/rtl8762d-hmi-sdk-master somewhere, unpack the newest tgz over it,
   `make` in board/evb_stack_img/silent_ota_gcc -> bin/app_MP.bin (arm-none-eabi-gcc needed).
-- Stock firmware remains: logs/flash_dump.bin (1 MB copy of the watch flash). Analysis helpers in tools/.
+- Stock firmware dump logs/flash_dump.bin was LOST on 2026-11-02 (deleted by a git history rewrite, not recoverable).
+  Re-dump what's left with `bash run.sh dump_flash` (our app now covers 0x82C000 up to ~0x850000). Analysis helpers in tools/.
+  Never commit a flash dump: it is vendor code and the repo is public (github.com/once-human/bsw051-open-firmware).
 
 ## Watch hardware (confirmed)
 - Panel 368x448 AMOLED, QSPI on SPIC2 (P4_0 CLK, P4_3 CS, P4_2/P4_1/P0_6/P0_7 data), TE P3_0. Power: P0_1 logic (soft start),

@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Keychain UI design v0</title>
+<style>
+:root{--bg:#0b0b0c;--card:#151517;--line:#2a2a2d;--fg:#ececec;--mut:#8d8d93;--acc:#ffb000}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 -apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:32px 16px 80px}
+h1{font-size:28px;margin:0 0 4px}h2{font-size:20px;margin:48px 0 6px;color:var(--acc);letter-spacing:.02em}
+h3{font-size:15px;margin:22px 0 8px}
+p{margin:6px 0;color:#cfcfd4}.mut{color:var(--mut)}
+code,.mono{font-family:"JetBrains Mono","DejaVu Sans Mono",monospace}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:10px 0}
+th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px;margin-top:14px}
+figure{margin:0}
+figure svg.scr{width:100%;display:block;border-radius:14%;border:1px solid var(--line);background:#000}
+figcaption{margin-top:8px;font-size:13px;color:#cfcfd4}
+figcaption b{color:var(--fg);display:block;font-size:14px}
+figcaption i{color:var(--mut);font-style:normal;display:block;margin-top:2px}
+.wide svg{width:100%;height:auto;background:var(--card);border:1px solid var(--line);border-radius:12px}
+.pill{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:1px 9px;font-size:12px;color:var(--mut);margin:2px 3px 2px 0}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0}
+.q li{margin:6px 0}
+</style></head><body><main>
+
+<h1>Keychain UI — design v0</h1>
+<p class="mut">Wireframes at the real 368 × 448 panel ratio. Amber on black is a placeholder identity; the pixel font is a placeholder too (final: a hand-drawn dot-matrix font). Nothing here is built yet.</p>
+
+<h2>1 · The idea in one paragraph</h2>
+<p>It is an object you carry, not a watch you read. There is <b>no home screen, no app grid, no swipe-down shade</b>. The crown is a rotary <b>mode dial</b>, like the mode dial on a camera. You sit in <b>Carry</b> (ambient art that looks good hanging off a belt), turn to pick a mode, press to enter it. Everything that is not a mode (notifications, calls) interrupts briefly and goes away.</p>
+
+<h2>2 · Controls — one switch, one crown, one touch panel</h2>
+<p>The crown <i>is</i> the button (press = push the crown in). So the whole input vocabulary is small enough to learn in a minute:</p>
+<table>
+<tr><th>Input</th><th>In Carry</th><th>On the Dial</th><th>Inside a mode</th></tr>
+<tr><td><b>Rotate</b></td><td>next / previous scene</td><td>move between modes (haptic click per notch)</td><td>the mode's main dial: volume, scroll, timer, tempo…</td></tr>
+<tr><td><b>Press</b></td><td>open the Dial</td><td>enter the mode</td><td>the mode's main action: play/pause, fire shutter, flip coin…</td></tr>
+<tr><td><b>Double-press</b></td><td>—</td><td>back to Carry</td><td><b>back to the Dial</b> (the universal “get me out”)</td></tr>
+<tr><td><b>Long press</b></td><td colspan="3">screen off (and the same press wakes it) — works everywhere</td></tr>
+<tr><td><b>Press + rotate</b></td><td>—</td><td>—</td><td>second action: seek in Music, brightness elsewhere</td></tr>
+<tr><td><b>Touch: swipe left/right</b></td><td class="mut">off by default (brushing trousers does nothing)</td><td>—</td><td>page through a deck: QR cards, clock faces</td></tr>
+<tr><td><b>Touch: tap / drag</b></td><td class="mut">off</td><td>tap a mode name to enter</td><td>tap targets, drag lists</td></tr>
+</table>
+<p class="mut">Honest cost of double-press: a single press has to wait about 0.2 s to be sure no second press follows. Tapping the big on-screen button is instant, so the camera shutter and torch use touch for the instant case.</p>
+
+<h3>Navigation map</h3>
+<div class="wide"><svg viewBox="0 0 900 190" font-family="DejaVu Sans Mono,monospace" font-size="14">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8d8d93"/></marker></defs>
+<g fill="#0b0b0c" stroke="#3a3a3d" stroke-width="2">
+<rect x="20" y="60" width="130" height="64" rx="12"/><rect x="250" y="60" width="130" height="64" rx="12" stroke="#ffb000"/><rect x="480" y="60" width="130" height="64" rx="12"/><rect x="740" y="30" width="140" height="56" rx="12"/><rect x="740" y="104" width="140" height="56" rx="12"/></g>
+<g fill="#ececec" text-anchor="middle"><text x="85" y="98">SCREEN OFF</text><text x="315" y="98" fill="#ffb000">CARRY</text><text x="545" y="98">DIAL</text><text x="810" y="64">MODE</text><text x="810" y="138">CARRY</text></g>
+<g stroke="#8d8d93" stroke-width="2" fill="none" marker-end="url(#ar)">
+<path d="M150 82H250"/><path d="M380 82H480"/><path d="M610 70L740 58"/><path d="M610 112L740 132"/><path d="M810 30C810 6 545 6 545 60"/></g>
+<g fill="#8d8d93" font-size="12" text-anchor="middle"><text x="200" y="74">long press</text><text x="430" y="74">press</text><text x="680" y="52">press</text><text x="690" y="152">dbl-press</text><text x="680" y="14">dbl-press (back to Dial)</text><text x="200" y="104">long press</text></g>
+</svg></div>
+
+<h2>3 · Modes on the Dial</h2>
+<p>Nine slots. Order = how often you will reach for them.</p>
+<table>
+<tr><th>#</th><th>Mode</th><th>What it does</th><th>Needs</th></tr>
+<tr><td>1</td><td><b>Carry</b></td><td>The ambient home. Scenes you turn through: <b>Me</b> (your photo / gallery), <b>Pet</b>, <b>Clocks</b> (many faces), <b>Sign</b> (scrolling marquee), <b>Counter</b> (“day 14 of building this”, days-to-trip). Always-on dim or off-until-pressed is a setting.</td><td>assets on device</td></tr>
+<tr><td>2</td><td><b>Cards</b></td><td>Deck of full-screen QR / info cards. Card 1 = <b>Me</b> (name, what you do, link). Then UPI, contact, Instagram, LinkedIn, site. Swipe or turn between them. Auto max-brightness on QR, auto-timeout (white screens are the power hog).</td><td>assets (QR images from the Studio)</td></tr>
+<tr><td>3</td><td><b>Music</b></td><td>Now playing from the iPhone; volume on the crown, play/pause on press, seek on press+turn.</td><td>iPhone media service (AMS) — no app</td></tr>
+<tr><td>4</td><td><b>Inbox</b></td><td>Recent notifications, scroll with the crown; per-app buzz pattern; incoming calls pop up with answer / decline.</td><td>iPhone notification service (ANCS) — no app</td></tr>
+<tr><td>5</td><td><b>Remote</b></td><td>Camera shutter (instant, 3 s, 10 s, burst) — works like your selfie stick. Slide clicker and laptop media keys as extra pages.</td><td>Bluetooth HID (to be tested with iOS)</td></tr>
+<tr><td>6</td><td><b>Claude</b></td><td>Your laptop's Claude sessions: working / done / <b>needs you</b>, with allow / deny on the crown. The Pet types while Claude works.</td><td>laptop helper script (Arch now, Mac later)</td></tr>
+<tr><td>7</td><td><b>Play</b></td><td>Coin, dice (d6 / d20), tally clicker, “pick one for me”, magic 8-ball (shake, if there is a motion sensor).</td><td>nothing</td></tr>
+<tr><td>8</td><td><b>Tools</b></td><td>Metronome (a steady buzz at a chosen tempo — felt, not heard), pomodoro, stopwatch, timer, torch (white screen), <b>Leash</b> (buzz when the phone link drops), <b>Demo loop</b> (auto-cycles every mode for filming the reel).</td><td>nothing</td></tr>
+<tr><td>9</td><td><b>Settings</b></td><td>Screen on/off behaviour, orientation, haptics strength, brightness, packs, pairing, battery.</td><td>—</td></tr>
+</table>
+
+<h3>Things you hadn't listed — my additions</h3>
+<ul>
+<li><b>Name-badge Me card</b> as the first card, and as a Carry scene — at events it is the thing people actually read.</li>
+<li><b>Sign / marquee</b>: scrolling dot-matrix text (“ASK ME ABOUT THIS”). Very eye-catching on a belt, trivial to draw.</li>
+<li><b>Pet as the system mascot</b>: it looks up on a notification, bobs with music, types while Claude works, sleeps when idle. One character ties every mode together — good reel material.</li>
+<li><b>Counter / countdown</b>: days since you started, days until a trip or birthday.</li>
+<li><b>Incoming call</b>: shows the caller; press answers, hold declines (audio stays on the phone / AirPods).</li>
+<li><b>Haptic signature per mode and per app</b>: you can tell WhatsApp from Mail with your hip.</li>
+<li><b>Demo loop</b>: a mode made for your reel — one tap and it walks through everything.</li>
+</ul>
+<p class="mut">Left out on purpose: weather and calendar (need data from the phone, which we cannot get without an app), Wi-Fi QR (you said no), 2FA codes (you said no).</p>
+
+<h2>4 · Wireframes</h2>
+<h3>Dial and Carry scenes</h3>
+<div class="grid" id="g1"></div>
+<h3>Cards</h3>
+<div class="grid" id="g2"></div>
+<h3>Music, Inbox, Remote, Claude</h3>
+<div class="grid" id="g3"></div>
+<h3>Play, Tools, Settings</h3>
+<div class="grid" id="g4"></div>
+
+<h2>5 · Faces, pets and QR cards without reflashing — “packs”</h2>
+<p>Yes, do it the way the stock app did for watch faces, and make it better. The keychain holds a few <b>active slots</b>; your phone or laptop holds an unlimited <b>library</b>; you swap what lives in the slots over Bluetooth. Two kinds of pack, both <b>pure data</b> (so a bad pack can never brick the device):</p>
+<div class="wide"><svg viewBox="0 0 900 250" font-family="DejaVu Sans Mono,monospace" font-size="13">
+<defs><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8d8d93"/></marker></defs>
+<g fill="#0b0b0c" stroke="#3a3a3d" stroke-width="2"><rect x="20" y="40" width="190" height="170" rx="12"/><rect x="270" y="40" width="250" height="170" rx="12" stroke="#ffb000"/><rect x="590" y="40" width="130" height="170" rx="12"/><rect x="760" y="40" width="120" height="170" rx="12"/></g>
+<g fill="#ececec" text-anchor="middle"><text x="115" y="30" fill="#8d8d93">LIBRARY</text><text x="395" y="30" fill="#ffb000">STUDIO (small web page)</text><text x="655" y="30" fill="#8d8d93">BLUETOOTH</text><text x="820" y="30" fill="#8d8d93">KEYCHAIN</text></g>
+<g fill="#ececec"><text x="36" y="80">my photos</text><text x="36" y="104">pet sprites</text><text x="36" y="128">clock recipes</text><text x="36" y="152">QR cards</text><text x="36" y="176">marquee texts</text><text x="36" y="200" fill="#8d8d93">(unlimited)</text>
+<text x="286" y="80">pick + arrange</text><text x="286" y="104">live preview using the</text><text x="286" y="124">SAME renderer as the</text><text x="286" y="144">watch (WebAssembly)</text><text x="286" y="176">converts photos to the</text><text x="286" y="196">device format, makes QR</text>
+<text x="780" y="80">slot 1  Me</text><text x="780" y="104">slot 2  Pet</text><text x="780" y="128">slot 3  Rings</text><text x="780" y="152">slot 4  UPI</text><text x="780" y="176">…</text><text x="780" y="200" fill="#8d8d93">(N slots)</text></g>
+<g stroke="#8d8d93" stroke-width="2" marker-end="url(#ar2)"><path d="M210 125H270"/><path d="M520 125H590"/><path d="M720 125H760"/></g>
+</svg></div>
+<table>
+<tr><th>Pack type</th><th>What is in it</th><th>Why it is cheap</th></tr>
+<tr><td><b>Assets</b></td><td>photos (16-colour dithered), pixel-art sprite sheets for the pet, QR codes, marquee text</td><td>stored in spare flash, not in the firmware</td></tr>
+<tr><td><b>Recipes</b></td><td>clock faces and ambient art written as a short list of shapes (rings, arcs, hands, text) tied to the time</td><td>our renderer already draws from a list of shapes, so a face is a few hundred bytes — “tons of clock options” is nearly free</td></tr>
+</table>
+<div class="box"><b>Honest unknowns</b>
+<ul class="q"><li><b>Free flash for assets</b> — I have not measured it. A full-screen photo is 330 KB uncompressed (16-bit), ~80 KB at 16 colours. Expect a handful of photos or many pixel sprites; a retro pet is tiny (4× scaled 2-bit sprites).</li>
+<li><b>Uploading from the iPhone</b> needs a web page in Bluefy (Safari has no Bluetooth). Laptop (Chrome on Arch / Mac) works directly. A tiny native app via Xcode on the Mac is possible later but not needed.</li></ul></div>
+
+<h2>6 · What I need from you</h2>
+<ol class="q">
+<li><b>Look and feel:</b> amber-on-black dot-matrix OK as the direction, or do you picture something else (white-on-black, one different accent)?</li>
+<li><b>Carry default:</b> which scene should it open on — Me, Pet, or a clock?</li>
+<li><b>Touch in Carry:</b> off by default (my proposal) so a belt brushing your trousers does nothing. OK?</li>
+<li><b>Torch:</b> a white screen at full brightness drains the battery fast. Keep it with an automatic time limit?</li>
+<li><b>Sketch next:</b> start with the Dial and Carry on paper. I will rebuild each sketch in the laptop simulator so you see it pixel-accurate before anything is flashed.</li>
+</ol>
+
+</main>
+<script>
+const W=368,H=448,A='#ffb000',F='#f4f4f4',M='#8a8a8a',K='#3a3a3a',B='#161616';
+const R=(x,y,w,h,fill,rx=0,ex='')=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rx}" fill="${fill}" ${ex}/>`;
+const S=(x,y,w,h,st,rx=0,sw=2)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rx}" fill="none" stroke="${st}" stroke-width="${sw}"/>`;
+const C=(x,y,r,fill,ex='')=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${fill}" ${ex}/>`;
+const Cs=(x,y,r,st,sw,ex='')=>`<circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="${st}" stroke-width="${sw}" ${ex}/>`;
+const T=(x,y,s,t,fill=F,an='middle',w=700,ex='')=>`<text x="${x}" y="${y}" font-size="${s}" text-anchor="${an}" font-weight="${w}" fill="${fill}" ${ex}>${t}</text>`;
+const Ln=(x1,y1,x2,y2,st,sw=2)=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${st}" stroke-width="${sw}"/>`;
+const P=(pts,fill)=>`<polygon points="${pts}" fill="${fill}"/>`;
+const dots=(n,i,y=426)=>{let s='';const g=16,x0=184-(n-1)*g/2;for(let k=0;k<n;k++)s+=C(x0+k*g,y,k==i?4.5:3,k==i?A:K);return s};
+function qr(x,y,size,seed){const n=21,m=size/n;let s=R(x,y,size,size,'#fff');let r=seed;const rnd=()=>(r=(r*1103515245+12345)&0x7fffffff)/0x7fffffff;
+ const fin=(fx,fy)=>R(x+fx*m,y+fy*m,7*m,7*m,'#000')+R(x+(fx+1)*m,y+(fy+1)*m,5*m,5*m,'#fff')+R(x+(fx+2)*m,y+(fy+2)*m,3*m,3*m,'#000');
+ for(let i=0;i<n;i++)for(let j=0;j<n;j++){const inF=(i<8&&j<8)||(i>12&&j<8)||(i<8&&j>12);if(!inF&&rnd()>.52)s+=R(x+i*m,y+j*m,m,m,'#000')}
+ return s+fin(0,0)+fin(14,0)+fin(0,14)}
+function sprite(rows,x,y,sc,fill,eye){let s='';rows.forEach((r,j)=>[...r].forEach((c,i)=>{if(c=='x')s+=R(x+i*sc,y+j*sc,sc,sc,fill);if(c=='e')s+=R(x+i*sc,y+j*sc,sc,sc,eye)}));return s}
+const cat=["..x.....x..",".xxx...xxx.",".xxxxxxxxx.","xxxxxxxxxxx","xxexxxxxexx","xxxxxxxxxxx",".xxxxxxxxx.",".xx.....xx."];
+const frame=inner=>`<svg class="scr" viewBox="0 0 ${W} ${H}" font-family="DejaVu Sans Mono,JetBrains Mono,monospace"><defs><pattern id="dp" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r=".9" fill="#fff" opacity=".07"/></pattern></defs><rect width="${W}" height="${H}" fill="#000"/><rect width="${W}" height="${H}" fill="url(#dp)"/>${inner}</svg>`;
+const modes=['CARRY','CARDS','MUSIC','INBOX','REMOTE','CLAUDE','PLAY','TOOLS','SETTINGS'];
+
+const dial=()=>{const ys=[62,140,224,308,386],sz=[20,32,58,32,20],op=[.12,.35,1,.35,.12];let s='';
+ [-2,-1,0,1,2].forEach((d,k)=>{s+=T(184,ys[k]+sz[k]*0.35,sz[k],modes[2+d],F,'middle',700,`opacity="${op[k]}"`)});
+ for(let i=0;i<9;i++)s+=Ln(i==2?14:20,70+i*34,32,70+i*34,i==2?A:K,i==2?4:2);
+ s+=R(40,196,4,56,A)+T(184,426,13,'03 / 09',M)+T(184,38,12,'turn = move   press = enter',M);return s};
+const meScene=()=>S(44,50,280,290,K,10)+Ln(44,50,324,340,K,1)+Ln(324,50,44,340,K,1)+T(184,200,14,'YOUR PHOTO',M)+T(184,220,11,'16-colour dither','#555')+T(184,386,28,'NAME',F)+T(184,414,14,'what I build',A)+dots(5,0,24);
+const petScene=()=>R(30,318,308,10,K)+R(52,328,10,80,K)+R(306,328,10,80,K)+R(104,306,104,12,'#2a2a2a')+R(116,238,80,68,'#222')+R(122,244,68,56,A,0,'opacity=".75"')+R(236,316,92,8,'#2a2a2a')+R(320,256,8,60,'#2a2a2a')+sprite(cat,232,256,7,'#e8e8e8',A)+S(238,170,82,40,F,10,2)+T(279,198,22,'. . .',F)+T(184,60,12,'PET  ·  coding',M)+dots(5,1,426);
+const clocks=()=>{let s=Ln(184,0,184,448,K,1)+Ln(0,224,368,224,K,1);
+ s+=T(92,112,40,'10:42',A)+T(92,142,11,'MON 03 NOV',M)+T(10,218,9,'DOT-MATRIX',K,'start');
+ ['IT IS','QUARTER','HALF','TEN','TO','ELEVEN'].forEach((w,i)=>{const on=i==0||i==3||i==4||i==5;s+=T(276,56+i*26,i==5?24:18,w,on?A:K)});s+=T(360,218,9,'WORDS',K,'end');
+ s+=T(14,262,13,'$ date',A,'start',400)+T(14,282,13,'Mon 03 Nov 10:42',F,'start',400)+T(14,306,13,'$ battery',A,'start',400)+T(14,326,13,'78% charging',F,'start',400)+T(14,350,13,'$ _',A,'start',400)+T(10,440,9,'TERMINAL',K,'start');
+ [[64,'260 377'],[46,'180 289'],[28,'110 176']].forEach(([r,d])=>{const cr=2*Math.PI*r;s+=Cs(276,336,r,'#222',9)+Cs(276,336,r,A,9,`stroke-dasharray="${(cr*d.split(' ')[0]/377).toFixed(0)} ${cr.toFixed(0)}" transform="rotate(-90 276 336)" stroke-linecap="round"`)});s+=T(360,440,9,'RINGS',K,'end');return s};
+const sign=()=>T(184,150,70,'ASK ME',A)+T(184,226,70,'ABOUT',F)+T(184,302,70,'THIS',F)+P('130,360 150,372 130,384',A)+P('160,360 180,372 160,384',A)+P('190,360 210,372 190,384',A)+T(184,426,11,'scrolls, text from the Studio',M)+dots(5,3,24);
+const counter=()=>T(184,150,13,'DAY',M)+T(184,270,150,'14',A)+T(184,316,17,'OF BUILDING THIS',F)+T(184,342,12,'since 20 Oct',M)+dots(5,4,426);
+const meCard=()=>T(24,46,13,'CARDS  1 / 5',M,'start')+T(24,150,52,'NAME',F,'start')+T(24,190,18,'I build tiny hardware',A,'start',400)+T(24,214,18,'and the software for it',A,'start',400)+qr(214,262,130,7)+T(24,330,13,'yoursite.com',M,'start',400)+T(24,350,11,'tap phone to the back to open it',K,'start',400)+dots(5,0);
+const upiCard=()=>T(184,36,13,'CARDS  2 / 5',M)+qr(40,56,288,3)+T(184,386,20,'UPI',A)+T(184,414,14,'name@bank',M)+dots(5,1,436);
+const music=()=>T(184,38,12,'NOW PLAYING · SPOTIFY',M)+T(24,150,34,'Song Title',F,'start')+T(24,192,34,'Two Lines',F,'start')+T(24,232,18,'Artist name',A,'start',400)+R(24,288,320,4,K,2)+R(24,288,150,4,A,2)+T(24,316,12,'1:24',M,'start',400)+T(344,316,12,'3:02',M,'end',400)+P('84,368 84,396 62,382',F)+P('62,368 62,396 40,382',F)+R(168,366,10,30,F)+R(190,366,10,30,F)+P('284,368 284,396 306,382',F)+P('306,368 306,396 328,382',F)+R(354,90,6,160,K,3)+R(354,150,6,100,A,3)+T(357,76,10,'VOL',M);
+const inbox=()=>{const rows=[['W','WhatsApp','Riya','are you free tonight?',1],['M','Mail','Stripe','Payout sent',0],['C','Calendar','Standup','in 10 min',0]];let s=T(24,46,13,'INBOX',M,'start')+T(344,46,13,'3',A,'end');
+ rows.forEach((r,i)=>{const y=70+i*104;if(r[4])s+=R(8,y,352,96,B,14)+R(8,y+14,4,68,A,2);s+=R(24,y+22,44,44,'#2a2a2a',10)+T(46,y+52,22,r[0],F)+T(84,y+30,12,r[1],A,'start',400)+T(84,y+56,19,r[2],F,'start')+T(84,y+78,14,r[3],M,'start',400)});return s+T(184,428,11,'turn = scroll   press = open   dbl = dial',M)};
+const toast=()=>R(14,14,340,96,'#1a1a1a',20)+R(30,36,44,44,'#2a2a2a',10)+T(52,66,22,'W',F)+T(90,44,12,'WhatsApp',A,'start',400)+T(90,70,18,'Riya: are you free…',F,'start')+T(90,94,12,'buzz  ●●  ●',M,'start',400)+C(184,300,50,'#0e0e0e')+T(184,308,22,'. . .',K)+T(184,400,12,'pops over anything, then fades',M);
+const call=()=>T(184,110,15,'INCOMING CALL',A)+T(184,226,56,'Mom',F)+R(30,330,308,50,'#222',25)+T(184,362,15,'PRESS · answer',F)+R(30,392,308,40,'#0f0f0f',20,`stroke="${K}" stroke-width="2"`)+T(184,418,13,'HOLD · decline',M);
+const remote=()=>{let s=T(184,38,12,'REMOTE · CAMERA',M);['SHOT','3s','10s','BURST'].forEach((l,i)=>{const x=24+i*84,on=i==1;s+=(on?R(x,64,76,34,A,17):R(x,64,76,34,'#0f0f0f',17,`stroke="${K}" stroke-width="2"`))+T(x+38,87,14,l,on?'#000':M)});
+ return s+Cs(184,240,112,F,5)+C(184,240,92,F)+T(184,262,76,'3','#000')+T(184,400,13,'press = fire   turn = timer',M)+T(184,422,11,'iPhone camera app open',K)};
+const claude=()=>T(24,44,13,'CLAUDE  ·  2 sessions',M,'start')+R(16,62,336,222,'#15110a',16,`stroke="${A}" stroke-width="2"`)+T(32,92,13,'dafit-watch',A,'start',400)+T(32,128,24,'Allow command?',F,'start')+T(32,162,14,'git push origin main',F,'start',400)+T(32,186,12,'waiting 12 s',M,'start',400)+R(32,214,138,50,'#222',25)+T(101,246,16,'DENY',F)+R(184,214,152,50,A,25)+T(260,246,16,'ALLOW','#000')+Cs(260,239,34,F,2,'opacity="0"')+R(16,300,336,84,B,16)+T(32,332,13,'other-project',M,'start',400)+T(32,360,17,'working 4 min',F,'start')+C(300,346,4,A)+C(316,346,4,A,'opacity=".5"')+C(332,346,4,A,'opacity=".25"')+T(184,428,11,'turn = pick   press = confirm',M);
+const coin=()=>T(184,38,12,'PLAY  ·  COIN',M)+C(184,220,104,A)+Cs(184,220,88,'#000',4,'opacity=".35"')+T(184,236,40,'HEADS','#000')+T(184,380,13,'press = flip',M)+['COIN','D6','D20','TALLY','PICK'].map((l,i)=>T(46+i*69,426,11,l,i==0?A:K)).join('');
+const tally=()=>T(184,38,12,'PLAY  ·  TALLY',M)+T(184,250,120,'0042',A)+T(184,300,14,'press = +1   turn = ±1',M)+T(184,324,12,'hold = reset',K)+['COIN','D6','D20','TALLY','PICK'].map((l,i)=>T(46+i*69,426,11,l,i==3?A:K)).join('');
+const metro=()=>T(184,38,12,'TOOLS  ·  METRONOME',M)+T(184,230,130,'120',A)+T(184,270,16,'BPM',M)+[0,1,2,3].map(i=>C(94+i*60,340,i==0?14:10,i==0?A:K)).join('')+T(184,400,13,'turn = tempo   press = start',M)+T(184,424,11,'felt in the hip, not heard',K);
+const settings=()=>{const rows=[['Screen','Always on'],['Touch in Carry','Off'],['Orientation','Up'],['Haptics','Medium'],['Brightness','▮▮▮▮▯'],['Packs','3 / 8'],['Phone','Paired']];let s=T(24,46,13,'SETTINGS',M,'start');
+ rows.forEach((r,i)=>{const y=66+i*50;if(i==0)s+=R(8,y,352,46,B,12)+R(8,y+8,4,30,A,2);s+=T(24,y+30,17,r[0],F,'start',400)+T(344,y+30,15,r[1],A,'end',400)});return s+T(184,428,11,'turn = move   press = change',M)};
+
+const figs=(id,list)=>{document.getElementById(id).innerHTML=list.map(([f,t,d,i])=>`<figure>${frame(f())}<figcaption><b>${t}</b>${d}${i?`<i>${i}</i>`:''}</figcaption></figure>`).join('')};
+figs('g1',[[dial,'The Dial','Turn to pick, press to enter. Neighbours fade out like a tape selector.','haptic click per notch'],
+ [meScene,'Carry · Me','Your photo as ambient art. Turn for the next scene.','scene dots at the top'],
+ [petScene,'Carry · Pet','Retro pixel creature at a desk. It is the mascot of every mode.','looks up on notification · bobs to music · types while Claude works · sleeps when idle'],
+ [clocks,'Carry · Clock faces','Four of many. Each is a recipe, a few hundred bytes.','dot-matrix · word clock · terminal · rings'],
+ [sign,'Carry · Sign','Scrolling marquee for the belt.',''],
+ [counter,'Carry · Counter','Days building this, or days until a trip.','']]);
+figs('g2',[[meCard,'Card 1 · Me','Who you are and what you do, with a QR to your site.','swipe → for the next card'],
+ [upiCard,'Card 2 · UPI','Full-screen QR, auto max brightness, auto timeout (white = power hungry).','swipe for Instagram, LinkedIn, contact…']]);
+figs('g3',[[music,'Music','Title, artist, progress. Volume rail appears on the right when you turn.','turn = volume · press = play/pause · press+turn = seek'],
+ [inbox,'Inbox','Recent notifications, newest first.','turn = scroll · press = open'],
+ [toast,'Notification pop-up','Slides over anything for 2–3 s, with that app’s own buzz.',''],
+ [call,'Incoming call','Caller name; answer / decline; audio stays on the phone.',''],
+ [remote,'Remote · Camera','Like your selfie stick: instant, 3 s, 10 s, burst.','haptic count-down 3-2-1'],
+ [claude,'Claude','“Needs you” card with allow / deny; other sessions below.','turn = pick · press = confirm']]);
+figs('g4',[[coin,'Play · Coin','Flip with a press; haptic spin and a thud on landing.','turn = switch game'],
+ [tally,'Play · Tally','A physical clicker: press adds one, with a click.',''],
+ [metro,'Tools · Metronome','Steady buzz at the chosen tempo.','pomodoro, timer, stopwatch, torch, leash and demo loop live in Tools too'],
+ [settings,'Settings','Screen always-on vs off, touch in Carry, orientation, haptics, packs.','']]);
+</script></body></html>
